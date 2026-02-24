@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מדינות וערי בירה במזרח התיכון</title>
+    
+    <!-- ייבוא פונט Heebo לעברית נקייה וקריאה -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב מותאמות אישית (Tailwind Config) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* הגדרת גלילה חלקה */
+        html { scroll-behavior: smooth; }
+        /* מניעת בחירת טקסט בטעות בלחיצה על כפתורים בנייד */
+        .no-select { user-select: none; -webkit-user-select: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-cyan-700 selection:text-white">
+
+    <!-- תוכן מרכזי -->
+    <main class="flex-grow flex flex-col items-center justify-center p-6 sm:p-10 max-w-5xl mx-auto w-full">
+        
+        <!-- כותרת האתר -->
+        <header class="text-center mb-12 animate-fade-in-down">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-6 drop-shadow-lg">
+                אטלס האסלאם במזרח התיכון
+            </h1>
+            
+            <!-- מבוא קצר על האתר (דרישה 1) -->
+            <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl border border-slate-700 max-w-3xl mx-auto leading-relaxed text-lg text-slate-300">
+                <p class="mb-4">
+                    ברוכים הבאים לפרויקט מחקר מקיף, המנתח לעומק את המדינות המוסלמיות במזרח התיכון. פרויקט זה נולד מתוך רצון להבין את השורשים, האידאולוגיה וההיסטוריה של המרחב בו אנו חיים.
+                </p>
+                <p>
+                    האתר מחולק לשני נתיבי חקר מקבילים: נתיב אחד מוקדש ל<strong>מדינות עצמן</strong> – משמעות שמן, ההיסטוריה והמנהיגות שלהן. הנתיב השני צולל אל תוך <strong>ערי הבירה</strong> – הלב הפועם של התרבות והשלטון, תוך התמקדות עמוקה באטימולוגיה המלאה ובהתפתחותן לאורך השנים.
+                </p>
+            </div>
+        </header>
+
+        <!-- אזור הכפתורים / כרטיסיות הניווט -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 w-full max-w-4xl no-select">
+            
+            <!-- כרטיסיה 1: מעבר למדינות -->
+            <a href="countries.html" class="group block bg-slate-800 rounded-3xl p-8 shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-cyan-900/30 hover:bg-slate-800/80 transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-cyan-600 focus:ring-opacity-50 text-center">
+                <div class="w-20 h-20 mx-auto bg-slate-900 rounded-full flex items-center justify-center mb-6 border-2 border-slate-600 group-hover:border-cyan-400 transition-colors">
+                    <!-- אייקון של מפה/מדינה (SVG inline) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">מחקר המדינות</h2>
+                <p class="text-slate-400 text-base leading-relaxed">
+                    מידע מקיף על כל מדינה. אטימולוגיה, היסטוריה, אידאולוגיה (סונים/שיעים), ומנהיגות נוכחית.
+                </p>
+                <div class="mt-6 inline-flex items-center text-cyan-400 font-medium group-hover:text-cyan-300">
+                    <span>היכנסו למחקר</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 transform group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                </div>
+            </a>
+
+            <!-- כרטיסיה 2: מעבר לערי הבירה -->
+            <a href="capitals.html" class="group block bg-slate-800 rounded-3xl p-8 shadow-lg border border-slate-700 hover:border-blue-500 hover:shadow-blue-900/30 hover:bg-slate-800/80 transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50 text-center">
+                <div class="w-20 h-20 mx-auto bg-slate-900 rounded-full flex items-center justify-center mb-6 border-2 border-slate-600 group-hover:border-blue-400 transition-colors">
+                    <!-- אייקון של עיר/ארכיטקטורה (SVG inline) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors">מחקר ערי הבירה</h2>
+                <p class="text-slate-400 text-base leading-relaxed">
+                    מסע אל לב הערים. פירוט אטימולוגי נרחב על מקורות השם, שנות ייסוד ואתרים היסטוריים בולטים.
+                </p>
+                <div class="mt-6 inline-flex items-center text-blue-400 font-medium group-hover:text-blue-300">
+                    <span>היכנסו למחקר</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 transform group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- פוטר (דרישה 2) -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-auto">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm">
+                &copy; 2026 פרויקט מחקר מיוחד. נבנה על ידי רם.
+            </p>
+            <p class="text-slate-600 text-xs mt-2">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשירי מגע מתקדמים (Samsung S25 Ultra).
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
