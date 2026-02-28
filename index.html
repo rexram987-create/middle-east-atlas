@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מדינות וערי בירה במזרח התיכון</title>
+    <title>אטלס המזרח התיכון: מחקרים גיאופוליטיים</title>
     
+    <!-- ייבוא פונט Heebo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
     
+    <!-- ייבוא Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
+    <!-- הגדרות עיצוב -->
     <script>
         tailwind.config = {
             theme: {
@@ -24,125 +27,158 @@
     </script>
 
     <style>
-        /* הגדרת גלילה חלקה */
-        html { scroll-behavior: smooth; }
-        /* מניעת בחירת טקסט בטעות בלחיצה על כפתורים בנייד */
-        .no-select { user-select: none; -webkit-user-select: none; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); }
+        .hero-gradient { background: radial-gradient(circle at top right, #1e293b 0%, #0f172a 100%); }
+        .flag-shadow { filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); }
+        .no-select { user-select: none; }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-cyan-700 selection:text-white">
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-teal-500 selection:text-white">
 
-    <main class="flex-grow flex flex-col items-center justify-start p-6 sm:p-10 max-w-7xl mx-auto w-full">
+    <!-- רקע דקורטיבי -->
+    <div class="fixed inset-0 z-[-1] hero-gradient"></div>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
         
-        <header class="text-center mb-16 animate-fade-in-down w-full max-w-4xl">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-6 drop-shadow-lg">
-                אטלס האסלאם במזרח התיכון
+        <!-- כותרת עליונה ומבוא -->
+        <header class="text-center mb-16">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-l from-teal-400 via-emerald-400 to-cyan-500">
+                אטלס המזרח התיכון
             </h1>
-            
-            <div class="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl border border-slate-700 leading-relaxed text-lg text-slate-300">
-                <p class="mb-4">
-                    ברוכים הבאים לפרויקט מחקר מקיף, המנתח לעומק את המדינות המוסלמיות במזרח התיכון. פרויקט זה נולד מתוך רצון להבין את השורשים, האידאולוגיה וההיסטוריה של המרחב בו אנו חיים.
-                </p>
-                <p>
-                    האתר מחולק לשני נתיבי חקר מקבילים: נתיב אחד מוקדש ל<strong>מדינות עצמן</strong> – משמעות שמן, ההיסטוריה והמנהיגות שלהן. הנתיב השני צולל אל תוך <strong>ערי הבירה</strong> – הלב הפועם של התרבות והשלטון, תוך התמקדות עמוקה באטימולוגיה המלאה ובהתפתחותן לאורך השנים.
+            <div class="glass border border-slate-800 p-8 rounded-3xl max-w-4xl mx-auto text-right">
+                <h2 class="text-2xl font-bold text-teal-400 mb-4">מבוא למחקר</h2>
+                <p class="text-lg text-slate-300 leading-relaxed font-light">
+                    ברוכים הבאים לאטלס הגיאופוליטי המקיף. פרויקט זה נולד מתוך תשוקה לחקר ההיסטוריה, האטימולוגיה והתהליכים המעצבים את המרחב שבו אנו חיים. המזרח התיכון אינו רק נקודה על המפה, אלא פסיפס של תרבויות עתיקות, אימפריות שנפלו, וגבולות ששורטטו מתוך אינטרסים עולמיים. כאן נחקור כל מדינה דרך שורשי שמה, סיפור ייסודה והמשאבים המניעים את כלכלתה.
                 </p>
             </div>
         </header>
 
-        <section class="w-full mb-16 no-select">
-            <div class="flex items-center justify-center gap-4 mb-8">
-                <div class="h-px bg-slate-700 flex-grow max-w-[100px]"></div>
-                <h2 class="text-3xl font-bold text-cyan-400 text-center">נתיב מחקר המדינות</h2>
-                <div class="h-px bg-slate-700 flex-grow max-w-[100px]"></div>
+        <!-- מילון מונחים אזורי -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold text-slate-200 mb-8 flex items-center">
+                <span class="bg-teal-500 w-2 h-8 ml-4 rounded-full"></span>
+                מילון מונחים גיאופוליטי
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- הלבנט -->
+                <div class="glass border border-slate-800 p-6 rounded-3xl">
+                    <h3 class="text-xl font-bold text-teal-400 mb-3">הלבנט (Levant)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        מקור השם מהמילה הצרפתית <em>Levant</em> שמשמעותה "זריחה" או "מזרח" (מהלטינית <em>Levare</em> - להתרומם). המונח מתייחס לארצות השוכנות לחופו המזרחי של הים התיכון. בערבית האזור מכונה <strong class="text-slate-200">"א-שאם"</strong>, שמשמעותו ההיסטורית היא "הצד השמאלי" (מנקודת המבט של מי שעומד במכה ופניו למזרח).
+                    </p>
+                </div>
+
+                <!-- חצי האי ערב -->
+                <div class="glass border border-slate-800 p-6 rounded-3xl">
+                    <h3 class="text-xl font-bold text-amber-500 mb-3">חצי האי ערב</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        המרחב הגיאוגרפי הגדול ביותר במזרח התיכון. אטימולוגית, המילה <strong class="text-slate-200">"ערב"</strong> קשורה לשורש השמי המציין "מערב" (האזור שבו השמש שוקעת עבור תושבי מסופוטמיה) או "ערבה" (מדבר צחיח). זהו ערש האסלאם והאזור המכיל את עתודות האנרגיה המשמעותיות ביותר בעולם המודרני.
+                    </p>
+                </div>
+
+                <!-- המגרב -->
+                <div class="glass border border-slate-800 p-6 rounded-3xl">
+                    <h3 class="text-xl font-bold text-rose-400 mb-3">המגרב (Al-Maghrib)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        מונח ערבי (المغرب) שמשמעותו המילולית היא <strong class="text-slate-200">"מקום השקיעה"</strong> (הפך למונח המערבי). הוא מתייחס למדינות צפון אפריקה (מרוקו, אלג'יריה, תוניסיה, לוב ומאוריטניה). השם נוצר בראשית האסלאם כדי להבדיל בין ארצות המזרח ("משריק") לבין קצה העולם המוסלמי במערב, לחופי האוקיינוס האטלנטי.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- אשכול הלבנט (Levant) -->
+        <section class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="h-px flex-grow bg-slate-800"></div>
+                <h2 class="px-6 text-2xl font-bold text-teal-400 tracking-wide uppercase italic">מדינות הלבנט</h2>
+                <div class="h-px flex-grow bg-slate-800"></div>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <a href="countries-levant.html" class="group bg-slate-800 rounded-3xl p-6 shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-cyan-900/30 transition-all duration-300 transform hover:-translate-y-1 text-center block">
-                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-300">הלבנט (א-שאם)</h3>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">סוריה, לבנון, ירדן ועיראק. מחקר על המרחב הקרוב, השפעות עות'מאניות וגבולות סייקס-פיקו.</p>
-                    <span class="text-cyan-400 text-sm font-medium flex items-center justify-center group-hover:text-cyan-300">
-                        לכניסה <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-                    </span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="levant/countries-levant-jordan.html" class="glass border border-slate-700/50 p-6 rounded-3xl hover:border-teal-500 transition-all duration-300 group">
+                    <div class="w-12 h-8 mb-4 group-hover:scale-110 transition-transform flag-shadow">
+                        <svg viewBox="0 0 900 450" class="w-full h-full rounded-sm"><rect width="900" height="150" fill="#000"/><rect width="900" height="150" y="150" fill="#fff"/><rect width="900" height="150" y="300" fill="#007a3d"/><polygon points="0,0 450,225 0,450" fill="#ce1126"/><path d="M 150 195 L 156 211 L 173 207 L 165 221 L 181 231 L 165 236 L 166 253 L 150 242 L 134 253 L 135 236 L 119 231 L 135 221 L 127 207 L 144 211 Z" fill="#fff"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">ירדן</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">הממלכה ההאשמית והנהר היורד.</p>
+                </a>
+                
+                <a href="levant/countries-levant-syria.html" class="glass border border-slate-700/50 p-6 rounded-3xl hover:border-rose-500 transition-all duration-300 group">
+                    <div class="w-12 h-8 mb-4 group-hover:scale-110 transition-transform flag-shadow">
+                        <svg viewBox="0 0 900 600" class="w-full h-full rounded-sm"><rect width="900" height="200" fill="#ce1126"/><rect width="900" height="200" y="200" fill="#fff"/><rect width="900" height="200" y="400" fill="#000"/><polygon points="300,240 315,280 360,280 325,305 340,350 300,325 260,350 275,305 240,280 285,280" fill="#007a3d"/><polygon points="600,240 615,280 660,280 625,305 640,350 600,325 560,350 575,305 540,280 585,280" fill="#007a3d"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">סוריה</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">מורשת אשור והרפובליקה המאוחדת.</p>
                 </a>
 
-                <a href="countries-arabia.html" class="group bg-slate-800 rounded-3xl p-6 shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-cyan-900/30 transition-all duration-300 transform hover:-translate-y-1 text-center block">
-                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-300">חצי האי ערב</h3>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">סעודיה, תימן, איחוד האמירויות, קטר ועוד. מורשת שבטית מדברית, והשפעת הכלכלה המודרנית.</p>
-                    <span class="text-cyan-400 text-sm font-medium flex items-center justify-center group-hover:text-cyan-300">
-                        לכניסה <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-                    </span>
+                <a href="levant/countries-levant-lebanon.html" class="glass border border-slate-700/50 p-6 rounded-3xl hover:border-emerald-500 transition-all duration-300 group">
+                    <div class="w-12 h-8 mb-4 group-hover:scale-110 transition-transform flag-shadow">
+                        <svg viewBox="0 0 900 600" class="w-full h-full rounded-sm"><rect width="900" height="600" fill="#ed1c24"/><rect width="900" height="300" y="150" fill="#fff"/><path d="M450 150L380 250H420L360 330H410L350 420H430V450H470V420H550L490 330H540L480 250H520Z" fill="#00a859"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">לבנון</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">ארץ הארזים, השלג וגילגמש.</p>
                 </a>
 
-                <a href="countries-nonarab.html" class="group bg-slate-800 rounded-3xl p-6 shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-cyan-900/30 transition-all duration-300 transform hover:-translate-y-1 text-center block">
-                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-300">המרחב הלא-ערבי</h3>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">איראן וטורקיה. ניתוח שורשים פרסיים וטורקיים, אימפריות היסטוריות ואידאולוגיות שלטוניות ייחודיות.</p>
-                    <span class="text-cyan-400 text-sm font-medium flex items-center justify-center group-hover:text-cyan-300">
-                        לכניסה <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-                    </span>
-                </a>
-
-                <a href="countries-nafrica.html" class="group bg-slate-800 rounded-3xl p-6 shadow-lg border border-slate-700 hover:border-cyan-500 hover:shadow-cyan-900/30 transition-all duration-300 transform hover:-translate-y-1 text-center block">
-                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-300">צפון אפריקה</h3>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">מצרים, סודאן ולוב. חקר המדינות המקשרות בין המזרח התיכון ליבשת אפריקה ואגן הנילוס.</p>
-                    <span class="text-cyan-400 text-sm font-medium flex items-center justify-center group-hover:text-cyan-300">
-                        לכניסה <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-                    </span>
+                <a href="levant/countries-levant-iraq.html" class="glass border border-slate-700/50 p-6 rounded-3xl hover:border-amber-500 transition-all duration-300 group">
+                    <div class="w-12 h-8 mb-4 group-hover:scale-110 transition-transform flag-shadow">
+                        <svg viewBox="0 0 900 600" class="w-full h-full rounded-sm"><rect width="900" height="200" fill="#ce1126"/><rect width="900" height="200" y="200" fill="#fff"/><rect width="900" height="200" y="400" fill="#000"/><text x="450" y="335" font-family="Arial" font-size="100" font-weight="bold" fill="#007a3d" text-anchor="middle">الله أكبر</text></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">עיראק</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">מסופוטמיה וערש הכתב.</p>
                 </a>
             </div>
         </section>
 
-        <section class="w-full mb-8 no-select">
-            <div class="flex items-center justify-center gap-4 mb-8">
-                <div class="h-px bg-slate-700 flex-grow max-w-[100px]"></div>
-                <h2 class="text-3xl font-bold text-blue-400 text-center">נתיב מחקר ערי הבירה</h2>
-                <div class="h-px bg-slate-700 flex-grow max-w-[100px]"></div>
+        <!-- אשכול חצי האי ערב (Arabia) -->
+        <section class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="h-px flex-grow bg-slate-800"></div>
+                <h2 class="px-6 text-2xl font-bold text-amber-500 tracking-wide uppercase italic">חצי האי ערב</h2>
+                <div class="h-px flex-grow bg-slate-800"></div>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <a href="capitals-levant.html" class="group bg-slate-800 rounded-3xl p-6 shadow-lg border border-slate-700 hover:border-blue-500 hover:shadow-blue-900/30 transition-all duration-300 transform hover:-translate-y-1 text-center block">
-                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300">ערי הלבנט</h3>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">דמשק, ביירות, רבת עמון ובגדד. מחקר אטימולוגי של מוקדי הכוח העתיקים והמודרניים באזור.</p>
-                    <span class="text-blue-400 text-sm font-medium flex items-center justify-center group-hover:text-blue-300">
-                        לכניסה <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-                    </span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="arabia/countries-arabia-saudi.html" class="glass border border-slate-700/50 p-6 rounded-3xl hover:border-emerald-600 transition-all duration-300 group">
+                    <div class="w-12 h-8 mb-4 group-hover:scale-110 transition-transform flag-shadow">
+                        <svg viewBox="0 0 900 600" class="w-full h-full rounded-sm"><rect width="900" height="600" fill="#006C35"/><path d="M 750 420 L 250 420 L 200 400 L 250 380 L 750 380 L 780 400 Z" fill="#fff"/><rect x="750" y="370" width="30" height="60" fill="#fff"/><text x="450" y="270" font-family="Arial" font-size="80" font-weight="bold" fill="#fff" text-anchor="middle">لا إله إلا الله</text></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">ערב הסעודית</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">הממלכה המבורכת ועידן הנפט.</p>
                 </a>
 
-                <a href="capitals-arabia.html" class="group bg-slate-800 rounded-3xl p-6 shadow-lg border border-slate-700 hover:border-blue-500 hover:shadow-blue-900/30 transition-all duration-300 transform hover:-translate-y-1 text-center block">
-                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300">ערי חצי האי</h3>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">ריאד, צנעא, אבו דאבי, דוחה ועוד. מנאות מדבר למטרופולינים של כלכלה, והתפתחות שמותיהן.</p>
-                    <span class="text-blue-400 text-sm font-medium flex items-center justify-center group-hover:text-blue-300">
-                        לכניסה <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-                    </span>
+                <a href="arabia/countries-arabia-uae.html" class="glass border border-slate-700/50 p-6 rounded-3xl hover:border-rose-600 transition-all duration-300 group">
+                    <div class="w-12 h-8 mb-4 group-hover:scale-110 transition-transform flag-shadow">
+                        <svg viewBox="0 0 900 450" class="w-full h-full rounded-sm"><rect width="225" height="450" fill="#ce1126"/><rect width="675" height="150" x="225" fill="#007a3d"/><rect width="675" height="150" x="225" y="150" fill="#fff"/><rect width="675" height="150" x="225" y="300" fill="#000"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">איחוד האמירויות</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">פדרציה של אמירים וחוף השלום.</p>
                 </a>
 
-                <a href="capitals-nonarab.html" class="group bg-slate-800 rounded-3xl p-6 shadow-lg border border-slate-700 hover:border-blue-500 hover:shadow-blue-900/30 transition-all duration-300 transform hover:-translate-y-1 text-center block">
-                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300">ערי המעטפת</h3>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">טהראן ואנקרה. אטימולוגיה ושנות יסוד של בירות שצמחו מתוך אימפריות והפכו למרכזי כוח במזרח התיכון.</p>
-                    <span class="text-blue-400 text-sm font-medium flex items-center justify-center group-hover:text-blue-300">
-                        לכניסה <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-                    </span>
-                </a>
-
-                <a href="capitals-nafrica.html" class="group bg-slate-800 rounded-3xl p-6 shadow-lg border border-slate-700 hover:border-blue-500 hover:shadow-blue-900/30 transition-all duration-300 transform hover:-translate-y-1 text-center block">
-                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-300">ערי צפון אפריקה</h3>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">קהיר, ח'רטום וטריפולי. מוקדי שלטון היסטוריים, מקורות השם והאתרים המכוננים שעיצבו אותן.</p>
-                    <span class="text-blue-400 text-sm font-medium flex items-center justify-center group-hover:text-blue-300">
-                        לכניסה <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-                    </span>
+                <a href="arabia/countries-arabia-oman.html" class="glass border border-slate-700/50 p-6 rounded-3xl hover:border-amber-400 transition-all duration-300 group">
+                    <div class="w-12 h-8 mb-4 group-hover:scale-110 transition-transform flag-shadow">
+                        <svg viewBox="0 0 900 450" class="w-full h-full rounded-sm"><rect width="900" height="150" fill="#fff"/><rect width="900" height="150" y="150" fill="#ce1126"/><rect width="900" height="150" y="300" fill="#007a3d"/><rect width="250" height="450" fill="#ce1126"/><g transform="translate(125, 75) scale(0.4)"><line x1="-35" y1="-35" x2="35" y2="35" stroke="#fff" stroke-width="15"/><line x1="35" y1="-35" x2="-35" y2="35" stroke="#fff" stroke-width="15"/><path d="M -10 -15 Q 0 15 -15 35 Q -5 45 10 35 Q 25 15 10 -15 Z" fill="#fff"/></g></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">עומאן</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">סולטנות ימית וארץ הנחושת.</p>
                 </a>
             </div>
         </section>
 
     </main>
 
-    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-auto w-full">
-        <div class="max-w-5xl mx-auto px-6">
-            <p class="text-slate-500 text-sm">
-                &copy; 2026 פרויקט מחקר מיוחד. נבנה על ידי רם.
+    <!-- פוטר מעודכן -->
+    <footer class="mt-20 py-12 border-t border-slate-800/50 text-center glass">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="text-slate-500 text-sm tracking-widest uppercase mb-4">
+                אטלס המזרח התיכון | פרויקט מחקר דיגיטלי
             </p>
-            <p class="text-slate-600 text-xs mt-2">
-                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשירי מגע מתקדמים (Samsung S25 Ultra).
+            <p class="text-slate-400 text-xs leading-relaxed max-w-lg mx-auto italic">
+                הנתונים המופיעים באטלס זה מבוססים על מחקר היסטורי, אטימולוגי וגיאופוליטי. כל התכנים מותאמים לצפייה אופטימלית במכשיר Samsung S25 Ultra.
             </p>
+            <div class="mt-8">
+                <p class="text-teal-500 font-bold text-lg">נחקר ונבנה על ידי רם &copy; 2026</p>
+            </div>
         </div>
     </footer>
 
