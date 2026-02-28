@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקרי הלבנט: עיראק</title>
+    
+    <!-- ייבוא פונט Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-select { user-select: none; -webkit-user-select: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-amber-700 selection:text-white pb-10">
+
+    <!-- סרגל ניווט עליון -->
+    <nav class="w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="../index.html" class="flex items-center text-amber-500 hover:text-amber-400 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <span class="font-medium text-lg">חזרה לאטלס הראשי</span>
+            </a>
+            <div class="text-slate-400 font-medium">נתיב המדינות / הלבנט (הסהר הפורה)</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-6 sm:p-10 max-w-4xl mx-auto w-full">
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-12 text-center mt-6">
+            <div class="inline-block bg-amber-900/30 border border-amber-700 text-amber-500 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                קובץ מחקר היסטורי
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-500 mb-4">
+                הרפובליקה של עיראק
+            </h1>
+            <p class="text-xl text-slate-400 font-light">جمهورية العراق (Jumhūriyyat Al-ʿIrāq)</p>
+        </header>
+
+        <div class="space-y-10">
+            
+            <!-- 1+2+4+7: תעודת זהות, ייסוד, מייסד וסיבת הייסוד -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-amber-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    תעודת זהות היסטורית
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">תאריכי ייסוד משמעותיים</h3>
+                        <ul class="text-slate-400 space-y-2 leading-relaxed list-disc list-inside">
+                            <li><strong class="text-slate-200">11 בנובמבר 1920:</strong> יצירת "המנדט הבריטי על מסופוטמיה".</li>
+                            <li><strong class="text-amber-300">3 באוקטובר 1932 (עצמאות ראשונה):</strong> סיום המנדט, כניסת "הממלכה ההאשמית של עיראק" לחבר הלאומים כמדינה עצמאית.</li>
+                            <li><strong class="text-slate-200">14 ביולי 1958:</strong> הפיכת הקצינים החופשיים, ביטול המלוכה והקמת הרפובליקה העיראקית.</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">המייסדים ושנות חייהם</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-slate-300 mb-1"><strong class="text-white">המלך פייסל הראשון, בן חוסיין</strong> (מייסד הממלכה):</p>
+                                <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-amber-500 text-sm font-medium">
+                                    <span>1885 (מכה)</span> <span class="mx-2">-</span> <span>1933 (שווייץ)</span>
+                                </div>
+                                <p class="text-xs text-slate-500 mt-1">לאחר שגורש מסוריה על ידי הצרפתים, הומלך בעיראק על ידי הבריטים.</p>
+                            </div>
+                            <div>
+                                <p class="text-slate-300 mb-1"><strong class="text-white">עבד אל-כרים קאסם</strong> (מייסד הרפובליקה):</p>
+                                <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-amber-500 text-sm font-medium">
+                                    <span>1914 (בגדד)</span> <span class="mx-2">-</span> <span>1963 (הוצא להורג)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" class="w-10 h-7 ml-3 rounded-sm shadow-sm border border-slate-600">
+                            <!-- פס אדום עליון -->
+                            <rect width="900" height="200" fill="#ce1126"/>
+                            <!-- פס לבן אמצעי -->
+                            <rect width="900" height="200" y="200" fill="#fff"/>
+                            <!-- פס שחור תחתון -->
+                            <rect width="900" height="200" y="400" fill="#000"/>
+                            <!-- טקסט "אללה אכבר" בערבית -->
+                            <text x="450" y="340" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="#007a3d" text-anchor="middle">الله أكبر</text>
+                        </svg>
+                        דגל המדינה ומשמעותו
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            דגלה של עיראק מבוסס על "צבעי הלאומיות הערבית" (פאן-ערביות). <strong class="text-red-400">האדום</strong> מסמל את השושלת ההאשמית ואת אומץ הלב, <strong class="text-white">הלבן</strong> מסמל את בית אומיה וטוהר, ו<strong class="text-black">השחור</strong> מסמל את הח'ליפות העבאסית (שבירתה הייתה בגדד). במרכז הפס הלבן מופיע המשפט <strong class="text-green-500">"אללה אכבר"</strong> (האל גדול מכל) בצבע ירוק, המסמל את האסלאם.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            <strong class="text-slate-300">ההיסטוריה של הדגל:</strong> הדגל העיראקי עבר שינויים רבים. התוספת של המילים "אללה אכבר" הוכנסה לראשונה על ידי הדיקטטור <strong>סדאם חוסיין</strong> בשנת 1991, רגע לפני מלחמת המפרץ, כניסיון לגייס תמיכה בעולם המוסלמי. במקור, המילים נכתבו בכתב ידו של סדאם עצמו. בשנת 2004, ולאחר מכן ב-2008 (לאחר הפלתו), שונה הגופן לכתב כופי מסורתי (Kufic) כדי לנתק את הדגל מדמותו של הרודן, אך להשאיר את הסמל הדתי.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3">סיבת הייסוד (הקשר גיאופוליטי)</h3>
+                    <p class="text-slate-400 leading-relaxed text-lg">
+                        מדינת עיראק המודרנית היא "יצירת כלאיים" מלאכותית שהונדסה על ידי האימפריה הבריטית לאחר מלחמת העולם הראשונה ופירוק האימפריה העות'מאנית. הבריטים תפרו יחד <strong>שלושה מחוזות עות'מאניים (וילאייטים) שונים לחלוטין:</strong> וילאייט מוסול (בצפון הכורדי והסוני), וילאייט בגדד (המעורב במרכז), ווילאייט בצרה (בדרום השיעי). הסיבה ליצירת המדינה הייתה הבטחת שליטה בריטית על <strong>מאגרי הנפט העצומים</strong> באזור, ויצירת רצף טריטוריאלי מהודו ועד הים התיכון. כדי לתת לגיטימציה לשלטון, הבריטים המליכו את פייסל ההאשמי, למרות שלא היה לו שום קשר קודם לאדמת עיראק.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 3: אטימולוגיה מורחבת של שם המדינה -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-orange-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                    אטימולוגיה מורחבת: מקור שם המדינה
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    השם "עיראק" משמש ברציפות מאז המאה ה-6 לספירה, אך שורשיו עמוקים הרבה יותר, ונעים בין שפות מסופוטמיות עתיקות, פרסית וערבית. במערב כונה האזור "מסופוטמיה" (Mesopotamia - ארץ בין הנהרות ביוונית), אך יושבי המקום השתמשו בשם "עיראק". להלן הפירוק הלשוני-היסטורי:
+                </p>
+
+                <div class="space-y-6">
+                    <!-- השערה 1: שומרית -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-cyan-600"></div>
+                        <h3 class="text-xl font-bold text-cyan-400 mb-2 text-2xl">1. השורש השומרי / אכדי: אוּרוּק (Uruk)</h3>
+                        <p class="text-slate-300 text-base leading-relaxed">
+                            חוקרים רבים סבורים שהשם נגזר משמה של העיר השומרית העתיקה <strong>ארך (Uruk)</strong>, אחת מהערים הראשונות בהיסטוריה האנושית (שנזכרת גם בתנ"ך: "וַתְּהִי רֵאשִׁית מַמְלַכְתּוֹ בָּבֶל וְאֶרֶךְ"). משמעות המילה בשומרית היא פשוט "עיר" או "יישוב".
+                            <br><br>
+                            <strong class="text-cyan-300">הקשר לעלילות גילגמש:</strong> ארך היא לא סתם עיר, אלא עיר ממלכתו של המלך האגדי גילגמש – גיבור האפוס "עלילות גילגמש", יצירת הספרות וההרפתקאות הראשונה והקדומה ביותר שנכתבה אי פעם. באותה עיר ממש התפתח כתב היתדות השומרי, מה שהופך את השם "עיראק" לסמל של ערש התרבות, הקריאה והכתיבה האנושית.
+                        </p>
+                    </div>
+
+                    <!-- השערה 2: פרסית -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-purple-500"></div>
+                        <h3 class="text-xl font-bold text-purple-400 mb-2 text-2xl">2. המקור בפרסית אמצעית: עיראק (Erāq)</h3>
+                        <p class="text-slate-300 text-base leading-relaxed">
+                            האימפריה הסאסאנית (הפרסית) שלטה באזור לפני הכיבוש האסלאמי. בפרסית אמצעית (פהלווי), המילה Erāq משמעותה <strong>"השפלה" או "הארץ הנמוכה"</strong>. שם זה ניתן לאזור כדי ליצור ניגוד בינו לבין "הארץ הגבוהה" (המישור ההררי של איראן).
+                        </p>
+                    </div>
+
+                    <!-- השערה 3: ערבית -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-orange-500"></div>
+                        <h3 class="text-xl font-bold text-orange-400 mb-3 text-2xl">3. המשמעות בשפה הערבית: עִיראק (عراق)</h3>
+                        <p class="text-slate-300 mb-4 text-base">
+                            כשהערבים המוסלמים כבשו את האזור במאה ה-7, הם אימצו את השם והעניקו לו משמעות מתוך השורש הערבי המקומי.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-slate-800 p-4 rounded-xl">
+                                <span class="block text-sm text-slate-500 mb-1">השורש הערבי:</span>
+                                <span class="text-2xl font-bold text-white tracking-widest">ع - ر - ق</span>
+                                <p class="text-slate-400 mt-2 text-sm leading-relaxed">פירוש השורש הוא "שורש", "גדה", או "חלק תחתון".</p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-xl">
+                                <span class="block text-sm text-slate-500 mb-1">המשמעות הגיאוגרפית:</span>
+                                <span class="text-2xl font-bold text-white tracking-widest">גדת הנהר / שורשי הדקלים</span>
+                                <p class="text-slate-400 mt-2 text-sm leading-relaxed">
+                                    בערבית קלאסית, השם פורש כ-"חוף" או "האזור שסביב גדות הנהר". במקרה זה, הכוונה היא לארץ הפורייה, סבוכת השורשים והירוקה שנמצאת בין גדות נהרות הפרת והחידקל.
+                                    <br><br>
+                                    <strong class="text-orange-300">תאוריית שורשי הדקלים:</strong> פירוש מרתק נוסף קושר את השם לביטוי "עורוק אל-נח'יל" (عروق النخيل - שורשי עצי הדקל). עיראק ההיסטורית הייתה מפורסמת במיליוני עצי הדקל שעיטרו את גדות נהרותיה, ולכן כונתה בפי הערבים "ארץ השורשים".
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- נתונים גיאוגרפיים, דמוגרפיים וכלכליים -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    נתונים גיאוגרפיים, דמוגרפיים וכלכליים
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- שטח -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-900/30 p-2 rounded-lg text-indigo-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">שטח וגיאוגרפיה</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-indigo-300 mb-2">438,317 <span class="text-lg font-medium text-slate-500">קמ"ר</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            עיראק היא מדינה רחבת ידיים (גדולה יותר משילוב של גרמניה ואוסטריה). הגיאוגרפיה שלה מוגדרת על ידי צמד נהרות הענק: <strong>החידקל (במזרח) והפרת (במערב)</strong> החוצים אותה ויוצרים עמקים פוריים במרכזה. צפון המדינה כולל את האזור ההררי של כורדיסטן, בעוד חלקה המערבי והדרומי הוא בעיקרו מדבר צחיח. יש לה גישה זעירה לים במפרץ הפרסי (באזור בצרה).
+                        </p>
+                    </div>
+
+                    <!-- אוכלוסייה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-900/30 p-2 rounded-lg text-pink-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">אוכלוסייה</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-pink-300 mb-2">~ 43 <span class="text-lg font-medium text-slate-500">מיליון (2024)</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            עיראק מאופיינת בשסע עדתי-דתי עמוק המעצב את הפוליטיקה שלה. הרוב המוחלט הוא מוסלמי, כאשר <strong>השיעים הערבים</strong> מהווים את הרוב (כ-60% עד 65%, מרוכזים בדרום ובבגדד). <strong>הסונים הערבים</strong> מהווים כ-15-20% (היו האליטה השלטת בימי סדאם). בצפון ישנו מיעוט <strong>כורדי סוני</strong> משמעותי (כ-15%-20%) הנהנה מאוטונומיה רחבה. הקהילה הנוצרית, שהייתה גדולה בעבר, הצטמצמה דרמטית בשל רדיפות (במיוחד על ידי דאע"ש).
+                        </p>
+                    </div>
+
+                    <!-- כלכלה ותל"ג -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-emerald-900/30 p-2 rounded-lg text-emerald-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">כלכלה ותל"ג (GDP)</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-emerald-300 mb-2">~ 260 <span class="text-lg font-medium text-slate-500">מיליארד $</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            הכלכלה העיראקית מבוססת כמעט בלעדית על <strong>נפט</strong> (המהווה מעל 90% מהכנסות הממשלה ומהייצוא). עיראק היא ממייסדות אופ"ק ויצרנית הנפט השנייה בגודלה בארגון. למרות עושר עצום במשאבים, המדינה סובלת משחיתות עמוקה ומנזקי עשרות שנות מלחמה (מלחמת איראן-עיראק, מלחמת המפרץ, הפלישה האמריקאית ב-2003 ועליית דאע"ש ב-2014), אשר מנעו מהעושר לחלחל לאזרחים ולפתח תשתיות מודרניות.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5+6: מטבע ואטימולוגיה של המטבע -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    הכלכלה והמטבע: הדינר העיראקי
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="bg-yellow-600/20 text-yellow-500 px-3 py-1 rounded-lg ml-3 border border-yellow-700/50">IQD</span>
+                        דינר עיראקי (دينار عراقي)
+                    </h3>
+                    
+                    <div class="mt-4 bg-slate-900/50 p-5 rounded-xl border border-slate-700">
+                        <h4 class="text-yellow-400 font-semibold mb-2">סיבת הבחירה בשם זה למטבע המודרני:</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            במהלך מלחמת העולם הראשונה, הבריטים כבשו את האזור והנהיגו בו את <strong>הרופי ההודי</strong> כמטבע הרשמי. בשנת <strong>1931</strong>, כחלק מתהליך קבלת העצמאות והכניסה לחבר הלאומים, ממשלת עיראק המליכה החליטה להנפיק מטבע עצמאי. בדומה לירדן, הבחירה בשם "דינר" נעשתה כדי להתנתק מהסמל הקולוניאלי הבריטי-הודי, ולהתחבר בחזרה לימי הזוהר של הח'ליפות העבאסית בבגדד, שהדינר היה מטבע הזהב הרשמי שלה.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-400 mb-4">אטימולוגיה מפורטת לחלקי שם המטבע ("דינר")</h3>
+                    <p class="text-slate-400 mb-4">
+                        (בדומה לדינר הירדני) למרות שהשם אומץ כדי לסמל זהות ערבית-אסלאמית, השורש האטימולוגי של המילה "דינר" הוא דווקא <strong>לטיני (רומי עתיק)</strong>.
+                    </p>
+
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <!-- שלב לטיני מוקדם -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">1. המקור הלטיני המוקדם</span>
+                            <span class="text-xl font-bold text-white block mb-1">Decem (דקם) &rarr; Deni</span>
+                            <p class="text-slate-400 text-sm mt-2">
+                                בלטינית, משמעות המילה <em>Decem</em> היא המספר <strong>עשר (10)</strong>. מתוכה נגזרה המילה <em>Deni</em> שמשמעותה "המכיל עשרה".
+                            </p>
+                        </div>
+                        
+                        <!-- שלב רומי -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">2. המטבע הרומי</span>
+                            <span class="text-xl font-bold text-white block mb-1">Denarius (דנאריוס)</span>
+                            <p class="text-slate-400 text-sm mt-2">
+                                מטבע הכסף המרכזי של הרפובליקה והאימפריה הרומית. הוא נקרא כך משום שערכו המקורי היה שווה ל-<strong>10 איסרים</strong> מנחושת (Asses). משמעות השם היא "מטבע של עשרה".
+                            </p>
+                        </div>
+
+                        <!-- שלב ערבי/אסלאמי -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-yellow-500/5 rounded-2xl"></div>
+                            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest block mb-2 relative z-10">3. האימוץ הערבי</span>
+                            <span class="text-xl font-bold text-yellow-500 block mb-1 relative z-10">دينار (Dīnār)</span>
+                            <p class="text-slate-400 text-sm mt-2 relative z-10">
+                                כשהאימפריה האסלאמית התפשטה, היא ירשה את המערכת המוניטרית הביזנטית והמילה הלטינית השתבשה בערבית ל"דינאר". 
+                                <br><br>
+                                <strong class="text-yellow-400">המהפכה של שנת 696:</strong> נקודת המפנה היסטורית התרחשה כאשר הח'ליף האומיי <strong>עבד אל-מלכ אבן מרואן</strong> ביצע רפורמה דרמטית: הוא הפסיק להעתיק את מטבעות הדנאריוס הרומיים (שנשאו ציורי קיסרים נוצרים), וטבע את "הדינר האסלאמי" הטהור הראשון, שנשא רק פסוקי קוראן. מטבע זה הפך לסטנדרט הכלכלי של הח'ליפות, וממנו הוחייה מחדש כסמל לאומי על ידי ממלכת עיראק ב-1931.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- פוטר -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-12 w-full">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm font-medium">
+                נחקר, נכתב וקודד על ידי <strong class="text-amber-600">רם</strong> &copy; 2026.
+            </p>
+            <p class="text-slate-600 text-xs mt-2">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשיר Samsung S25 Ultra.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
