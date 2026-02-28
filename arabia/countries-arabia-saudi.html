@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקרי חצי האי ערב: סעודיה</title>
+    
+    <!-- ייבוא פונט Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-select { user-select: none; -webkit-user-select: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-emerald-700 selection:text-white pb-10">
+
+    <!-- סרגל ניווט עליון -->
+    <nav class="w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="../index.html" class="flex items-center text-emerald-400 hover:text-emerald-300 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <span class="font-medium text-lg">חזרה לאטלס הראשי</span>
+            </a>
+            <div class="text-slate-400 font-medium">נתיב המדינות / חצי האי ערב</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-6 sm:p-10 max-w-4xl mx-auto w-full">
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-12 text-center mt-6">
+            <div class="inline-block bg-emerald-900/30 border border-emerald-700 text-emerald-400 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                קובץ מחקר היסטורי
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600 mb-4">
+                הממלכה הערבית הסעודית
+            </h1>
+            <p class="text-xl text-slate-400 font-light">المملكة العربية السعودية (Al-Mamlaka Al-ʿArabiyyah As-Suʿūdiyyah)</p>
+        </header>
+
+        <div class="space-y-10">
+            
+            <!-- תעודת זהות וייסוד -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-emerald-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    תעודת זהות היסטורית
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">תאריכי ייסוד משמעותיים</h3>
+                        <ul class="text-slate-400 space-y-2 leading-relaxed list-disc list-inside">
+                            <li><strong class="text-slate-200">1744 (המדינה הראשונה):</strong> הקמת "אמירות דירעייה" מתוך ברית דתית-פוליטית.</li>
+                            <li><strong class="text-slate-200">1902 (כיבוש ריאד):</strong> אבן סעוד כובש מחדש את ריאד מידי בית רשיד ומייצב את כוחו.</li>
+                            <li><strong class="text-emerald-300">23 בספטמבר 1932 (יום לאומי):</strong> הכרזה רשמית על איחוד חיג'אז ונג'ד והקמת "הממלכה הערבית הסעודית" המודרנית.</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">המייסד ושנות חייו</h3>
+                        <p class="text-slate-400 leading-relaxed mb-2">
+                            <strong class="text-white text-xl">המלך עבד אל-עזיז אבן סעוד</strong>
+                        </p>
+                        <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-emerald-400 text-sm font-medium">
+                            <span>1875 (ריאד)</span>
+                            <span class="mx-2">-</span>
+                            <span>9 בנובמבר 1953 (טאיף)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" class="w-10 h-7 ml-3 rounded-sm shadow-sm border border-slate-600">
+                            <!-- רקע ירוק סעודי -->
+                            <rect width="900" height="600" fill="#006C35"/>
+                            <!-- חרב -->
+                            <path d="M 750 420 L 250 420 L 200 400 L 250 380 L 750 380 L 780 400 Z" fill="#fff"/>
+                            <!-- ידית החרב -->
+                            <rect x="750" y="370" width="30" height="60" fill="#fff"/>
+                            <!-- כיתוב (שהאדה) פשוט לייצוג ב-SVG מינימליסטי -->
+                            <text x="450" y="270" font-family="Arial, sans-serif" font-size="90" font-weight="bold" fill="#fff" text-anchor="middle" dir="rtl">لا إله إلا الله محمد رسول الله</text>
+                        </svg>
+                        דגל המדינה ומשמעותו
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            דגלה של ערב הסעודית נבדל מרוב דגלי העולם בכך שלעולם לא מורידים אותו לחצי התורן (לאות אבל), מכיוון שהוא נושא עליו טקסט קדוש. הצבע ה<strong>ירוק</strong> הוא צבעו המסורתי של האסלאם (ומקושר לגלימתו של הנביא מוחמד).
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            <strong class="text-slate-300">הסמלים בדגל:</strong> במרכז הדגל מופיעה ה<strong>"שהאדה"</strong> בלבן (הכרזת האמונה האסלאמית: "אין אלוה מבלעדי אללה, ומוחמד הוא שליחו"). מתחת לכיתוב מופיעה <strong>חרב לבנה</strong> המצביעה שמאלה (כיוון הקריאה בערבית). החרב מסמלת הצדק המחמיר של השריעה (ההלכה האסלאמית), וכן את הניצחונות הצבאיים של אבן סעוד שאיחדו את חצי האי ערב בכוח הזרוע.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3">סיבת הייסוד (הקשר גיאופוליטי ודתי)</h3>
+                    <p class="text-slate-400 leading-relaxed text-lg">
+                        שלא כמו מדינות הלבנט שהוקמו על ידי קולוניאליזם מערבי, סעודיה הוקמה מתוך דינמיקה פנימית של חצי האי ערב. סיבת הייסוד נעוצה ב<strong>ברית ההיסטורית (משנת 1744)</strong> בין האמיר מוחמד אבן סעוד (איש הצבא והפוליטיקה) לבין איש הדת הקיצוני מוחמד אבן עבד אל-ווהאב (מייסד התנועה הוואהבית). המטרה הייתה לאחד את השבטים הבדואים המפוצלים והשקועים במלחמות דמים, לטהר את האסלאם מ"השפעות זרות", ולהקים ממלכה איסלאמית ריבונית ועוצמתית שתשלוט על המקומות הקדושים (מכה ומדינה), מתוך דחיקת השלטון העות'מאני וסילוק משפחות מתחרות (כמו השושלת ההאשמית מחיג'אז).
+                    </p>
+                </div>
+            </section>
+
+            <!-- אטימולוגיה מורחבת של שם המדינה -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-cyan-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                    אטימולוגיה מורחבת: מקור שם המדינה
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    סעודיה היא אחת המדינות הבודדות בעולם שנקראת <strong>על שם משפחת השלטון שלה</strong> (יחד עם ליכטנשטיין). השם מורכב מהמיקום הגיאוגרפי והשיוך המשפחתי:
+                </p>
+
+                <div class="space-y-6">
+                    <!-- חלק 1: ערב -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-orange-500"></div>
+                        <h3 class="text-xl font-bold text-orange-400 mb-3 text-2xl">1. עֲרָב (Arabia)</h3>
+                        <p class="text-slate-300 mb-4 text-base">
+                            מונח גיאוגרפי עתיק המציין את חצי האי. הוא מופיע כבר בכתובות אשוריות מהמאה ה-9 לפנה"ס, ובתנ"ך.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-slate-800 p-4 rounded-xl">
+                                <span class="block text-sm text-slate-500 mb-1">השורש השמי הראשון: ע-ר-ב (מערב)</span>
+                                <span class="text-2xl font-bold text-white tracking-widest">ע - ר - ב</span>
+                                <p class="text-slate-400 mt-2 text-sm leading-relaxed">
+                                    בדומה למילה "ערב" (Sunset) או "מערב". עבור עמי מסופוטמיה (אשור ובבל) שגרו במזרח, חצי האי והמדבר הגדול שכנו בכיוון <strong>שקיעת השמש</strong> (המערב).
+                                </p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-xl">
+                                <span class="block text-sm text-slate-500 mb-1">השורש השמי השני: יובש / נוודות</span>
+                                <span class="text-2xl font-bold text-white tracking-widest">עֲרָבָה (Aravah)</span>
+                                <p class="text-slate-400 mt-2 text-sm leading-relaxed">
+                                    פירוש נוסף קושר את המילה למונח העברי/שמי "ערבה" – כלומר מדבר, ארץ צחיחה וריקה. "ערבי" היה למעשה כינוי ל<strong>נווד</strong> החי בארץ הצחיחה (בדומה לבדואי של ימינו).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- חלק 2: סעודיה -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-emerald-500"></div>
+                        <h3 class="text-xl font-bold text-emerald-400 mb-3 text-2xl">2. סְעוּדִיָה (Suʿūdiyyah)</h3>
+                        <p class="text-slate-300 mb-4 text-base">
+                            השיוך הריבוני למשפחת המלוכה - בית סעוד (آل سعود). 
+                        </p>
+                        
+                        <div class="grid grid-cols-1 gap-4">
+                            <div class="bg-slate-800 p-4 rounded-xl">
+                                <span class="block text-sm text-slate-500 mb-1">מקור השם (אבי השושלת מהמאה ה-18):</span>
+                                <span class="text-2xl font-bold text-white">סעוד אבן מוחמד אל מוקרין (سعود بن محمد آل مقرن)</span>
+                                <p class="text-slate-400 mt-2 leading-relaxed">
+                                    השם סעוד נגזר מהשורש הערבי <strong>س-ع-د (ס-ע-ד)</strong>. משמעות השורש היא <strong>"אושר", "מזל טוב", או "ברכה"</strong> (בדומה לשם סעיד). לכן, פירוש שמה המלא של המדינה הוא: "הממלכה הערבית השייכת למשפחת המזל/הברכה". מעניין לציין שלפני 1932 המדינה נקראה "ממלכת חיג'אז ונג'ד" (על שם האזורים הגיאוגרפיים), אך אבן סעוד שינה זאת כדי לקבע את שלטון משפחתו לדורי דורות.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- פרק חדש: הנפט והגז -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-slate-100 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                    עידן הזהב השחור והגז
+                </h2>
+                
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-amber-500 mb-3">מי גילה את המשאבים?</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                בניגוד למדינות אחרות במזרח התיכון שהיו תחת מונופול נפט בריטי, פיתוח הנפט בסעודיה נעשה על ידי <strong>חברות אמריקאיות</strong>. המלך אבן סעוד חתם ב-1933 על זיכיון חיפושים עם חברת <strong>SOCAL</strong> (חברת הנפט הסטנדרטית של קליפורניה, כיום שברון), שהקימה את חברת הבת CASOC (לימים <strong>ארמקו - Aramco</strong>). הגיאולוג הראשי שהוביל את הפריצה היה האמריקאי המבריק <strong>מקס סטיינקה (Max Steineke)</strong>, שהתעקש להמשיך לחפור לעומק גם כשהחברה כמעט התייאשה.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-amber-500 mb-3">היסטוריית הגילוי</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                במשך כמעט חמש שנים קדחו האמריקאים שש בארות במזרח סעודיה ולא מצאו דבר. ב-1938 ניתנה הוראה להפסיק, אך סטיינקה שיכנע את ההנהלה לתת צ'אנס לבאר נוספת ולהעמיק בה אל תוך שכבות גיר מתקופת היורה. ב-<strong>3 במרץ 1938</strong>, בעומק של 1,440 מטרים בבאר המפורסמת <strong>"דמאם מספר 7" (שזכתה לכינוי "באר השגשוג")</strong>, פרץ לראשונה נפט בכמויות מסחריות אדירות. גילוי זה הוביל לגילוי "שדה גוואר" (Ghawar) - שדה הנפט היבשתי הגדול בעולם.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-600">
+                        <h3 class="text-xl font-bold text-emerald-400 mb-3">ההשפעה הדרמטית על המדינה</h3>
+                        <p class="text-slate-300 leading-relaxed">
+                            הגילוי שינה את סעודיה מן הקצה אל הקצה. ממדינה ענייה ומדברית, שכלכלתה התבססה אך ורק על גביית מסים מעולי רגל המגיעים למכה ומסחר דל של תמרים וגמלים – היא זינקה להפוך ל<strong>מעצמת אנרגיה עולמית</strong> ולמנהיגה של העולם הערבי. 
+                            העושר הבלתי נתפס איפשר למשפחת המלוכה לבנות תשתיות מודרניות, לרכוש נשק מערבי מתקדם, לקיים מדינת רווחה ללא מסים לאזרחיה, ובמקביל – לממן ולהפיץ את האסלאם הוואהבי הקיצוני ברחבי העולם באמצעות בניית מסגדים. חברת "סעודי ארמקו" (שהולאמה במלואה על ידי הסעודים) הפכה לחברה הרווחית והיקרה ביותר בעולם כולו.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- נתונים גיאוגרפיים, דמוגרפיים וכלכליים -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    נתונים גיאוגרפיים, דמוגרפיים וכלכליים
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- שטח -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-900/30 p-2 rounded-lg text-indigo-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">שטח וגיאוגרפיה</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-indigo-300 mb-2">2,149,690 <span class="text-lg font-medium text-slate-500">קמ"ר</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            סעודיה היא המדינה הגדולה ביותר במזרח התיכון (גדולה פי 100 מישראל). היא תופסת כ-80% משטחו של חצי האי ערב. הגיאוגרפיה נשלטת לחלוטין על ידי <strong>מדבריות עצומים</strong> (כמו "רובע אל-ח'אלי" - מדבר החול הרציף הגדול בעולם). למדינה יש חופי ים ארוכים וחשובים בים האדום (במערב) ובמפרץ הפרסי (במזרח).
+                        </p>
+                    </div>
+
+                    <!-- אוכלוסייה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-900/30 p-2 rounded-lg text-pink-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">אוכלוסייה</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-pink-300 mb-2">~ 36 <span class="text-lg font-medium text-slate-500">מיליון</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            מתוך 36 מיליון תושבים, רק כ-<strong>60% הם אזרחים סעודים</strong>. כ-40% (כ-14 מיליון) הם מהגרי עבודה וזרים (Gost Workers), בעיקר ממדינות אסיה (הודו, פקיסטן, הפיליפינים) שעושים את רוב עבודות הכפיים והשירותים. רוב האזרחים הם מוסלמים סונים (וואהבים), עם מיעוט שיעי של כ-10%-15% המרוכז בעיקר במחוזות המזרחיים העשירים בנפט.
+                        </p>
+                    </div>
+
+                    <!-- כלכלה ותל"ג -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-emerald-900/30 p-2 rounded-lg text-emerald-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">כלכלה ותל"ג (GDP)</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-emerald-300 mb-2">1.1 <span class="text-lg font-medium text-slate-500">טריליון $</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            סעודיה היא הכלכלה הגדולה ביותר במזרח התיכון וחברה בארגון ה-G20. היא המייצאת הגדולה בעולם של נפט גולמי. עם זאת, יורש העצר מוחמד בן סלמאן מוביל כיום את תוכנית <strong>"חזון 2030" (Vision 2030)</strong>, שמטרתה לגמול את המדינה מהתלות המוחלטת בנפט באמצעות השקעות עתק בהייטק, תיירות, בניית ערי עתיד (כמו פרויקט NEOM), ואנרגיות מתחדשות.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- מטבע ואטימולוגיה של המטבע -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    הכלכלה והמטבע: הריאל הסעודי
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="bg-yellow-600/20 text-yellow-500 px-3 py-1 rounded-lg ml-3 border border-yellow-700/50">SAR</span>
+                        ריאל סעודי (ريال سعودي)
+                    </h3>
+                    
+                    <div class="mt-4 bg-slate-900/50 p-5 rounded-xl border border-slate-700">
+                        <h4 class="text-yellow-400 font-semibold mb-2">סיבת הבחירה בשם זה למטבע המודרני:</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            לפני איחוד הממלכה ב-1932, חצי האי ערב סבל מכאוס מוניטרי. שבטים וסוחרים השתמשו בתערובת של מטבעות עות'מאניים, רופי הודי (מהסחר עם בריטניה), ומטבעות כסף אירופאיים (בעיקר מטבע הטאלר של מריה תרזה האוסטרית). המטבע שהיה הכי פופולרי בקרב עולי הרגל למכה היה מטבע כסף שנקרא "ריאל חיג'אזי". עם הקמת המדינה, המלך אבן סעוד ביסס את המטבע הזה והטביע אותו רשמית כ"ריאל סעודי" כסמל לממלכה ריבונית, מתקדמת ומאוחדת.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-400 mb-4">אטימולוגיה מפורטת לחלקי שם המטבע ("ריאל")</h3>
+                    <p class="text-slate-400 mb-4">
+                        באופן מפתיע, שמו של המטבע של ממלכת האסלאם השמרנית ביותר מקורו דווקא באימפריות הנוצריות של אירופה – ספרד ופורטוגל.
+                    </p>
+
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">1. המקור הלטיני המוקדם</span>
+                            <span class="text-xl font-bold text-white block mb-1">Regalis (רֶגָאלִיס)</span>
+                            <p class="text-slate-400 text-sm mt-2">
+                                בשפה הלטינית של האימפריה הרומית, המילה <em>Regalis</em> (או <em>Rex</em>) משמעותה <strong>"מלך" או "מלכותי"</strong>.
+                            </p>
+                        </div>
+                        
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">2. האימפריה הספרדית</span>
+                            <span class="text-xl font-bold text-white block mb-1">Real (ריאל)</span>
+                            <p class="text-slate-400 text-sm mt-2">
+                                בספרד (ובפורטוגל) אומצה המילה הלטינית ויצרה את המונח <em>Real</em> ("מלכותי"). במאה ה-16, האימפריה הספרדית החלה להנפיק מטבעות כסף גדולים שנקראו "ריאל של שמיניות" (Real de a ocho). מטבעות אלו הפכו למטבע הסחר הגלובלי הראשון בעולם.
+                            </p>
+                        </div>
+
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-yellow-500/5 rounded-2xl"></div>
+                            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest block mb-2 relative z-10">3. האימוץ הערבי</span>
+                            <span class="text-xl font-bold text-yellow-500 block mb-1 relative z-10">ريال (Riyāl)</span>
+                            <p class="text-slate-400 text-sm mt-2 relative z-10">
+                                סוחרים אירופאים וספינות סחר באוקיינוס ההודי הביאו את מטבעות הכסף הספרדיים האמינים לנמלי חצי האי ערב. הבדואים וסוחרי מכה אימצו את המטבע ואת שמו "ריאל" כשם נרדף למטבע כסף בעל ערך, ומשם הפך למטבע הרשמי של סעודיה, תימן, קטאר ועומאן.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- פוטר -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-12 w-full">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm font-medium">
+                נחקר, נכתב וקודד על ידי <strong class="text-emerald-600">רם</strong> &copy; 2026.
+            </p>
+            <p class="text-slate-600 text-xs mt-2">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשיר Samsung S25 Ultra.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
