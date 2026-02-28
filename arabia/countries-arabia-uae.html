@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקרי חצי האי ערב: איחוד האמירויות</title>
+    
+    <!-- ייבוא פונט Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-select { user-select: none; -webkit-user-select: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-rose-700 selection:text-white pb-10">
+
+    <!-- סרגל ניווט עליון -->
+    <nav class="w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="../index.html" class="flex items-center text-rose-400 hover:text-rose-300 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <span class="font-medium text-lg">חזרה לאטלס הראשי</span>
+            </a>
+            <div class="text-slate-400 font-medium">נתיב המדינות / חצי האי ערב</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-6 sm:p-10 max-w-4xl mx-auto w-full">
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-12 text-center mt-6">
+            <div class="inline-block bg-rose-900/30 border border-rose-700 text-rose-400 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                קובץ מחקר היסטורי
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-rose-600 mb-4">
+                איחוד האמירויות הערביות
+            </h1>
+            <p class="text-xl text-slate-400 font-light">الإمارات العربية المتحدة (Al-ʾImārāt Al-ʿArabiyyah Al-Muttaḥidah)</p>
+        </header>
+
+        <div class="space-y-10">
+            
+            <!-- תעודת זהות וייסוד -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-rose-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    תעודת זהות היסטורית
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">תאריכי ייסוד משמעותיים</h3>
+                        <ul class="text-slate-400 space-y-2 leading-relaxed list-disc list-inside">
+                            <li><strong class="text-slate-200">1853-1892:</strong> חתימה על הסכמי חסות ("חוף שביתת הנשק") בין האימפריה הבריטית לשבטים המקומיים.</li>
+                            <li><strong class="text-slate-200">18 בפברואר 1968:</strong> הפגישה ההיסטורית באוהל במדבר (סיח אל-סדירה) בה הוסכם על איחוד.</li>
+                            <li><strong class="text-rose-300">2 בדצמבר 1971 (יום לאומי):</strong> נסיגת הבריטים וההכרזה הרשמית על הקמת פדרציה עצמאית של 6 אמירויות (ראס אל-ח'ימה הצטרפה כשנה לאחר מכן).</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">המייסד ושנות חייו</h3>
+                        <p class="text-slate-400 leading-relaxed mb-2">
+                            <strong class="text-white text-xl">השייח' זאיד בן סולטאן אל נהיאן</strong>
+                            <br>(שליט אבו דאבי והנשיא הראשון)
+                        </p>
+                        <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-rose-400 text-sm font-medium">
+                            <span>1918 (אבו דאבי)</span>
+                            <span class="mx-2">-</span>
+                            <span>2 בנובמבר 2004 (אבו דאבי)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" class="w-10 h-7 ml-3 rounded-sm shadow-sm border border-slate-600">
+                            <!-- פס אדום אנכי -->
+                            <rect width="225" height="450" fill="#ce1126"/>
+                            <!-- פסים אופקיים -->
+                            <rect width="675" height="150" x="225" fill="#007a3d"/>
+                            <rect width="675" height="150" x="225" y="150" fill="#fff"/>
+                            <rect width="675" height="150" x="225" y="300" fill="#000"/>
+                        </svg>
+                        דגל המדינה ומשמעותו
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            הדגל עוצב על ידי צעיר אמירויותי בן 19 בלבד (עבדאללה מוחמד אל-מעינה) לקראת ההכרזה על עצמאות המדינה. הוא מבוסס על הצבעים הכלל-ערביים המסורתיים (אדום, ירוק, לבן ושחור). 
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            <strong class="text-slate-300">הסוד שמאחורי הפס האדום:</strong> הפס האדום האנכי הצמוד לתורן אינו מקרי. לפני האיחוד, האזור כונה בפי הבריטים "חוף השודדים", ודגלי כל השבטים באזור (עד היום) מורכבים ברובם מצבע אדום בוהק. הפס האדום האנכי מסמל את הבסיס המשותף, ההיסטורי והשבטי, שמאחד יחד את כל שבע האמירויות.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3">סיבת הייסוד (הקשר גיאופוליטי)</h3>
+                    <p class="text-slate-400 leading-relaxed text-lg">
+                        הקמת האיחוד נבעה מהחלטתה הפתאומית של בריטניה (ב-1968) לסגת מכל בסיסיה צפונית לתעלת סואץ. "נסיכויות החסות" הקטנות במפרץ הבינו שאין להן יכולת לשרוד בנפרד מול איומים אזוריים (כמו איראן שתבעה בעלות על איים באזור, וסעודיה). השייח' זאיד (מאבו דאבי העשירה בנפט) והשייח' ראשד (מדובאי המבוססת על סחר) כרתו ברית היסטורית, פתחו את ארנקיהם, ושכנעו עוד חמש נסיכויות עניות להתאחד לפדרציה אחת כדי לייצר כוח הגנתי, כלכלי ופוליטי שיוכל להגן על עצמו.
+                    </p>
+                </div>
+            </section>
+
+            <!-- אטימולוגיה ופירוש עמוק של המונח "אמירות" -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-orange-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                    אטימולוגיה ופוליטיקה: מה זה "אמיר" ולמה לא "ממלכה"?
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    השם של המדינה ("איחוד האמירויות") מספר את כל הסיפור המבני, השבטי וההיסטורי שלה. המדינה מורכבת מ-7 "אמירויות" נפרדות (אבו דאבי, דובאי, שארג'ה, עג'מאן, פוג'יירה, ראס אל-ח'ימה, ואום אל-קיוין). בעולם הערבי ישנן ממלכות (כמו סעודיה וירדן) וישנן רפובליקות (כמו סוריה ועיראק), אך מודל ה"אמירות" הוא ייחודי למפרץ. מדוע לא לקרוא לזה פשוט ממלכה?
+                </p>
+
+                <div class="space-y-6">
+                    <!-- חלק 1 -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-orange-500"></div>
+                        <h3 class="text-xl font-bold text-orange-400 mb-3 text-2xl">1. השורש הערבי והצבאי: א-מ-ר (أ - م - ر)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            המילה "אמיר" (أمير) נגזרת מהשורש הערבי שמשמעותו <strong>"לצוות", "להורות" או "לפקד"</strong> (קשור למילה "פקודה" - אַמְר / امر). 
+                            <br><br>
+                            <strong class="text-orange-300">ההקשר ההיסטורי:</strong> בראשית האסלאם, התואר "אמיר" לא ניתן למלכים או לשליטים עליונים, אלא ל<strong>מפקדי צבא</strong> או למושלי מחוזות שמונו מטעם הח'ליפות. הח'ליף עצמו נשא את התואר העליון "אמיר אל-מואמינין" (أمير المؤمنين - שר/מפקד המאמינים). עם השנים, כשהח'ליפות המרכזית נחלשה (בתקופה העבאסית המאוחרת), אותם "אמירים" (מושלים צבאיים מקומיים) צברו כוח עצמאי והפכו לשליטים דה-פקטו של הטריטוריות שלהם, שכונו "אמירויות" - כלומר, שטח הנתון לפיקודו של מפקד.
+                        </p>
+                    </div>
+
+                    <!-- חלק 2 -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-amber-500"></div>
+                        <h3 class="text-xl font-bold text-amber-400 mb-3 text-2xl">2. "אמירות" (Emirate) לעומת "ממלכה" (Kingdom)</h3>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-slate-800 p-5 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-emerald-400 mb-1">מַמְלָכָה (מַלִכּ / مَلِك):</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    תואר השייך לשליט יחיד, עליון ואבסולוטי. מלך טוען לריבונות מוחלטת ולרוב מסתמך על צידוק דתי או כיבוש היסטורי חובק-כל (כמו אבן סעוד שאיחד את חצי האי בכוח החרב והכריז על עצמו מלך). בממלכה, שאר ראשי השבטים כפופים לחלוטין למלך.
+                                </p>
+                            </div>
+                            <div class="bg-slate-800 p-5 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-orange-400 mb-1">אֱמִירוּת (אֱמִיר / أمير):</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    נסיכות טריטוריאלית הנטועה במסורת ה<strong>שבטית והבדואית</strong>. האמיר הוא מעין "ראשון בין שווים" ("שייח'"). כוחו נובע מהסכמה ושיתוף פעולה שבטי (מועצת ה"שורא" - התייעצות), ולא מריבונות אלוהית. האמירויות העדיפו תואר צנוע זה כדי לא להתגרות באימפריות הגדולות (בריטניה, עות'מאנים) ומשום שכל אמירות שלטה על עיר-חוף קטנה וסביבתה בלבד.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- חלק 3 -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-red-500"></div>
+                        <h3 class="text-xl font-bold text-red-400 mb-3 text-2xl">3. פדרציה של אמירים: הנוסחה הפוליטית הגאונית</h3>
+                        <p class="text-slate-300 text-base leading-relaxed">
+                            השם "איחוד האמירויות" נבחר כפשרה פוליטית קריטית ב-1971. אף אחד מ-7 ראשי השבטים לא הסכים לוותר על עצמאותו או להישבע אמונים לאחד מהם כ"מלך". הפתרון היה פדרציה: כל שייח' נשאר <strong>ריבון אבסולוטי באמירות שלו</strong> (שולט על משאבי הנפט המקומיים, משטרת הפנים ומערכת המשפט המקומית), אך כלפי חוץ הם מהווים מדינה אחת.
+                            <br><br>
+                            <strong class="text-red-300">חלוקת הכוח (המועצה העליונה):</strong> כדי למנוע חיכוכים, נקבע סטטוס-קוו בלתי כתוב אך יציב - השליט של האמירות הגדולה והעשירה ביותר בנפט (<strong>אבו דאבי</strong>) משמש תמיד כנשיא המדינה, ואילו השליט של האמירות המסחרית והמתקדמת ביותר (<strong>דובאי</strong>) מכהן כסגן הנשיא וראש הממשלה. מודל זה מנע מלחמות ירושה והפך את הפדרציה למדינה היציבה ביותר באזור.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- פרק חדש: הנפט והגז -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-slate-100 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                    עידן הזהב השחור: מז'אק קוסטו למעצמה פיננסית
+                </h2>
+                
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-amber-500 mb-3">מי גילה את המשאבים?</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                החיפושים באזור הובלו בעיקר על ידי "חברת הנפט (Petroleum Development) לחוף שביתת הנשק", חברת בת של תאגיד בריטי-אמריקאי-צרפתי. אולם, פריצת הדרך המדהימה ביותר לא התרחשה ביבשה אלא <strong>בלב ים</strong>! ב-1953, בחיפוש אחר שדות ימיים עבור חברת בת של BP, נשכר לא אחר מאשר חוקר המצולות המפורסם <strong>ז'אק-איב קוסטו (Jacques Cousteau)</strong> יחד עם צוללניו כדי לחקור את קרקעית המפרץ מול חופי אבו דאבי, מה שהוביל לאיתור התוואי הגיאולוגי המדויק.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-amber-500 mb-3">היסטוריית הגילוי</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                בשנת <strong>1958</strong>, בבאר הימית "אום שאיף" (Umm Shaif) שאותרה בעזרתו של קוסטו, התגלה שדה נפט מסיבי ראשון השייך לאבו דאבי. ב-1960 התגלה הנפט גם ביבשה (שדה מורבאן). בדובאי הסמוכה, גילוי הנפט אירע ב-1966 בשדה "פאתח" (גם הוא בים). משלוח הנפט הראשון מאבו דאבי עזב את המפרץ ב-1962, והזרים כספים לראשונה לאזור.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-600">
+                        <h3 class="text-xl font-bold text-emerald-400 mb-3">ההשפעה הדרמטית על המדינה</h3>
+                        <p class="text-slate-300 leading-relaxed">
+                            עד שנות ה-60, האזור נשען על דיג, שליית פנינים בים ומסחר זעיר, ורוב האוכלוסייה חיה בעוני, בבקתות בוץ או באוהלים נטולי חשמל ומים זורמים. תגליות הנפט (ובעיקר משבר האנרגיה של 1973 שהקפיץ את המחירים) הפכו את <strong>אבו דאבי למממנת הראשית של הפדרציה החדשה</strong>. השייח' זאיד השתמש בכספים כדי לבנות בתי ספר, בתי חולים וכבישים בלב המדבר. בעוד אבו דאבי נשענה על נפט, דובאי השתמשה בהכנסות הנפט הקצרות שלה (שעמדו להיגמר) כדי <strong>להמציא את עצמה מחדש</strong> כמרכז תיירות, תעופה (Emirates) וסחר חופשי בינלאומי.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- נתונים גיאוגרפיים, דמוגרפיים וכלכליים -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    נתונים גיאוגרפיים, דמוגרפיים וכלכליים
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- שטח -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-900/30 p-2 rounded-lg text-indigo-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">שטח וגיאוגרפיה</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-indigo-300 mb-2">83,600 <span class="text-lg font-medium text-slate-500">קמ"ר</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            מדינה מדברית ברובה (חולקת את גבולותיה עם סעודיה ועומאן), הממוקמת לחופיו של המפרץ הפרסי (הקרוי שם "המפרץ הערבי"). אבו דאבי לבדה מהווה כ-87% מכלל שטח המדינה. אזור ראס אל-ח'ימה בצפון מתאפיין ברכסי הרים גבוהים הנישאים מעל הים.
+                        </p>
+                    </div>
+
+                    <!-- אוכלוסייה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-900/30 p-2 rounded-lg text-pink-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">אוכלוסייה א-סימטרית</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-pink-300 mb-2">~ 10 <span class="text-lg font-medium text-slate-500">מיליון</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            הדמוגרפיה של האמירויות היא אולי המיוחדת בעולם: <strong>רק כ-11% מהתושבים (כמיליון איש) הם אזרחים אמירתים.</strong> השאר (כ-89%) הם זרים ומהגרי עבודה (בעיקר מהודו, פקיסטן, בנגלדש, הפיליפינים ומערב אירופה) המחזיקים את כל מערכות הכלכלה, הבנייה והשירותים.
+                        </p>
+                    </div>
+
+                    <!-- כלכלה ותל"ג -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-emerald-900/30 p-2 rounded-lg text-emerald-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">כלכלה ותל"ג (GDP)</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-emerald-300 mb-2">~ 510 <span class="text-lg font-medium text-slate-500">מיליארד $</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            הכלכלה השנייה בגודלה במזרח התיכון (אחרי סעודיה). בעוד אבו דאבי יושבת על עתודות נפט וגז מהגדולות בעולם, דובאי הובילה אסטרטגיית גיוון דרמטית, וכיום פחות מ-5% מהכנסותיה מגיעים מנפט. הכלכלה מבוססת על נדל"ן יוקרה, מרכזים פיננסיים (DIFC), תיירות בינלאומית מסיבית, ולוגיסטיקה ימית ואווירית ענפה.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- מטבע ואטימולוגיה של המטבע -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    הכלכלה והמטבע: הדירהם האמירתי
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="bg-yellow-600/20 text-yellow-500 px-3 py-1 rounded-lg ml-3 border border-yellow-700/50">AED</span>
+                        דירהם אמירתי (درهم إماراتي)
+                    </h3>
+                    
+                    <div class="mt-4 bg-slate-900/50 p-5 rounded-xl border border-slate-700">
+                        <h4 class="text-yellow-400 font-semibold mb-2">סיבת הבחירה בשם זה למטבע המודרני:</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            לפני איחוד המדינה ב-1971, האמירויות השתמשו במגוון מטבעות, בעיקר ב"רופי המפרץ" (גרסה של הרופי ההודי שהונפקה על ידי בריטניה), ולאחר מכן במטבעות זמניים משותפים עם קטאר ובחריין. ב-<strong>1973</strong>, הונפק ה"דירהם" כסמל לאיחוד ולעצמאות כלכלית. השם "דירהם" נבחר כהומאז' למטבע הכסף העתיק של הח'ליפויות האסלאמיות (בית אומיה ועבאס), כדי לסמל חיבור עמוק למורשת הערבית. מאז 1997, הדירהם מוצמד (Pegged) לדולר האמריקאי בשער קבוע של 3.67.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-400 mb-4">אטימולוגיה מפורטת לחלקי שם המטבע ("דירהם")</h3>
+                    <p class="text-slate-400 mb-4">
+                        (בדומה ל"דינר"), המילה האסלאמית "דירהם" אינה ערבית במקורה, אלא מהווה גלגול מרתק של מטבע יווני עתיק.
+                    </p>
+
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">1. המקור היווני העתיק</span>
+                            <span class="text-xl font-bold text-white block mb-1">Drachma (דְרַכְמָה)</span>
+                            <p class="text-slate-400 text-sm mt-2">
+                                ביוון העתיקה, המילה <em>Drachma</em> משמעותה <strong>"חופן" או "קומץ"</strong>. במקור, זה היה חופן של שישה שיפודי מתכת (אובולים) ששימשו כאמצעי תשלום, ובהמשך הפך לשם מטבע הכסף המפורסם של אתונה והאימפריה ההלניסטית.
+                            </p>
+                        </div>
+                        
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">2. המעבר דרך פרס (סאסאנית)</span>
+                            <span class="text-xl font-bold text-white block mb-1">Drahm (דְרַהָם)</span>
+                            <p class="text-slate-400 text-sm mt-2">
+                                כשאלכסנדר מוקדון כבש את המזרח, הוא הביא עמו את הדרכמה. האימפריה הסאסאנית (הפרסית) ששלטה באזור המפרץ לפני האסלאם, אימצה את המטבע והגייה המקומית הפכה את הדרכמה ל"דרהם".
+                            </p>
+                        </div>
+
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-yellow-500/5 rounded-2xl"></div>
+                            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest block mb-2 relative z-10">3. האימוץ האסלאמי-ערבי</span>
+                            <span class="text-xl font-bold text-yellow-500 block mb-1 relative z-10">درهم (Dirham)</span>
+                            <p class="text-slate-400 text-sm mt-2 relative z-10">
+                                הערבים המוסלמים שכבשו את האימפריה הפרסית במאה ה-7 אימצו את המערכת המוניטרית הקיימת, ושיבשו מעט את השם ל"דירהם". משם הוא התגלגל ל-1973, והפך למטבע הרשמי שמניע את הכלכלה האדירה של האמירויות.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- פוטר -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-12 w-full">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm font-medium">
+                נחקר, נכתב וקודד על ידי <strong class="text-rose-600">רם</strong> &copy; 2026.
+            </p>
+            <p class="text-slate-600 text-xs mt-2">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשיר Samsung S25 Ultra.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
