@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקרי הלבנט: ירדן</title>
+    
+    <!-- ייבוא פונט Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-select { user-select: none; -webkit-user-select: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-cyan-700 selection:text-white pb-10">
+
+    <!-- סרגל ניווט עליון (לא סטטי, כדי שלא יפריע בגלילה) -->
+    <nav class="w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center text-cyan-400 hover:text-cyan-300 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <span class="font-medium text-lg">חזרה לאטלס</span>
+            </a>
+            <div class="text-slate-400 font-medium">נתיב המדינות / הלבנט</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-6 sm:p-10 max-w-4xl mx-auto w-full">
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-12 text-center mt-6">
+            <div class="inline-block bg-cyan-900/30 border border-cyan-700 text-cyan-400 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                קובץ מחקר היסטורי
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-500 mb-4">
+                הממלכה ההאשמית של ירדן
+            </h1>
+            <p class="text-xl text-slate-400 font-light">المملكة الأردنية الهاشمية (Al-Mamlaka Al-Urdunniyya Al-Hāshimiyya)</p>
+        </header>
+
+        <div class="space-y-10">
+            
+            <!-- 1+2+4+7: תעודת זהות, ייסוד, מייסד וסיבת הייסוד (נשמר במלואו) -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-emerald-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    תעודת זהות היסטורית
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">תאריך ייסוד מלא</h3>
+                        <ul class="text-slate-400 space-y-2 leading-relaxed list-disc list-inside">
+                            <li><strong class="text-slate-200">11 באפריל 1921:</strong> הקמת "אמירות עבר הירדן" תחת המנדט הבריטי.</li>
+                            <li><strong class="text-slate-200">22 במרץ 1946:</strong> חתימת חוזה לונדון המעניק עצמאות.</li>
+                            <li><strong class="text-emerald-300">25 במאי 1946 (תאריך רשמי):</strong> הכרזת העצמאות המלאה של הממלכה ההאשמית.</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">המייסד ושנות חייו</h3>
+                        <p class="text-slate-400 leading-relaxed mb-2">
+                            <strong class="text-white text-xl">המלך עבדאללה הראשון, בן חוסיין</strong>
+                        </p>
+                        <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-emerald-400 text-sm font-medium">
+                            <span>1882 (מכה, האימפריה העות'מאנית)</span>
+                            <span class="mx-2">-</span>
+                            <span>20 ביולי 1951 (ירושלים)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3">סיבת הייסוד (הקשר גיאופוליטי)</h3>
+                    <p class="text-slate-400 leading-relaxed text-lg">
+                        הקמת האמירות (ולאחר מכן הממלכה) נולדה מתוך כורח גיאופוליטי של האימפריה הבריטית לאחר מלחמת העולם הראשונה והמרד הערבי. הבריטים חיפשו דרך לתגמל את <strong>השושלת ההאשמית</strong> (שעזרה להם להפיל את האימפריה העות'מאנית) תוך שמירה על יציבות אזורית. שר המושבות דאז, וינסטון צ'רצ'יל, החליט (בוועידת קהיר ב-1921) לנתק את השטח שממזרח לנהר הירדן משטח המנדט שיועד ל"בית לאומי לעם היהודי", ולהעניק אותו לעבדאללה הראשון כדי לשמש <strong>מדינת חיץ (Buffer Zone)</strong> בין סוריה הצרפתית, סעודיה, וארץ ישראל.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 3: אטימולוגיה מורחבת של שם המדינה -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-cyan-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                    אטימולוגיה מורחבת: מקור שם המדינה
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    השם המלא של המדינה מורכב משני יסודות מרכזיים: המיקום הגיאוגרפי ("ירדן") והשיוך השושלתי ("האשמית"). להלן הפירוק הלשוני-היסטורי המעמיק:
+                </p>
+
+                <div class="space-y-6">
+                    <!-- חלק 1: ירדן (מורחב) -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-blue-500"></div>
+                        <h3 class="text-xl font-bold text-blue-400 mb-3 text-2xl">1. יַרְדֵּן (Urdunn / Jordan)</h3>
+                        <p class="text-slate-300 mb-4 text-base">
+                            שם המדינה נגזר ישירות מנהר הירדן, המהווה את גבולה המערבי. השם מתועד היסטורית עוד מימי קדם, ומופיע כבר בפפירוסים מצריים עתיקים (כמו "פפירוס אנאסטאזי א'" מהמאה ה-13 לפנה"ס) תחת השם <em>Yrdn</em>, ובמקורות יווניים עתיקים כ-<em>Ιορδάνης</em> (יורדאנס).
+                        </p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-slate-800 p-4 rounded-xl">
+                                <span class="block text-sm text-slate-500 mb-1">השורש השמי / עברי:</span>
+                                <span class="text-2xl font-bold text-white tracking-widest">י - ר - ד</span>
+                                <p class="text-slate-400 mt-2 text-sm leading-relaxed">המשמעות המילולית היא "לרדת" או "הנהר היורד". שם זה משקף תופעה גיאולוגית ייחודית: הנהר מאופיין בשיפוע טופוגרפי קיצוני, כשהוא יורד ממורדות הר החרמון המושלג ועד לים המלח – הנקודה הנמוכה ביותר על פני כדור הארץ.</p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-xl">
+                                <span class="block text-sm text-slate-500 mb-1">הסיומת:</span>
+                                <span class="text-2xl font-bold text-white tracking-widest">ן (N)</span>
+                                <p class="text-slate-400 mt-2 text-sm leading-relaxed">סיומת נפוצה מאוד בשפות שמיות צפון-מערביות עתיקות (כמו עברית, כנענית וארמית). היא משמשת לציון שמות מקומות או תכונות גיאוגרפיות מובהקות (בדומה לשמות כמו חרמון, שריון או לבנון).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- חלק 2: האשמית (מורחב) -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-amber-500"></div>
+                        <h3 class="text-xl font-bold text-amber-400 mb-3 text-2xl">2. הָאשֵמִית (Hāshimiyya)</h3>
+                        <p class="text-slate-300 mb-4 text-base">
+                            תוספת לשם המדינה שנועדה להעניק לגיטימציה דתית והיסטורית עמוקה לשלטון. היא מעידה כי בית המלוכה הירדני הוא נצר ישיר לשושלת ההאשמית – משפחת המלוכה השריפית של העיר מכה, השייכת לשבט קורייש, ומייחסת את שורשיה הביולוגיים עד לנביא מוחמד עצמו.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 gap-4">
+                            <div class="bg-slate-800 p-4 rounded-xl">
+                                <span class="block text-sm text-slate-500 mb-1">מקור השם (סב-סבו של הנביא):</span>
+                                <span class="text-2xl font-bold text-white">האשם אבן עבד מנאף (هاشم بن عبد مناف)</span>
+                                <p class="text-slate-400 mt-2 leading-relaxed">
+                                    השורש הערבי <strong>ه-ش-م (ה-ש-מ)</strong> משמעותו "לשבור", "לרסק" או "לפורר". 
+                                    לפי המסורת וההיסטוריוגרפיה האסלאמית, שמו המקורי של האיש היה 'עמר', אך הוא זכה בכינוי הכבוד "האשם" (המרסק) בזכות נדיבותו. מסופר כי בשנות בצורת קשות בחצי האי ערב, הוא נהג <strong>לפורר ולרסק לחם אל תוך בשר ומרק</strong> כדי להכין את התבשיל המסורתי "ת'ריד" (ثَرِيد), אותו חילק בחינם לעולי הרגל (החג') הרעבים שהגיעו למכה.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- נתונים חדשים: שטח, אוכלוסייה וכלכלה -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-purple-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    נתונים גיאוגרפיים, דמוגרפיים וכלכליים
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- שטח -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-purple-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-purple-900/30 p-2 rounded-lg text-purple-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">שטח וגיאוגרפיה</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-purple-300 mb-2">89,342 <span class="text-lg font-medium text-slate-500">קמ"ר</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            ירדן היא מדינה חסרת מוצא משמעותי לים (מלבד רצועה צרה של כ-26 ק"מ במפרץ עקבה שבים האדום). <strong>כ-75% עד 80% משטחה הוא מדבר צחיח</strong> (הבאדיה) הנמצא במזרח ובדרום המדינה. האזור הפורה והחקלאי ביותר הוא בקעת הירדן והרצועה ההררית המערבית (שם נמצאות הערים הגדולות עמאן ואירביד). המדינה סובלת ממחסור כרוני וחמור במקורות מים טבעיים.
+                        </p>
+                    </div>
+
+                    <!-- אוכלוסייה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-900/30 p-2 rounded-lg text-pink-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">אוכלוסייה</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-pink-300 mb-2">~ 11.5 <span class="text-lg font-medium text-slate-500">מיליון (הערכה)</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            הדמוגרפיה הירדנית מורכבת ומושפעת קשות מגלי פליטים אזוריים. האוכלוסייה מורכבת מ<strong>עבר-ירדנים מקוריים (בדווים ושבטים)</strong> המהווים את הבסיס הנאמן לשלטון ההאשמי, ומהווים כיום כ-40-50% מהאוכלוסייה. היתר הם יוצאי פלסטין (פליטי 48' ו-67' וצאצאיהם), ויותר מ-1.3 מיליון פליטים מסוריה ומעיראק שנמלטו ממלחמות האזרחים במדינותיהם.
+                        </p>
+                    </div>
+
+                    <!-- כלכלה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-emerald-900/30 p-2 rounded-lg text-emerald-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">כלכלה ומשאבים</h3>
+                        </div>
+                        <p class="text-xl font-extrabold text-emerald-300 mb-2">משק מוטה שירותים וסיוע</p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            בניגוד לשכנותיה במפרץ או בעיראק, לירדן <strong>אין כמעט מאגרי נפט או גז טבעי</strong>, מה שהופך את כלכלתה לפגיעה. משאבי הטבע העיקריים שלה הם כריית פוספטים ואשלג (בעיקר באזור ים המלח). הכלכלה הירדנית נשענת משמעותית על <strong>תיירות</strong> (פטרה, עקבה, ג'רש), העברות כספים של אזרחים ירדנים העובדים במדינות המפרץ, וסיוע חוץ מסיבי (בעיקר מארצות הברית ומדינות המפרץ) המשמר את יציבותה הפוליטית.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5+6: מטבע ואטימולוגיה של המטבע (נשמר במלואו כפי שהיה) -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    הכלכלה והמטבע: הדינר הירדני
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="bg-yellow-600/20 text-yellow-500 px-3 py-1 rounded-lg ml-3 border border-yellow-700/50">JOD</span>
+                        דינר ירדני (دينار أردني)
+                    </h3>
+                    
+                    <div class="mt-4 bg-slate-900/50 p-5 rounded-xl border border-slate-700">
+                        <h4 class="text-yellow-400 font-semibold mb-2">סיבת הבחירה בשם זה למטבע המודרני:</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            עם הקמת האמירות ולאחר מכן הממלכה, ירדן השתמשה ב"לירה הארץ-ישראלית" (Palestine Pound) שהנפיק המנדט הבריטי. 
+                            בשנת <strong>1950</strong>, כחלק מביסוס העצמאות והריבונות הכלכלית שלה, ירדן החליטה להנפיק מטבע עצמאי. הבחירה בשם "דינר" נועדה להתנתק מהמורשת הקולוניאלית של ה"לירה/פאונד" הבריטית, ולהתחבר בחזרה למורשת האסלאמית המפוארת — הדינר היה המטבע ההיסטורי של האימפריות האסלאמיות הגדולות (כמו בית אומיה ובית עבאס).
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-400 mb-4">אטימולוגיה מפורטת לחלקי שם המטבע ("דינר")</h3>
+                    <p class="text-slate-400 mb-4">
+                        למרות שהשם אומץ כדי לסמל זהות ערבית-אסלאמית, השורש האטימולוגי של המילה "דינר" הוא דווקא <strong>לטיני (רומי עתיק)</strong>.
+                    </p>
+
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <!-- שלב לטיני מוקדם -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">1. המקור הלטיני המוקדם</span>
+                            <span class="text-xl font-bold text-white block mb-1">Decem (דקם) &rarr; Deni</span>
+                            <p class="text-slate-400 text-sm mt-2">
+                                בלטינית, משמעות המילה <em>Decem</em> היא המספר <strong>עשר (10)</strong>. מתוכה נגזרה המילה <em>Deni</em> שמשמעותה "המכיל עשרה".
+                            </p>
+                        </div>
+                        
+                        <!-- שלב רומי -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">2. המטבע הרומי</span>
+                            <span class="text-xl font-bold text-white block mb-1">Denarius (דנאריוס)</span>
+                            <p class="text-slate-400 text-sm mt-2">
+                                מטבע הכסף המרכזי של הרפובליקה והאימפריה הרומית. הוא נקרא כך משום שערכו המקורי היה שווה ל-<strong>10 איסרים</strong> מנחושת (Asses). משמעות השם היא "מטבע של עשרה".
+                            </p>
+                        </div>
+
+                        <!-- שלב ערבי/אסלאמי -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-yellow-500/5 rounded-2xl"></div>
+                            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest block mb-2 relative z-10">3. האימוץ הערבי</span>
+                            <span class="text-xl font-bold text-yellow-500 block mb-1 relative z-10">دينار (Dīnār)</span>
+                            <p class="text-slate-400 text-sm mt-2 relative z-10">
+                                כשהאימפריה האסלאמית התפשטה וכבשה שטחים מהאימפריה הביזנטית (הרומית המזרחית), היא ירשה את המערכת המוניטרית. המילה הלטינית השתבשה בערבית ל"דינאר", והפכה למטבע הזהב הרשמי של הח'ליפות, וממנו למטבע הירדני המודרני.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- פוטר כפי שסוכם -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-12 w-full">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm font-medium">
+                נחקר, נכתב וקודד על ידי <strong class="text-cyan-600">רם</strong> &copy; 2026.
+            </p>
+            <p class="text-slate-600 text-xs mt-2">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשיר Samsung S25 Ultra.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
