@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקרי חצי האי ערב: תימן</title>
+    
+    <!-- ייבוא פונט Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-select { user-select: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-amber-800 selection:text-white pb-10">
+
+    <!-- סרגל ניווט עליון -->
+    <nav class="w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="../index.html" class="flex items-center text-amber-600 hover:text-amber-500 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <span class="font-medium text-lg">חזרה לאטלס הראשי</span>
+            </a>
+            <div class="text-slate-400 font-medium">נתיב המדינות / חצי האי ערב</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-6 sm:p-10 max-w-4xl mx-auto w-full">
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-12 text-center mt-6">
+            <div class="inline-block bg-amber-900/30 border border-amber-700 text-amber-500 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                קובץ מחקר היסטורי מורחב
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-amber-600 to-orange-500 mb-4">
+                הרפובליקה התימנית
+            </h1>
+            <p class="text-xl text-slate-400 font-light">الجمهورية اليمنية (Al-Jumhūriyyah Al-Yamaniyyah)</p>
+        </header>
+
+        <div class="space-y-10">
+            
+            <!-- תעודת זהות וייסוד -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-amber-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    תעודת זהות היסטורית: מדינה מחולקת
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">תאריכי ייסוד (היסטוריה של פיצול)</h3>
+                        <ul class="text-slate-400 space-y-3 leading-relaxed list-disc list-inside">
+                            <li><strong class="text-slate-200">1918 (צפון תימן):</strong> התמוטטות האימפריה העות'מאנית והקמת "הממלכה המותוואכלית" (שלטון האימאם השיעי-זיידי). ב-1962 הפכה לרפובליקה הערבית התימנית.</li>
+                            <li><strong class="text-slate-200">1967 (דרום תימן):</strong> לאחר מלחמת גרילה עקובה מדם, הבריטים עוזבים את עיר הנמל עדן. הדרום הופך ל"רפובליקה הדמוקרטית העממית של תימן" - <strong>המדינה המרקסיסטית-קומוניסטית היחידה בעולם הערבי</strong> (בחסות ברית המועצות).</li>
+                            <li><strong class="text-amber-400">22 במאי 1990 (האיחוד):</strong> קריסת ברית המועצות מובילה למיזוג היסטורי בין הצפון והדרום והקמת "הרפובליקה התימנית" המודרנית והמאוחדת (על הנייר לפחות).</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">מייסד הרפובליקה המאוחדת</h3>
+                        <p class="text-slate-400 leading-relaxed mb-1">
+                            <strong class="text-white text-lg">עלי עבדאללה סאלח</strong>
+                            <br><span class="text-sm">(נשיא הצפון שהפך לנשיא המדינה המאוחדת. שלט בתימן למעלה מ-30 שנה ותיאר זאת כ"ריקוד על ראשי נחשים")</span>
+                        </p>
+                        <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-amber-500 text-sm font-medium mb-4 mt-2">
+                            <span>21 במרץ 1947 (סנחאן)</span>
+                            <span class="mx-2">-</span>
+                            <span>4 בדצמבר 2017 (נרצח בצנעא)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" class="w-14 h-9 ml-3 rounded-sm shadow-sm border border-slate-600">
+                            <!-- פסים אופקיים: אדום, לבן, שחור -->
+                            <rect width="900" height="200" fill="#ce1126"/>
+                            <rect width="900" height="200" y="200" fill="#fff"/>
+                            <rect width="900" height="200" y="400" fill="#000"/>
+                        </svg>
+                        דגל המדינה: מינימליזם פאן-ערבי
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            דגל תימן המאוחדת (1990) הוא הפשוט ביותר מבין הדגלים הפאן-ערביים. הוא מורכב משלושה פסים אופקיים קלאסיים בלבד (<strong>אדום, לבן ושחור</strong>), ללא סמלים, כוכבים או כיתוב (בניגוד לסוריה, עיראק או מצרים). 
+                            הסיבה לכך היא פרגמטית: בעת האיחוד בין צפון לדרום, הוחלט להסיר את סמלי המדינות הקודמות (הכוכב הירוק של הצפון והמשולש התכלת עם הכוכב האדום הקומוניסטי של הדרום) כדי ליצור דגל נקי המוסכם על שני הצדדים.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            <strong class="text-slate-300">המשמעות:</strong> ה<strong>אדום</strong> מסמל את דם הקדושים ומאבק העצמאות; ה<strong>לבן</strong> מסמל עתיד מזהיר, שלום ותקווה; וה<strong>שחור</strong> מסמל את העבר החשוך של דיכוי (השלטון האימאמי השמרני בצפון והקולוניאליזם הבריטי בדרום).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3">מיקום גיאופוליטי: "שער הדמעות"</h3>
+                    <p class="text-slate-400 leading-relaxed text-lg">
+                        החשיבות העולמית של תימן אינה נובעת מנפט, אלא מגיאוגרפיה. היא שולטת על <strong>מיצר באב אל-מנדב (باب المندب - מילולית: "שער הדמעות" או שער הקינה)</strong>, המחבר בין ים סוף לאוקיינוס ההודי. המיצר זכה לשמו המצמרר בגלל הסכנות העצומות לניווט בו בעבר. כיום, כ-10% מהסחר העולמי (כולל מיליוני חביות נפט ביום) עוברים דרכו בדרך לתעלת סואץ. השליטה בנקודת החנק הזו היא שהפכה את תימן לזירת מאבק בינלאומית בין המורדים החות'ים (בגיבוי איראן) לבין סעודיה והקואליציה המערבית.
+                    </p>
+                </div>
+            </section>
+
+            <!-- אטימולוגיה מורחבת של שם המדינה -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-orange-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                    אטימולוגיה: סוד "ערב המאושרת" ומשמעות הצד הימני
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    השם "תימן" (Yemen / يَمَن) הוא אחד השמות העתיקים והיפים באזור. הוא אוצר בתוכו משמעויות מרחביות, בלשניות ואפילו אימפריאליות:
+                </p>
+
+                <div class="space-y-6">
+                    <!-- הפירוש הגיאוגרפי (ימין) -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-orange-600"></div>
+                        <h3 class="text-xl font-bold text-orange-500 mb-3 text-2xl">1. השורש י-מ-ן (ي-م-ن): "הצד הימני" / דרום</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            על פי המסורת הגיאוגרפית הערבית הקדומה, נקודת הייחוס בעולם הייתה הכעבה בעיר <strong>מכה</strong>. כאשר אדם עומד במכה ופניו מופנות מזרחה אל עבר זריחת השמש:
+                        </p>
+                        <ul class="list-disc list-inside text-slate-400 space-y-2 text-sm leading-relaxed mb-4">
+                            <li>הצד ה<strong>שמאלי</strong> שלו (לכיוון צפון) נקרא "א-שאם" (الشام) - ומכאן שמו של הלבנט / סוריה.</li>
+                            <li>הצד ה<strong>ימני</strong> שלו (לכיוון דרום) נקרא "ימין" או "תימן" (اليمن) - הארץ הנמצאת מימין. לכן, המילה "תימן" בטקסטים קדומים (וגם בעברית מקראית) היא מילה נרדפת למושג <strong>"דרום"</strong>.</li>
+                        </ul>
+                    </div>
+
+                    <!-- הפירוש השני (ערביה פליקס) -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-emerald-500"></div>
+                        <h3 class="text-xl font-bold text-emerald-500 mb-3 text-2xl">2. הפירוש הברכתי: יוּמְן (Yumn - שגשוג ואושר)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            בלשנים היסטוריים מציעים פירוש נוסף מאותו שורש: המילה הערבית <strong>יוּמְן (يُمْن)</strong> שמשמעותה <strong>שגשוג, ברכה, אושר או מזל טוב</strong> (קשור למושג "ימין" המסמל כוח טוב ואהדה, בניגוד לשמאל שנחשב מבשר רעות).
+                            <br><br>
+                            <strong class="text-emerald-400">ארץ "ערב המאושרת" (Arabia Felix):</strong> 
+                            פירוש זה מתיישב לחלוטין עם האופן שבו האימפריה הרומית כינתה את המקום! הרומאים חילקו את חצי האי ערב לשלושה חלקים: "ערב הפטראית" (הסלעית - באזור ירדן ופטרה), "ערב המדברית" (ערביה דזרטה - סעודיה), ואת אזור תימן הם כינו בלטינית <strong>Arabia Felix (ערב המאושרת / המבורכת)</strong>. 
+                            מדוע "מאושרת"? מכיוון שתימן, בזכות הרי הגעש הגבוהים שבה שמשכו את גשמי המונסון, הייתה אזור ירוק ופורה לחלוטין, שהתעשר מעצי הבושם (לבונה ומור) והתבלינים. עבור הנודדים במדבר, תימן הייתה גן עדן ירוק של מים זורמים.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- פרק הרפתקאות היסטורי: סודות הקפה ונמל מוכא -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-amber-700 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    נתיב הקפה: סודות נמל מוכא והמונופול התימני
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    זהו אולי סיפור ההרפתקאות הכלכלי הגדול ביותר של תימן. תימן אמנם לא המציאה את צמח הקפה (שגדל פרא באתיופיה הסמוכה), אבל היא זו שהפכה אותו למשקה העולמי שאנו מכירים כיום, ושלטה עליו ביד ברזל במשך מאות שנים.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- גילוי המשקה -->
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-amber-500 mb-3">מתי ואיך הגיע הקפה לתימן?</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                צמח הקפה במקורו גדל פרא באתיופיה. על פי רשומות היסטוריות, הצמח הובא לראשונה לתימן בין <strong>המאה ה-14 לאמצע המאה ה-15</strong>.
+                                <br><br>
+                                <strong class="text-amber-300">נסיבות ההגעה (סודם של הסופים):</strong> המסע של הקפה חצה את מיצר "באב אל-מנדב". חכמי דת ונזירים של הזרם ה<strong>סופי</strong> בתימן, שנהגו לנסוע לאתיופיה, נחשפו שם למנהג המקומי של לעיסת פולי קפה לעוררות. הם חיפשו פתרון שיעזור להם להישאר ערים ומרוכזים במהלך תפילות הלילה הארוכות שלהם (טקסי ה"ד'יכר"). הם הבריחו עימם זרעים ושתילים חיים בספינותיהם בחזרה לתימן, וגילו להפתעתם שהטראסות ההרריות והגעשיות של המדינה מתאימות אף יותר מאתיופיה לגידול הצמח! הם היו הראשונים שקלו והרתיחו את הפולים למשקה, לו קראו <strong>קַהְוַוה (قهوة)</strong> (מילה ששימשה בערבית עתיקה לתיאור יין).
+                            </p>
+                        </div>
+                        
+                        <!-- עיר הנמל מוכא -->
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-amber-600 mb-3">אטימולוגיה: עיר הנמל מוֹכָא (Mocha)</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                במאות ה-16 וה-17, כל שק קפה שיצא לעולם עבר דרך נמל עתיק אחד לחופי ים סוף בתימן: <strong>אל-מוֹכָא (المخا)</strong>. פולי הקפה התימניים (הנקראים בערביקה) הצטיינו בטעם ייחודי שהזכיר שוקולד או קקאו. סוחרים אירופאים שקנו את הקפה בנמל החלו לקרוא לפולים עצמם על שם העיר "מוכא". עד היום, משקה המשלב קפה מריר עם שוקולד מתוק נקרא ברחבי העולם <strong>"מוֹקָה"</strong>, כהומאז' לאותם פולים שוקולדיים היסטוריים שיצאו מתימן!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ההברחה הגדולה -->
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-600 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-red-600"></div>
+                        <h3 class="text-xl font-bold text-red-400 mb-3">המונופול העולמי ו"שוד הקפה" הגדול</h3>
+                        <p class="text-slate-300 leading-relaxed">
+                            במשך יותר מ-200 שנה, האימפריה העות'מאנית ושליטי תימן החזיקו במונופול עולמי מוחלט על סחר הקפה. כדי למנוע ממדינות ואימפריות אחרות לגדל קפה בעצמן, נחקק חוק נוקשה ועונשו מוות: <strong>אסור להוציא מתימן פולים חיים, זרעים או שתילים</strong>. כל פול קפה שהועלה על ספינה אירופאית חויב לעבור קודם הרתחה עמוקה או קלייה כדי לעקר אותו ולמנוע את הנבטתו.
+                            <br><br>
+                            המונופול התימני נשבר לבסוף רק בעקבות מבצעי ריגול והברחה נועזים: המפורסם שבהם (במאה ה-17) שייך לסופי ממוצא הודי בשם <strong>באבא בודאן</strong>. בדרכו חזרה מעלייה לרגל למכה דרך תימן, הוא הצליח לגנוב 7 פולי קפה חיים וירוקים, הדביק אותם בחשאי לבטנו מתחת לבגדיו, והבריח אותם להרים בהודו שם קמו מטעי קפה מתחרים. זמן קצר לאחר מכן, גם מרגלים של חברת הודו המזרחית ההולנדית (VOC) הצליחו להבריח שתילים והעבירו אותם לאי ג'אווה שבאינדונזיה. פעולות אלו שברו את המונופול התימני לנצח ושינו את ההיסטוריה של המסחר העולמי.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- פרק: הנפט והגז -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-slate-100 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                    עידן הנפט: פוטנציאל שהוחרב במלחמה
+                </h2>
+                
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-amber-500 mb-3">מי גילה ומתי?</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                ביחס לשכנותיה מצפון, תימן היא מדינה דלה מאוד בנפט. החיפושים במדינה החלו כבר בשנות ה-30, אך פריצת הדרך ארעה רק בשנת <strong>1984</strong>, כאשר חברת הנפט האמריקאית העצמאית <strong>Hunt Oil Company</strong> (מטקסס) מצאה נפט מסחרי באגן <strong>מאריב (Marib)</strong> שבצפון תימן. זמן קצר לאחר מכן, ב-1986, גילו הסובייטים נפט גם בדרום תימן (אגן מאסילה).
+                            </p>
+                        </div>
+                        
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-amber-500 mb-3">הגז הטבעי (פרויקט בלהאף)</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                התקווה הכלכלית הגדולה ביותר של תימן המאוחדת הייתה הגז הטבעי. בתחילת שנות ה-2000, חברת Total (טוטאל) הצרפתית הובילה מיזם בינלאומי ענק להקמת מתקן יצוא גז נוזלי (LNG) בנמל <strong>בלהאף (Balhaf)</strong> שלחוף הים הערבי. הפרויקט, שעלותו נאמדה בכ-4.5 מיליארד דולר, החל לייצא גז ב-2009.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-600">
+                        <h3 class="text-xl font-bold text-red-500 mb-3">השפעה: משאבים תחת אש</h3>
+                        <p class="text-slate-300 leading-relaxed">
+                            לצערה של תימן, חלום האנרגיה נגדע באכזריות. עם פרוץ מלחמת האזרחים הקטלנית ב-2014 והשתלטות המורדים החות'ים על הבירה צנעא, <strong>תעשיית הנפט והגז של תימן קרסה לחלוטין</strong>. צינורות נפט פוצצו על ידי שבטים ואל-קאעידה, חברות זרות (כולל Total ו-Hunt) פינו את עובדיהן והכריזו על "כוח עליון" (Force Majeure), ומתקן הגז המפואר בבלהאף הושבת. כיום, הנפט אינו מביא שגשוג לאזרחים, אלא מהווה יעד להתקפות צבאיות בין הצדדים הנלחמים על שאריות הכלכלה של המדינה הענייה ביותר בחצי האי ערב.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- נתונים גיאוגרפיים, דמוגרפיים וכלכליים -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    נתונים גיאוגרפיים, דמוגרפיים וכלכליים
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- שטח -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-900/30 p-2 rounded-lg text-indigo-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">שטח וגיאוגרפיה סלעית</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-indigo-300 mb-2">555,000 <span class="text-lg font-medium text-slate-500">קמ"ר</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            המדינה השנייה בשטחה בחצי האי ערב (אחרי סעודיה). הגיאוגרפיה של תימן מתאפיינת בהרים עצומים (הרי מחוז סעדה והבירה צנעא הנישאים לגובה של מעל 3,500 מטרים), המקשים מאוד על תנועה ומעניקים יתרון אסטרטגי לשבטים וללוחמי גרילה (חות'ים). בדרום ישנן רצועות חוף לוהטות לאורך ים סוף ומפרץ עדן.
+                        </p>
+                    </div>
+
+                    <!-- אוכלוסייה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-900/30 p-2 rounded-lg text-pink-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">אוכלוסייה קורסת</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-pink-300 mb-2">~ 34 <span class="text-lg font-medium text-slate-500">מיליון</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            אוכלוסייה גדולה וצעירה מאוד (רובם המוחלט אזרחים תימנים, בניגוד למדינות המפרץ). קיים פיצול דתי-פוליטי עמוק: כ-35% הם מוסלמים <strong>שיעים-זיידים</strong> המרוכזים בהרים בצפון (מהם צמחה תנועת החות'ים), וכ-65% הם מוסלמים <strong>סונים (שאפיעים)</strong> השולטים במישורי החוף והדרום. המלחמה גרמה לאחד המשברים ההומניטריים הקשים בעולם המודרני עם רעב ומגפות.
+                        </p>
+                    </div>
+
+                    <!-- כלכלה ותל"ג -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-red-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-red-900/30 p-2 rounded-lg text-red-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">כלכלה ותל"ג (GDP)</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-red-400 mb-2">~ 21 <span class="text-lg font-medium text-slate-500">מיליארד $ (הערכה)</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            תימן הייתה <strong>המדינה הענייה ביותר במזרח התיכון</strong> עוד לפני פרוץ מלחמת האזרחים, וכיום כלכלתה כמעט אינה קיימת רשמית. התל"ג צנח, המטבע התרסק, ואין מוסדות מדינה מתפקדים לגביית מסים או חלוקת שכר עקבית. הכלכלה נשענת על סיוע הומניטרי, גידול חקלאי (בעיקר גידול הצמח הנרקוטי "גאת"), והעברות כספים של פליטים מחו"ל.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- מטבע ואטימולוגיה של המטבע -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    הכלכלה והמטבע: הריאל התימני
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="bg-yellow-600/20 text-yellow-500 px-3 py-1 rounded-lg ml-3 border border-yellow-700/50">YER</span>
+                        ריאל תימני (ريال يمني)
+                    </h3>
+                    
+                    <div class="mt-4 bg-slate-900/50 p-5 rounded-xl border border-slate-700">
+                        <h4 class="text-yellow-400 font-semibold mb-2">סיבת הבחירה והקריסה:</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            היסטוריית המטבע בתימן מפוצלת בדיוק כמו המדינה עצמה. בדרום תימן (תחת הבריטים) השתמשו ברופי, ומאוחר יותר ב"דינר של דרום תימן". בצפון תימן הודפס ה"ריאל התימני" בעקבות הקמת הרפובליקה ב-1962 (כדי להחליף את "ריאל מריה תרזה" האירופי ואת המטבע האימאמי שנקרא "אימאדי"). <br>עם איחוד המדינה ב-1990, <strong>הריאל התימני של הצפון</strong> הפך למטבע הרשמי של כל המדינה (והדינר של הדרום בוטל לחלוטין ב-1996). כיום, עקב המלחמה, המטבע סובל מהיפר-אינפלציה קשה, וישנם שערים חליפין שונים לחלוטין בשטחים שבשליטת החות'ים לעומת השטחים שבשליטת הממשלה.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-400 mb-4">אטימולוגיה מפורטת לחלקי שם המטבע</h3>
+                    
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">1. המקור הלטיני-ספרדי</span>
+                            <span class="text-xl font-bold text-white block mb-1">Regalis / Real (מלכותי)</span>
+                            <p class="text-slate-400 text-sm mt-2">
+                                השם "ריאל" נגזר מהמילה הלטינית-ספרדית למלכותי. סוחרי הקפה והתבלינים התימנים (שישבו בערי נמל אסטרטגיות כמו עַדֶן ומוֹכָא) אימצו את המטבעות האירופאיים שהגיעו לחופיהם דרך ספינות סחר, והפכו את המילה "ריאל" לשם גנרי לכסף עובר לסוחר.
+                            </p>
+                        </div>
+                        
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-yellow-500/5 rounded-2xl"></div>
+                            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest block mb-2 relative z-10">2. חלוקת המשנה: פִילְס (فلس)</span>
+                            <span class="text-xl font-bold text-yellow-500 block mb-1 relative z-10">פוֹלִיס מיוון העתיקה</span>
+                            <p class="text-slate-400 text-sm mt-2 relative z-10">
+                                כמו בכווית ובחריין, הריאל התימני התחלק בעבר ל-100 <strong>פילס</strong> (Fils). שם זה נגזר מהמילה היוונית <em>Follis</em> – מטבע ארד פשוט שנטבע ברחבי האימפריה. (כיום, עקב הקריסה הכלכלית ואיבוד ערך המטבע, לא משתמשים כלל ב"פילס" בתימן).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- פוטר -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-12 w-full">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm font-medium">
+                נחקר, נכתב וקודד על ידי <strong class="text-amber-600">רם</strong> &copy; 2026.
+            </p>
+            <p class="text-slate-600 text-xs mt-2">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשיר Samsung S25 Ultra.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
