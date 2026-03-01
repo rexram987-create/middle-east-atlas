@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקרי חצי האי ערב: בחריין</title>
+    
+    <!-- ייבוא פונט Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-select { user-select: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-red-700 selection:text-white pb-10">
+
+    <!-- סרגל ניווט עליון -->
+    <nav class="w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="../index.html" class="flex items-center text-red-500 hover:text-red-400 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <span class="font-medium text-lg">חזרה לאטלס הראשי</span>
+            </a>
+            <div class="text-slate-400 font-medium">נתיב המדינות / חצי האי ערב</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-6 sm:p-10 max-w-4xl mx-auto w-full">
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-12 text-center mt-6">
+            <div class="inline-block bg-red-900/30 border border-red-700 text-red-400 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                קובץ מחקר היסטורי מורחב
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-700 mb-4">
+                ממלכת בחריין
+            </h1>
+            <p class="text-xl text-slate-400 font-light">مملكة البحرين (Mamlakat Al-Baḥrayn)</p>
+        </header>
+
+        <div class="space-y-10">
+            
+            <!-- תעודת זהות וייסוד -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-red-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    תעודת זהות היסטורית
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">תאריכי ייסוד ואירועים מכוננים</h3>
+                        <ul class="text-slate-400 space-y-3 leading-relaxed list-disc list-inside">
+                            <li><strong class="text-slate-200">1783 (כיבוש בחריין):</strong> שושלת "אאל ח'ליפה" (Al Khalifa), שמקורה בשבטים ממרכז חצי האי ערב, כובשת את איי בחריין מידי האימפריה הפרסית, ומבססת את שלטונה הנמשך עד ימינו.</li>
+                            <li><strong class="text-slate-200">15 באוגוסט 1971:</strong> הכרזת העצמאות. בחריין משתחררת רשמית מ"הסכם החסות" עם בריטניה, ובוחרת לא להצטרף לאיחוד האמירויות, אלא לעמוד כ"אמירות" ריבונית עצמאית.</li>
+                            <li><strong class="text-red-400">14 בפברואר 2002 (הפיכה לממלכה):</strong> האמיר חמד בן עיסא עורך רפורמות חוקתיות במדינה, משנה את שמה מ"מדינת בחריין" ל"ממלכת בחריין", ומשדרג את תוארו מאמיר ל"מלך".</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">המייסדים ושנות חייהם</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-slate-400 leading-relaxed mb-1">
+                                    <strong class="text-white text-lg">אחמד "אל-פאתח" (הכובש)</strong>
+                                    <br><span class="text-sm">(מייסד השושלת השולטת)</span>
+                                </p>
+                                <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-red-400 text-sm font-medium">
+                                    <span>תאריך לידה לא ידוע</span> <span class="mx-2">-</span> <span>1795</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 leading-relaxed mb-1 mt-2">
+                                    <strong class="text-white text-lg">השייח' עיסא בן סלמאן אאל ח'ליפה</strong>
+                                    <br><span class="text-sm">(מייסד המדינה העצמאית המודרנית ב-1971)</span>
+                                </p>
+                                <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-red-400 text-sm font-medium">
+                                    <span>3 ביוני 1933</span> <span class="mx-2">-</span> <span>6 במרץ 1999</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" class="w-14 h-8 ml-3 rounded-sm shadow-sm border border-slate-600">
+                            <!-- רקע אדום -->
+                            <rect width="900" height="540" fill="#CE1126"/>
+                            <!-- חלק לבן עם 5 שיניים -->
+                            <polygon points="0,0 225,0 360,54 225,108 360,162 225,216 360,270 225,324 360,378 225,432 360,486 225,540 0,540" fill="#fff"/>
+                        </svg>
+                        דגל המדינה וסוד הגיאומטריה
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            הדגל של בחריין מורכב משני צבעים היסטוריים: <strong>אדום</strong> (צבעם של שבטי ה"ח'ווארג'" בחצי האי ערב) ו<strong>לבן</strong> (שהוסף בעקבות דרישת הבריטים במאה ה-19 כסימן לשלום ולהפסקת ה"פיראטיות" הימית). הקו המפריד בין הצבעים הוא משונן.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            <strong class="text-slate-300">למה דווקא 5 שיניים?</strong> 
+                            ההיסטוריה של הדגל מרתקת. במקור, היו לדגל בחריין עשרות שיניים זעירות שנועדו להבדיל אותו מדגלים אחרים במרחק ראייה בים. בשנת 1972, המספר צומצם ל-8 שיניים. אולם, לקראת ההכרזה על בחריין כ"ממלכה" בשנת 2002, הוחלט להפחית את המספר ל-<strong>5 משולשים בדיוק</strong>. חמשת המשולשים הללו מסמלים את <strong>חמשת עמודי האסלאם</strong> (השהאדה, התפילה, הצדקה, הצום, והעלייה לרגל).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3">סיבת הייסוד והקשר גיאופוליטי</h3>
+                    <p class="text-slate-400 leading-relaxed text-lg">
+                        ארכיפלג בחריין תמיד היה מוקד מאבק אסטרטגי. הוא שימש כמרכז סחר עולמי של פנינים, ומיקומו בלב המפרץ משך אליו פולשים (פורטוגזים, עות'מאנים, ובעיקר פרסים). הקמת בחריין המודרנית נעשתה מתוך <strong>צורך הישרדותי</strong> של שושלת אאל ח'ליפה הסונית, מול איראן (השיעית) שתבעה בעלות היסטורית על האי. החסות הבריטית הגנה עליהם מסיפוח איראני, וכשהבריטים עזבו ב-1971, משאל עם בחסות האו"ם קבע שהבחריינים רוצים עצמאות ערבית ריבונית, מה שסלל את הדרך להקמת המדינה. עד היום, סעודיה משמשת כמגן האסטרטגי הגדול של בחריין מפני השפעות איראניות.
+                    </p>
+                </div>
+            </section>
+
+            <!-- אטימולוגיה מורחבת של שם המדינה -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-orange-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                    אטימולוגיה ופלאי טבע: משמעות השם "בחריין" וארץ דילמון
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    השם "בחריין" הוא אחד השמות היפים והייחודיים בעולם הערבי, שכן הוא מתאר תופעת טבע נדירה ומסתורית. אבל לפני שנקראה בחריין, המקום הזה כיכב בסיפורי ההרפתקאות העתיקים ביותר.
+                </p>
+
+                <div class="space-y-6">
+                    <!-- החיבור לעלילות גילגמש (דילמון) -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-amber-500"></div>
+                        <h3 class="text-xl font-bold text-amber-500 mb-3 text-2xl">1. השם העתיק: ארץ דִילְמוּן (Dilmun) וחיפוש חיי הנצח</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            בעת העתיקה, האי בחריין היה ידוע בשם <strong>"דילמון"</strong>. עבור השומרים והאכדים (תושבי עיראק של היום), דילמון נחשבה ל"גן עדן" – מקום שבו המוות והמחלות אינם קיימים, והמים תמיד מתוקים. 
+                            <br><br>
+                            <strong class="text-amber-300">החיבור להרפתקאות:</strong> באפוס העתיק בעולם, <strong>"עלילות גילגמש"</strong>, לאחר מות חברו אנכידו, גילגמש יוצא למסע הרפתקאות לחפש את סוד חיי הנצח. הוא חוצה את "מי המוות" ומגיע אל ארץ דילמון (בחריין), שם הוא פוגש את אותנפישתים (המקבילה השומרית לנח מהמבול) ואף צולל לקרקעית הים סביב האי כדי למצוא את פרח הנעורים (רמז היסטורי מדהים לתעשיית צלילת הפנינים המוקדמת של בחריין!).
+                        </p>
+                    </div>
+
+                    <!-- השורש הערבי: בחריין -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-cyan-400"></div>
+                        <h3 class="text-xl font-bold text-cyan-400 mb-3 text-2xl">2. הפירוש המילולי: בַּחְרֵיין (Bahr-ayn)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            המילה "בחריין" בערבית היא צורת הזוגי (Dual) של המילה "בַּחְר" (ים). המשמעות המילולית הפשוטה היא <strong>"שני הימים" (Two Seas)</strong>. אבל אילו שני ימים נפגשים בבחריין? כאן נכנס הפלא הגיאולוגי:
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-cyan-300 mb-1">הים הראשון (המלוח):</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    אלו הם מימי המפרץ הפרסי (הים הפתוח) המקיפים את ארכיפלג האיים של בחריין מכל עבר.
+                                </p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-cyan-300 mb-1">הים השני (המתוק):</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    מתחת לאי ולקרקעית הים סביבו, קיימים מעיינות ארטזיים אדירים של <strong>מים מתוקים וטהורים</strong> (שמקורם באקוויפרים המגיעים עד סעודיה). המים המתוקים מבעבעים ופורצים ממש מתוך קרקעית הים המלוח! 
+                                </p>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 mt-4 text-base leading-relaxed">
+                            התופעה הזו, של נביעות מים מתוקים בלב ים מלוח, יצרה אשליה אצל יורדי הים הערבים כאילו האי יושב על נקודת המפגש בין שני "ימים" שונים לחלוטין. בזכות המעיינות הללו, בחריין הייתה תמיד נווה מדבר ירוק עם מטעי תמרים, בניגוד מוطلق לחולות סביבה.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- פרק: הנפט והגז -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-slate-100 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                    עידן הנפט: החלוצה של המפרץ
+                </h2>
+                
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-amber-500 mb-3">מי גילה את המשאבים?</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                בחריין עשתה היסטוריה במזרח התיכון: היא הייתה המדינה <strong>הראשונה בצד הערבי של המפרץ</strong> שבה התגלה נפט! הגיאולוג הניו-זילנדי מייג'ור פרנק הולמס היה הראשון להאמין שיש נפט באי, אך הבריטים דחו אותו. בסופו של דבר, חברת <strong>SOCAL האמריקאית</strong> (כיום שברון) הקימה את <strong>BAPCO</strong> (חברת הנפט של בחריין). הגיאולוג האמריקאי <strong>פרד דייויס (Fred Davies)</strong> היה האיש שהוביל את הקידוח המוצלח הראשון.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-amber-500 mb-3">היסטוריית הגילוי (ג'בל א-דוח'אן)</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                במרכז האי ישנה גבעה קטנה בשם "ג'בל א-דוח'אן" (הר העשן - קרוי כך על שם הערפילים סביבו). ב-<strong>1 ביוני 1932</strong>, בבאר מספר 1 למרגלות ההר, פרץ נפט לראשונה. התגלית הזו בבחריין הייתה רעידת אדמה גיאופוליטית: היא זו ששכנעה את מלך סעודיה לאפשר לאמריקאים לחפש נפט גם בשטחו (מה שהוביל להקמת אימפריית 'ארמקו' הסעודית).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-600">
+                        <h3 class="text-xl font-bold text-emerald-400 mb-3">ההשפעה על המדינה: המדינה הראשונה שנאלצה לגוון</h3>
+                        <p class="text-slate-300 leading-relaxed">
+                            גילוי הנפט הרס כליל את תעשיית הפנינים המסורתית (שכבר גססה בגלל המצאת הפנינה המתורבתת ביפן), והקפיץ את בחריין אל המאה ה-20 לפני כולן. אולם, לבחריין יש מאגרי נפט <strong>קטנים מאוד</strong> ביחס לשכנותיה. 
+                            <br><br>
+                            בגלל שהייתה הראשונה לגלות נפט, היא גם המדינה הראשונה במפרץ שהנפט שלה החל להיגמר. עובדה זו אילצה את בחריין להמציא את עצמה מחדש מוקדם מאוד: כבר בשנות ה-70 וה-80 היא הפכה את עצמה למרכז בנקאות ופיננסים בינלאומי מוביל (כמעין הקדמה למה שדובאי עשתה מאוחר יותר), ולמרכז זיקוק נפט אזורי ואלומיניום, כדי לא להסתמך רק על מה שנשאב מהאדמה. כיום, הנפט מהווה רק כ-20% מהתל"ג של בחריין.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- נתונים גיאוגרפיים, דמוגרפיים וכלכליים -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    נתונים גיאוגרפיים, דמוגרפיים וכלכליים
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- שטח -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-900/30 p-2 rounded-lg text-indigo-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">המדינה הקטנה ביותר</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-indigo-300 mb-2">~ 785 <span class="text-lg font-medium text-slate-500">קמ"ר</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            בחריין היא <strong>המדינה הקטנה ביותר במזרח התיכון</strong> (קטנה פי 30 ממדינת ישראל!). במקור היא הייתה מורכבת מ-33 איים טבעיים, אך פרויקטים עצומים של אחזור אדמות ויצירת איים מלאכותיים הגדילו את מספר האיים ליותר מ-80. היא מחוברת לסעודיה באמצעות גשר מרהיב באורך 25 ק"מ (גשר המלך פהד).
+                        </p>
+                    </div>
+
+                    <!-- אוכלוסייה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-900/30 p-2 rounded-lg text-pink-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">השסע העדתי</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-pink-300 mb-2">~ 1.5 <span class="text-lg font-medium text-slate-500">מיליון</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            כמחצית מהאוכלוסייה הם עובדים זרים. אך הסיפור הדמוגרפי המרכזי של אזרחי בחריין הוא השסע הדתי: <strong>רוב מוחלט של האזרחים (כ-65-70%) הם מוסלמים שיעים, בעוד משפחת המלוכה (אאל ח'ליפה) והאליטה השלטת הם סונים.</strong> מצב זה מוביל למתיחות פוליטית מתמדת (שהתפרצה במלוא עוזה ב"אביב הערבי" ב-2011 ודוכאה בעזרת טנקים מסעודיה).
+                        </p>
+                    </div>
+
+                    <!-- כלכלה ותל"ג -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-emerald-900/30 p-2 rounded-lg text-emerald-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">כלכלה ותל"ג (GDP)</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-emerald-300 mb-2">~ 44 <span class="text-lg font-medium text-slate-500">מיליארד $</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            הכלכלה הקטנה ביותר במפרץ, אך המגוונת שבהן מתוך הכרח. בחריין היא מרכז מרכזי של בנקאות אסלאמית, התכת אלומיניום עולמית (חברת Alba), ותיירות מסחרית (בעיקר סעודים שחוצים את הגשר בסופי שבוע אל בחריין, הנחשבת ל"ליברלית" יותר ומתירה אלכוהול).
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- מטבע ואטימולוגיה של המטבע -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    הכלכלה והמטבע: הדינר הבחרייני
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="bg-yellow-600/20 text-yellow-500 px-3 py-1 rounded-lg ml-3 border border-yellow-700/50">BHD</span>
+                        דינר בחרייני (دينار بحريني)
+                    </h3>
+                    
+                    <div class="mt-4 bg-slate-900/50 p-5 rounded-xl border border-slate-700">
+                        <h4 class="text-yellow-400 font-semibold mb-2">סיבת הבחירה וההיסטוריה:</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            עד שנת 1965, בחריין (כמו שאר נסיכויות המפרץ) השתמשה ב"רופי המפרץ" של בריטניה. לקראת העצמאות, בחריין בחרה להתנתק והנפיקה את המטבע המקומי שלה - הדינר. הבחירה בשם "דינר" נועדה לקשר את בחריין למורשת ההיסטורית האסלאמית המפוארת של הח'ליפויות העתיקות, בניגוד ל"ריאל" ששורשיו ספרדיים או ה"רופי" ששורשיו הודים. הדינר הבחרייני הוא <strong>המטבע השני ביוקרו בעולם</strong> (אחרי הדינר הכוויתי), ומוצמד בקשיחות לדולר (1 דינר = 2.65 דולר).
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-400 mb-4">אטימולוגיה מפורטת לחלקי שם המטבע ("דינר")</h3>
+                    
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <!-- שלב לטיני מוקדם -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">1. המקור הלטיני (Decem)</span>
+                            <span class="text-xl font-bold text-white block mb-1">Denarius (דנאריוס)</span>
+                            <p class="text-slate-400 text-sm mt-2">
+                                למרות הניסיון לבחור שם "אסלאמי", המקור הוא דווקא לטיני. ברומא העתיקה, המטבע <em>Denarius</em> היה המטבע הנפוץ ביותר. שמו נגזר מהמילה <em>Decem</em> שמשמעותה המספר "עשר", שכן ערכו ההתחלתי היה 10 איסרי נחושת.
+                            </p>
+                        </div>
+                        
+                        <!-- שלב ערבי/אסלאמי -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-yellow-500/5 rounded-2xl"></div>
+                            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest block mb-2 relative z-10">2. האימוץ הערבי</span>
+                            <span class="text-xl font-bold text-yellow-500 block mb-1 relative z-10">دينار (Dīnār)</span>
+                            <p class="text-slate-400 text-sm mt-2 relative z-10">
+                                האימפריה הערבית-אסלאמית, שהתפשטה למרחבי האימפריה הביזנטית, ירשה את המערכת המוניטרית שלה. המילה "דנאריוס" השתבשה בערבית ל"דינאר", והפכה למטבע הזהב הרשמי של האסלאם, שעל שמו קרוי כיום המטבע החזק של בחריין. בדומה לעומאן (המשתמשת בביסה), הדינר הבחרייני החזק אינו מחולק למאות, אלא ל-<strong>1,000 פילס (Fils)</strong>, גם זו מילה שמקורה ב"פוליס" הרומי.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- פוטר -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-12 w-full">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm font-medium">
+                נחקר, נכתב וקודד על ידי <strong class="text-red-600">רם</strong> &copy; 2026.
+            </p>
+            <p class="text-slate-600 text-xs mt-2">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשיר Samsung S25 Ultra.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
