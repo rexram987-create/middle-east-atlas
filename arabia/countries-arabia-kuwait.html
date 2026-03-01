@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקרי חצי האי ערב: כווית</title>
+    
+    <!-- ייבוא פונט Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-select { user-select: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-cyan-700 selection:text-white pb-10">
+
+    <!-- סרגל ניווט עליון -->
+    <nav class="w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="../index.html" class="flex items-center text-cyan-400 hover:text-cyan-300 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <span class="font-medium text-lg">חזרה לאטלס הראשי</span>
+            </a>
+            <div class="text-slate-400 font-medium">נתיב המדינות / חצי האי ערב</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-6 sm:p-10 max-w-4xl mx-auto w-full">
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-12 text-center mt-6">
+            <div class="inline-block bg-cyan-900/30 border border-cyan-700 text-cyan-400 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                קובץ מחקר היסטורי מורחב
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-4">
+                מדינת כווית
+            </h1>
+            <p class="text-xl text-slate-400 font-light">دولة الكويت (Dawlat Al-Kuwayt)</p>
+        </header>
+
+        <div class="space-y-10">
+            
+            <!-- תעודת זהות וייסוד -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-cyan-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    תעודת זהות היסטורית
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">תאריכי ייסוד ואירועים מכוננים</h3>
+                        <ul class="text-slate-400 space-y-3 leading-relaxed list-disc list-inside">
+                            <li><strong class="text-slate-200">1613 (התיישבות ראשונה):</strong> ייסוד העיר כווית ככפר דייגים קטן על ידי שבט בני ח'אלד. העיר הפכה בהמשך למרכז סחר ימי משגשג.</li>
+                            <li><strong class="text-slate-200">1899:</strong> השייח' מובארכ חותם על הסכם חסות סודי עם האימפריה הבריטית כדי לבלום את ניסיונות ההשתלטות של האימפריה העות'מאנית.</li>
+                            <li><strong class="text-cyan-300">19 ביוני 1961 (עצמאות מלאה):</strong> כווית מבטלת את הסכם החסות מול בריטניה והופכת למדינה ריבונית, עשירה ומודרנית (הראשונה באזור המפרץ עם חוקה ופרלמנט).</li>
+                            <li><strong class="text-red-400">2 באוגוסט 1990:</strong> טראומה לאומית – פלישת עיראק לכווית בהוראת סדאם חוסיין, שהובילה למלחמת המפרץ ולשחרור המדינה בפברואר 1991.</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">המייסדים והמנהיגים ההיסטוריים</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-slate-400 leading-relaxed mb-1">
+                                    <strong class="text-white text-lg">השייח' סבאח הראשון אבן ג'אבר</strong>
+                                    <br><span class="text-sm">(השליט הראשון של כווית ממשפחת א-סבאח)</span>
+                                </p>
+                                <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-cyan-400 text-sm font-medium">
+                                    <span>~1700</span> <span class="mx-2">-</span> <span>1762</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 leading-relaxed mb-1 mt-2">
+                                    <strong class="text-white text-lg">השייח' מובארכ "הגדול" א-סבאח</strong>
+                                    <br><span class="text-sm">(מייסד כווית המודרנית והריבונית)</span>
+                                </p>
+                                <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-cyan-400 text-sm font-medium">
+                                    <span>1837</span> <span class="mx-2">-</span> <span>28 בנובמבר 1915</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" class="w-14 h-7 ml-3 rounded-sm shadow-sm border border-slate-600">
+                            <!-- פסים אופקיים -->
+                            <rect width="900" height="150" fill="#007a3d"/>
+                            <rect width="900" height="150" y="150" fill="#fff"/>
+                            <rect width="900" height="150" y="300" fill="#ce1126"/>
+                            <!-- טרפז שחור משמאל -->
+                            <polygon points="0,0 250,150 250,300 0,450" fill="#000"/>
+                        </svg>
+                        דגל המדינה וצבעי הפאן-ערביות
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            דגל כווית (שאומץ ב-1961 עם קבלת העצמאות) הוא ייצוג קלאסי ומושלם של צבעי הלאומיות הערבית, המבוססים על פואמה מפורסמת של המשורר צפי א-דין אל-חילי (מהמאה ה-14): "לבנים הם מעשינו, שחורים הם קרבותינו, ירוקים הם שדותינו, ואדומות הן חרבותינו".
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            <strong class="text-slate-300">העיצוב הייחודי:</strong> הטרפז השחור הממוקם בצד התורן מסמל את תבוסת האויב ואת שדות הקרב שבהם הגנו הכוויתים על עצמאותם. הפס הירוק העליון מייצג את עצי הדקל ונווי המדבר, הלבן את הטוהר והשלום, והאדום (בניגוד לדם שבדרך כלל הוא מסמל) מייצג במפורש את החרבות האדומות מדם האויבים שהעזו לפלוש.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3">סיבת הייסוד והקשר גיאופוליטי</h3>
+                    <p class="text-slate-400 leading-relaxed text-lg">
+                        הקמתה של כווית לא נבעה מכיבוש אימפריאלי, אלא מצורך קיומי. במאה ה-17, בצורת קשה הכתה באזור נג'ד (מרכז ערב הסעודית של ימינו). שבטים בדואים החלו לנדוד צפונה אל חופי המפרץ בחיפוש אחר מים ומחיה, והתיישבו סביב מבצר קטן (ראו פרק אטימולוגיה). בזכות מיקומה האסטרטגי בצפון המפרץ הפרסי, בסמוך לשפך הנהרות של מסופוטמיה (עיראק), כווית הפכה במהירות ל<strong>עיר-מדינה סוחרת וניטרלית</strong>. היא שימשה מקלט בטוח לסוחרים שנמלטו ממלחמות בעיראק ובפרס, והפכה למרכז סחר ימי מרכזי בין הודו, חצי האי ערב והאימפריה העות'מאנית. 
+                    </p>
+                </div>
+            </section>
+
+            <!-- אטימולוגיה מורחבת של שם המדינה -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-blue-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                    אטימולוגיה: סודו של "המבצר הקטן"
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    השם כווית הוא דוגמה קלאסית לשם שנוצר מתוך מבנה צבאי-גיאוגרפי והוקטן בצורה של חיבה בשפה הערבית. להלן הניתוח הבלשני:
+                </p>
+
+                <div class="space-y-6">
+                    <!-- שלב 1: מילת הבסיס -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-blue-500"></div>
+                        <h3 class="text-xl font-bold text-blue-400 mb-3 text-2xl">1. מילת הבסיס: כּוּת (Kout / كوت)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            המקור לשם המדינה הוא המילה הערבית/ארמית <strong>"כּוּת"</strong>. המשמעות הגיאוגרפית של המילה היא <strong>מצודה, מבצר, או יישוב מוקף חומה שניצב בסמוך למקור מים חיוני</strong> (ים, נהר או אגם). המצודה שימשה לאחסון תחמושת, אגירת מזון, והגנה על אוניות המסחר שעגנו מולה.
+                            <br><br>
+                            בהיסטוריה המקומית, מסופר כי שבט "בני ח'אלד" השליט בנה מבצר כזה על החוף במאה ה-17, וכשהשבטים הנודדים הגיעו מהמדבר, הם הקימו את אוהליהם סביב אותו "כּוּת" שמסר להם הגנה.
+                        </p>
+                    </div>
+
+                    <!-- שלב 2: ההקטנה (Diminutive) -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-cyan-400"></div>
+                        <h3 class="text-xl font-bold text-cyan-400 mb-3 text-2xl">2. תבנית ההקטנה: כּוּוֵויית (Kuwayt / كويت)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            השפה הערבית עושה שימוש נרחב בתבנית "הקטנה" (תסע'יר - Diminutive) שנקראת <em>פֻעַיְל (Fu'ayl)</em>. תבנית זו משמשת כדי לתאר משהו קטן יותר, או כשם חיבה (למשל: נהר -> נֻהַיְר / חסן -> חוסיין / עבד -> עובייד).
+                            <br><br>
+                            כך, המילה "כות" (מבצר) הוזנה אל תוך תבנית ההקטנה והפכה ל-<strong>כּוּוֵויית</strong>, שפירושה המילולי הוא <strong>"המבצר הקטן" (The Little Fort)</strong>. עם השנים, המבצר הקטן הפך לעיר, העיר הפכה לאמירות, והאמירות הפכה למדינה המודרנית והעשירה שאנו מכירים כיום.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- פרק: הנפט והגז -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-slate-100 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                    עידן הנפט: עושר אגדי וטרגדיה בוערת
+                </h2>
+                
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-amber-500 mb-3">מי גילה את המשאבים?</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                גילוי הנפט בכווית היה מאבק דיפלומטי. בריטניה (בעלת החסות) רצתה את המונופול, אך חברות אמריקאיות דרשו דריסת רגל. כפשרה, הוקמה ב-1934 "חברת הנפט של כווית" (KOC), שהייתה שותפות חצי-חצי בין <strong>BP</strong> (הבריטית) ל-<strong>Gulf Oil</strong> (האמריקאית, כיום שברון). 
+                            </p>
+                        </div>
+                        
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-amber-500 mb-3">שדה בורגאן (1938)</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                ב-22 בפברואר <strong>1938</strong> (שבועות ספורים בלבד לפני גילוי הנפט המפורסם בסעודיה), הגיאולוגים פגעו בזהב שחור באזור <strong>בורגאן (Burgan)</strong>. מה שהם גילו היה לא פחות ממדהים: שדה בורגאן התברר להיות <strong>שדה הנפט היבשתי השני בגודלו בעולם כולו</strong> (אחרי שדה גוואר בסעודיה)! בגלל מלחמת העולם השנייה, חביות הנפט הראשונות יוצאו מכווית רק ב-1946.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-600">
+                        <h3 class="text-xl font-bold text-emerald-400 mb-3">השפעה: מדינת הרווחה הראשונה וטרגדית האש</h3>
+                        <p class="text-slate-300 leading-relaxed">
+                            הנפט הפך את כווית לעשירה מופלגת. היא הייתה המדינה הראשונה במפרץ שהשתמשה בכסף כדי להקים "מדינת רווחה" אולטימטיבית עם חינוך חינם מגן חובה ועד אוניברסיטה (כולל מלגות לחו"ל), בריאות בחינם ופטור ממיסים. יתרה מזאת, ב-1953 כווית הייתה <strong>הראשונה בעולם להקים "קרן הון ריבונית" (KIA)</strong>, כדי להשקיע את עודפי הנפט לעתיד הרחוק.
+                            <br><br>
+                            <strong class="text-orange-400">אש המלחמה (1991):</strong> עושר הנפט היה גם הקללה של כווית. כשהיא סירבה למחול על חובות עיראק ממלחמת איראן-עיראק (וסדאם האשים אותה ב"גניבת נפט" אופקית ממאגריו), צבא עיראק פלש למדינה ב-1990. כשהצבא העיראקי נסוג בפברואר 1991, הוא הפעיל מדיניות "אדמה חרוכה" ו<strong>הצית למעלה מ-600 בארות נפט כוויתיות</strong>. הדליקות כיסו את השמיים בעשן שחור ורעיל שגרם לחושך באמצע היום, במה שנחשב לאסון האקולוגי החמור בהיסטוריה האנושית. לקח למעלה מ-10 חודשים וצוותי כיבוי מכל העולם כדי לכבות את כל הבארות.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- נתונים גיאוגרפיים, דמוגרפיים וכלכליים -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    נתונים גיאוגרפיים, דמוגרפיים וכלכליים
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- שטח -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-900/30 p-2 rounded-lg text-indigo-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">שטח וגיאוגרפיה</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-indigo-300 mb-2">17,818 <span class="text-lg font-medium text-slate-500">קמ"ר</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            כווית היא מדינה קטנה השוכנת בקצה הצפון-מערבי של המפרץ הפרסי, ומהווה טריז אסטרטגי בין שתי הענקיות – עיראק (מצפון) וסעודיה (מדרום). פני השטח הם מדבר חולי שטוח לחלוטין. לכווית ישנם 9 איים קטנים בים, שהגדול בהם, האי בובייאן (Bubiyan), חולש על נתיבי השיט.
+                        </p>
+                    </div>
+
+                    <!-- אוכלוסייה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-900/30 p-2 rounded-lg text-pink-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">מיעוט בארצם</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-pink-300 mb-2">~ 4.3 <span class="text-lg font-medium text-slate-500">מיליון</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            כמו במרבית מדינות המפרץ העשירות, המבנה הדמוגרפי מבוסס על עבודה זרה: <strong>רק כ-30% מאוכלוסיית המדינה (כ-1.3 מיליון איש) הם אזרחים כוויתים!</strong> 70% הנותרים הם מהגרי עבודה, בעיקר מקהילות עצומות של הודים ומצרים. האזרחים הכוויתים (ברובם סונים, עם מיעוט שיעי של כ-30%) נהנים מהגנה סוציאלית אדירה ותעסוקה מובטחת במגזר הציבורי.
+                        </p>
+                    </div>
+
+                    <!-- כלכלה ותל"ג -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-emerald-900/30 p-2 rounded-lg text-emerald-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">כלכלה ותל"ג (GDP)</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-emerald-300 mb-2">~ 160 <span class="text-lg font-medium text-slate-500">מיליארד $</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            כלכלת כווית מבוססת באופן קיצוני על נפט (מהווה כ-90% מהכנסות הממשלה). כווית מחזיקה בכ-6% מכלל עתודות הנפט המוכחות בעולם כולו. בניגוד לאמירויות או לקטר שהשקיעו בגיוון דרמטי (תיירות או גז), כווית נותרה שמרנית יותר מבחינה כלכלית, אך היא מבטיחה את עתידה בזכות קרן העושר (KIA) שמנהלת למעלה מ-800 מיליארד דולר.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- מטבע ואטימולוגיה של המטבע -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    הכלכלה והמטבע: הדינר הכוויתי (שיאן העולם)
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="bg-yellow-600/20 text-yellow-500 px-3 py-1 rounded-lg ml-3 border border-yellow-700/50">KWD</span>
+                        דינר כוויתי (دينار كويتي)
+                    </h3>
+                    
+                    <div class="mt-4 bg-slate-900/50 p-5 rounded-xl border border-slate-700">
+                        <h4 class="text-yellow-400 font-semibold mb-2">המטבע היקר ביותר בכדור הארץ:</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            הדינר הכוויתי מחזיק בגאווה בתואר <strong>"המטבע בעל הערך הגבוה ביותר בעולם"</strong> (1 דינר = מעל 3.25 דולר אמריקאי, נכון לשנת 2024). המטבע הונפק לראשונה בשנת 1960 כדי להחליף את ה"רופי של המפרץ" הבריטי, לקראת קבלת העצמאות. בניגוד לרוב מטבעות המפרץ שמוצמדים קשיחות רק לדולר, הדינר הכוויתי מוצמד ל"סל מטבעות" עולמי (המורכב מהמטבעות של שותפות הסחר המרכזיות שלה), מה שמעניק לו יציבות פלדה מול תנודות עולמיות ושומר על כוח הקנייה העצום של האזרחים.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-400 mb-4">אטימולוגיה מפורטת של חלקי המטבע</h3>
+                    
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <!-- שלב 1: הדינר -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">1. המטבע הראשי: דינר (دينار)</span>
+                            <span class="text-xl font-bold text-white block mb-1">הירושה מהדנאריוס הרומי</span>
+                            <p class="text-slate-400 text-sm mt-2">
+                                בדומה למטבע של בחריין וירדן, השם "דינר" נבחר כסמל להתחברות מחדש לימי הזוהר של הח'ליפות העבאסית. אולם, השורש הבלשני הוא לטיני במקורו: מהמטבע הרומי <em>Denarius</em> (הנגזר מהמילה Decem = עשר).
+                            </p>
+                        </div>
+                        
+                        <!-- שלב 2: פילס -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-yellow-500/5 rounded-2xl"></div>
+                            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest block mb-2 relative z-10">2. חלוקת המשנה: פִילְס (فلس)</span>
+                            <span class="text-xl font-bold text-yellow-500 block mb-1 relative z-10">החותמת של יוון העתיקה</span>
+                            <p class="text-slate-400 text-sm mt-2 relative z-10">
+                                מאחר שהדינר הכוויתי כל כך יקר, הוא (בדיוק כמו המטבעות בעומאן ובחריין) אינו מחולק ל-100 אלא ל-<strong>1,000 יחידות משנה הנקראות פילס (Fils)</strong>. מאיפה הגיעה המילה פילס? גם היא שריד עתיק לאימפריות המערביות! מקורה במילה היוונית/רומית <strong>פוֹלִיס (Follis)</strong>, שהיה מטבע ברונזה זעיר שהוכנס לשימוש על ידי הקיסר דיוקלטיאנוס במאה ה-3 לספירה. השם "פוליס" התגלגל לערבית כ"פאלס" (ובהמשך ככינוי לעוני - פשיטת רגל/איפלאס), וכיום הוא משמש כאגורה של המטבע החזק בעולם.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- פוטר -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-12 w-full">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm font-medium">
+                נחקר, נכתב וקודד על ידי <strong class="text-cyan-600">רם</strong> &copy; 2026.
+            </p>
+            <p class="text-slate-600 text-xs mt-2">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשיר Samsung S25 Ultra.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
