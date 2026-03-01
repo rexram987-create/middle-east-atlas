@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקרי חצי האי ערב: קטר</title>
+    
+    <!-- ייבוא פונט Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-select { user-select: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-red-900 selection:text-white pb-10">
+
+    <!-- סרגל ניווט עליון -->
+    <nav class="w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="../index.html" class="flex items-center text-red-400 hover:text-red-300 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <span class="font-medium text-lg">חזרה לאטלס הראשי</span>
+            </a>
+            <div class="text-slate-400 font-medium">נתיב המדינות / חצי האי ערב</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-6 sm:p-10 max-w-4xl mx-auto w-full">
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-12 text-center mt-6">
+            <div class="inline-block bg-red-900/30 border border-red-700 text-red-400 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                קובץ מחקר היסטורי מורחב
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600 mb-4">
+                מדינת קטר
+            </h1>
+            <p class="text-xl text-slate-400 font-light">دولة قطر (Dawlat Qaṭar)</p>
+        </header>
+
+        <div class="space-y-10">
+            
+            <!-- תעודת זהות וייסוד -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-red-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    תעודת זהות היסטורית
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">תאריכי ייסוד ואירועים מכוננים</h3>
+                        <ul class="text-slate-400 space-y-3 leading-relaxed list-disc list-inside">
+                            <li><strong class="text-slate-200">18 בדצמבר 1878 (היום הלאומי):</strong> עלייתו לשלטון של השייח' ג'אסם בן מוחמד אאל ת'אני. הוא הצליח לאחד את השבטים הבדואים המפוצלים בחצי האי תחת הנהגה אחת.</li>
+                            <li><strong class="text-red-300">מרץ 1893 (קרב אל-וג'בה):</strong> אירוע היסטורי והרפתקני מכונן שבו כוח קטרי קטן בראשות השייח' ג'אסם הצליח להביס כוח צבאי גדול של האימפריה העות'מאנית. הניצחון הזה סימן את תחילת העצמאות הקטרית בפועל והרתיע פולשים עתידיים.</li>
+                            <li><strong class="text-slate-200">1916:</strong> חתימה על "הסכם חסות" (Protectorate) עם האימפריה הבריטית, שהעניק לבריטים שליטה על מדיניות החוץ של קטר בתמורה להגנה ימית.</li>
+                            <li><strong class="text-red-400">3 בספטמבר 1971:</strong> סיום החסות הבריטית. קטר סירבה להצטרף לאיחוד האמירויות הערביות או לבחריין, והכריזה על עצמה כמדינה ריבונית עצמאית לחלוטין.</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">המייסד ושנות חייו</h3>
+                        <p class="text-slate-400 leading-relaxed mb-2">
+                            <strong class="text-white text-xl">השייח' ג'אסם בן מוחמד אאל ת'אני</strong>
+                            <br>(מייסד האומה, לוחם, משורר ופוליטיקאי ממולח)
+                        </p>
+                        <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-red-400 text-sm font-medium mb-4">
+                            <span>~1825 (קטר)</span>
+                            <span class="mx-2">-</span>
+                            <span>17 ביולי 1913 (לוסייל)</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            השייח' ג'אסם מתואר בהיסטוריוגרפיה הקטרית כדמות גדולה מהחיים: הוא היה לא רק לוחם שהדף את העות'מאנים והבריטים בעזרת דיפלומטיה חכמה ומאבקים מזוינים, אלא גם פוסק הלכה (קאדי), סוחר פנינים עשיר, ומשורר שכתב על אהבתו למדבר ולחצי האי הקטרי.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 500" class="w-14 h-7 ml-3 rounded-sm shadow-sm border border-slate-600">
+                            <!-- רקע בורדו -->
+                            <rect width="1100" height="500" fill="#8D1B3D"/>
+                            <!-- חלק לבן עם 9 שיניים -->
+                            <polygon points="0,0 300,0 350,27.7 300,55.5 350,83.3 300,111.1 350,138.8 300,166.6 350,194.4 300,222.2 350,250 300,277.7 350,305.5 300,333.3 350,361.1 300,388.8 350,416.6 300,444.4 350,472.2 300,500 0,500" fill="#fff"/>
+                        </svg>
+                        דגל המדינה: "אל-עדעם" וסודות צבע הארגמן
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            דגל קטר (המכונה בערבית "אל-עדעם" - Al Adaam) הוא ייחודי בעולם בשל יחס האורך שלו (11:28, הארוך והצר ביותר מבין דגלי המדינות בעולם) ובשל צבעו הלבן והבורדו-יין (Maroon) העמוק. 
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            <strong class="text-slate-300">האגדה על צבע הבורדו:</strong> במקור, דגלי השבטים במפרץ היו אדומים בוהקים. בקטר שלטה תעשייה עתיקה (מלפני כ-3,000 שנה, מתקופת הכשים) של הפקת צבע ארגמן יוקרתי מחלזונות ים באזור איי אל-ח'ור (Al Khor). יתרה מזאת, כאשר הניפו את הדגלים האדומים תחת שמש המדבר הקופחת והלחות של המפרץ, הצבע האדום דהה במהירות והתכהה לגוון בורדו עמוק. הקטרים אימצו את הצבע הדהוי הזה כסמל האותנטי שלהם, וכיום הוא מוגדר רשמית כצבע "קטר-רד" (Pantone 1955 C).
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            <strong class="text-slate-300">הגיאומטריה של 9 השיניים:</strong> תשע השיניים המשוננות המפרידות בין הלבן לבורדו אינן בחירה אקראית של עיצוב. הן מסמלות את קטר כחברה ה-9 ב"אמירויות המפוייסות" (Trucial States) – לאחר חתימת הסכם ההגנה עם בריטניה ב-1916 (האמירויות ה-1 עד ה-7 מהוות היום את איחוד האמירויות, השמינית היא בחריין, וקטר סגרה את הרשימה כתשיעית).
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- אטימולוגיה מורחבת של שם המדינה -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-orange-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                    אטימולוגיה מורחבת: מקור השם "קטר"
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    השם "קטר" אינו יצירה מודרנית; הוא אחד השמות הגיאוגרפיים העתיקים והיציבים ביותר בחצי האי ערב. הוא הופיע בכתבים היסטוריים ומערביים כבר לפני כאלפיים שנה, וישנן שתי תיאוריות מרכזיות (מערבית וערבית) המסבירות את מקורו:
+                </p>
+
+                <div class="space-y-6">
+                    <!-- תיאוריה 1: קטרה של תלמי -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-orange-500"></div>
+                        <h3 class="text-xl font-bold text-orange-400 mb-3 text-2xl">1. קַטָרָה (Catara) – מפות קלאודיוס תלמי</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            במאה ה-1 לספירה, הסופר והחוקר הרומי <strong>פליניוס הזקן</strong> התייחס בכתביו לתושבי האזור כ"קתארי" (Catharrei) – שבטים נוודים השולטים בדרכי המסחר. מאה שנים מאוחר יותר, הגיאוגרף והאסטרונום היווני-רומי הנודע <strong>קלאודיוס תלמי (Ptolemy)</strong> שרטט במפות המזרח שלו יישוב ונמל מרכזי בשם <strong>Catara</strong> (קטארה), שמוקם בדיוק בחצי האי הקטרי של ימינו. 
+                            <br><br>
+                            השם השתמר בפי יורדי הים והסוחרים לאורך הדורות והתפתח להגייה הערבית המקומית "קטר" (Qaṭar). כהומאז' להיסטוריה העתיקה הזו, הממשלה הקטרית הקימה בעשור האחרון את "כפר התרבות קטארה" (Katara Cultural Village) - מתחם אמנות ותרבות מפואר בלב דוחה הנושא את השם המקורי.
+                        </p>
+                    </div>
+
+                    <!-- תיאוריה 2: השורש הערבי - טיפות וגשם -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-red-400"></div>
+                        <h3 class="text-xl font-bold text-red-400 mb-3 text-2xl">2. השורש הערבי המקומי: ק-ט-ר (Q-T-R)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            בלשנים ערבים מציעים פירוש עמוק המבוסס על השפה עצמה. השורש <strong>ק-ט-ר</strong> בערבית משמעותו <strong>"טפטוף", "נזילה" או "טיפות גשם"</strong> (ומכאן גם המילה "קַטְר" - גשם היורד בטיפות פתאומיות). 
+                            <br><br>
+                            <strong class="text-red-300">ההקשר הגיאוגרפי והאנושי:</strong>
+                            ישנם שני הסברים רומנטיים-היסטוריים לפירוש זה. הראשון טוען שחצי האי קטר היה מפורסם בקרב הבדואים כמקום שאליו יורדים ענני גשם פתאומיים (באופן יחסי למדבר הענק והצחיח של סעודיה השכנה), ויוצרים מאגרי מים זמניים. ההסבר השני והפואטי יותר קושר את ה"טיפות" ל<strong>טיפות הזיעה ולדמעות של שולי הפנינים</strong>, שכן קטר הייתה במשך מאות שנים מרכז עולמי של תעשיית שליית הפנינים הקשוחה והמסוכנת, הרבה לפני שמישהו ידע שיש מתחת לאדמתה גז ונפט.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- פרק: הנפט והגז - השדה הצפוני -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-slate-100 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                    עידן האנרגיה: ההימור המטורף על "השדה הצפוני"
+                </h2>
+                
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-red-500 mb-3">מי גילה את המשאבים?</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                הנפט בקטר התגלה לראשונה בשנת <strong>1939</strong> בשדה דוחאן (Dukhan) במערב חצי האי, על ידי גיאולוגים של חברת הנפט העיראקית (IPC הבריטית-צרפתית-אמריקאית). אך מלחמת העולם השנייה עיכבה את הפקתו עד 1949.
+                                <br><br>
+                                אולם, הפלא האמיתי של קטר איננו נפט, אלא <strong>גז טבעי</strong>. בשנת <strong>1971</strong>, צוות קידוח ימי של חברת <strong>Shell</strong> הבריטית גילה במים הטריטוריאליים של קטר את ה-"North Field" (השדה הצפוני). למרבה האירוניה, הנהלת Shell הייתה מאוכזבת – הם חיפשו נפט, ובאותם ימים גז נחשב למוצר לוואי זול וחסר ערך שקשה מאוד לשנע על פני האוקיינוסים. במשך קרוב ל-20 שנה, השדה האדיר הזה שכב כמעט ללא שימוש בתחתית הים.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-red-500 mb-3">היסטוריית הגילוי והפיתוח</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                הכל השתנה ב-1995. השייח' חמד בן ח'ליפה הדיח את אביו השמרן ותפס את השלטון. הוא הבין שקטר יושבת על אוצר גלובלי: <strong>מאגר הגז הלא-נלווה הגדול ביותר בכדור הארץ</strong>. (פרט גיאופוליטי מרתק: השדה הזה משותף בחציו עם <strong>איראן</strong>, שקוראת לחלק שלה "פארס הדרומי", מה שמחייב את קטר לנהל יחסים דיפלומטיים זהירים מאוד מול טהראן).
+                                <br><br>
+                                נגד עצתם של מומחים רבים, השייח' חמד לקח הלוואות עתק של מיליארדי דולרים והכניס את קטר לשותפות אסטרטגית עם חברות מערביות (בעיקר ExxonMobil) לפיתוח טכנולוגיה חדישה של <strong>הנזלת גז (LNG - Liquefied Natural Gas)</strong>. קירור הגז למינוס 162 מעלות צלזיוס הפך אותו לנוזל ואיפשר לדחוס אותו לאוניות ענק ולשווק אותו לכל העולם, במיוחד לאסיה ואירופה.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-600">
+                        <h3 class="text-xl font-bold text-emerald-400 mb-3">ההשפעה הדרמטית: מנקודה במדבר למעצמה עולמית</h3>
+                        <p class="text-slate-300 leading-relaxed">
+                            ההימור על הגז הנוזלי הצליח בצורה חסרת תקדים והפך את קטר (המדינה הזעירה) ליצואנית ה-LNG הגדולה בעולם. נהר של טריליוני דולרים זרם פנימה. העושר הזה איפשר לקטר לקנות נכסים אייקוניים בעולם (כמו קבוצת הכדורגל פ.ס.ז', מגדל שארד בלונדון וכלבו הרודס). 
+                            <br><br>
+                            חשוב מכך, העושר העניק לקטר <strong>מדיניות חוץ עצמאית לחלוטין</strong> ("עוצמה רכה"). היא הקימה את אימפריית התקשורת <strong>אל-ג'זירה</strong>, הפכה למתווכת בינלאומית בין המערב לארגונים קיצוניים (כמו הטליבאן וחמאס), ואירחה את מונדיאל 2022. העצמאות הזו הכעיסה את סעודיה והאמירויות, שהטילו על קטר מצור יבשתי ואווירי חמור (2017-2021). המצור נכשל, משום שאירופה ואסיה המשיכו לקנות את הגז הקטרי היקר מכל משמר, מה שחיזק את מעמדה העצמאי של קטר.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- נתונים גיאוגרפיים, דמוגרפיים וכלכליים -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    נתונים גיאוגרפיים, דמוגרפיים וכלכליים
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- שטח -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-900/30 p-2 rounded-lg text-indigo-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">שטח וגיאוגרפיה</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-indigo-300 mb-2">11,581 <span class="text-lg font-medium text-slate-500">קמ"ר</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            קטר היא חצי אי קטן (בערך בגודל של חצי ממדינת ישראל) הבולט מתוך סעודיה אל תוך מימי המפרץ הפרסי. רוב שטחה הוא מישור מדברי שטוח, אבני וצחיח לחלוטין המכוסה בדיונות חול בדרום. המדינה נעדרת כל מקור מים מתוקים טבעי (נהר או אגם) ונסמכת במאה אחוז על מפעלי התפלת מי ים ענקיים.
+                        </p>
+                    </div>
+
+                    <!-- אוכלוסייה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-900/30 p-2 rounded-lg text-pink-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">א-נומליה דמוגרפית</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-pink-300 mb-2">~ 2.9 <span class="text-lg font-medium text-slate-500">מיליון</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            בדומה לאמירויות, הדמוגרפיה בקטר היא חסרת תקדים בעולם הדמוקרטי: <strong>רק כ-12% (כ-350,000 בני אדם בלבד) הם אזרחים קטריים אמיתיים.</strong> הרוב המוחלט של התושבים (88%) הם עובדים זרים ומהגרים מדרום אסיה (הודו, פקיסטן, נפאל ובנגלדש) שהגיעו לעבוד בבניית גורדי השחקים ואצטדיוני המונדיאל במסגרת שיטת ה"כפאללה" (Kafala) מעוררת המחלוקת. האזרחים, לעומת זאת, נהנים מחיים ללא מסים, אדמות בחינם מהמדינה, וחינוך ובריאות מסובסדים במלואם.
+                        </p>
+                    </div>
+
+                    <!-- כלכלה ותל"ג -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-emerald-900/30 p-2 rounded-lg text-emerald-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">כלכלה ותל"ג (GDP)</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-emerald-300 mb-2">~ 235 <span class="text-lg font-medium text-slate-500">מיליארד $</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            קטר מדורגת בעקביות במקום הראשון או השני בעולם ברשימת <strong>התל"ג לנפש (PPP)</strong> הגבוה בעולם, המוערך בכ-120,000 דולר לאדם. הכלכלה נשענת על ייצוא הגז הטבעי לחברות באסיה ולמדינות באירופה. כחלק מלקחי העתיד, קטר הקימה את קרן העושר הריבונית QIA, המנהלת כמעט חצי טריליון דולר כדי להבטיח הכנסות גם ב"יום שאחרי הגז".
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- מטבע ואטימולוגיה של המטבע -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    הכלכלה והמטבע: הריאל הקטרי והמטבע של מריה תרזה
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="bg-yellow-600/20 text-yellow-500 px-3 py-1 rounded-lg ml-3 border border-yellow-700/50">QAR</span>
+                        ריאל קטרי (ريال قطري)
+                    </h3>
+                    
+                    <div class="mt-4 bg-slate-900/50 p-5 rounded-xl border border-slate-700">
+                        <h4 class="text-yellow-400 font-semibold mb-2">סיבת הבחירה וההיסטוריה הפיננסית המורכבת:</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            לפני גילוי הנפט והגז, המסחר במפרץ היה אנרכי מבחינה מוניטרית. שולי הפנינים בקטר סחרו בעזרת מטבעות כסף וזהב אירופאיים, כשהמפורסם שבהם היה <strong>הטאלר של מריה תרזה</strong> (מטבע כסף מאוסטריה, שהערבים כינו "אבו טיר" - אבי הציפור, בשל סמל הנשר שעליו). עם כניסת הבריטים, קטר עברה להשתמש ב"רופי המפרץ" שהונפק על ידי הודו. בשנת 1966, לאחר שכלכלת הודו קרסה והרופי פוחת, קטר מיהרה להתנתק ממנו והנפיקה מטבע מעבר יחד עם דובאי. כעבור מספר שנים (ב-<strong>1973</strong>, לאחר שדובאי הצטרפה לאמירויות), קטר המשיכה בדרכה העצמאית והנפיקה לבדה את ה"ריאל הקטרי". כיום, הריאל מוצמד (Pegged) באופן מלא לדולר האמריקאי בשער קבוע של 3.64, מה שמבטיח יציבות עסקית מוחלטת לתעשיית הגז שלה שנסחרת בדולרים.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-400 mb-4">אטימולוגיה מפורטת לחלקי שם המטבע ("ריאל")</h3>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">1. המקור הלטיני</span>
+                            <span class="text-xl font-bold text-white block mb-1">Regalis (רֶגָאלִיס / מלכותי)</span>
+                            <p class="text-slate-400 text-sm mt-2">
+                                בדומה לשכנותיה סעודיה, תימן ועומאן (וגם איראן שממול), השם נגזר מהמילה הלטינית העתיקה <em>Regalis</em> (הקשורה למילה Rex) ומציינת דבר מה השייך לכתר או למלך.
+                            </p>
+                        </div>
+                        
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-yellow-500/5 rounded-2xl"></div>
+                            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest block mb-2 relative z-10">2. הגלגול האירופי והאימוץ הערבי</span>
+                            <span class="text-xl font-bold text-yellow-500 block mb-1 relative z-10">Real (ריאל)</span>
+                            <p class="text-slate-400 text-sm mt-2 relative z-10">
+                                המילה הלטינית הפכה ל"ריאל" בספרדית ופורטוגזית. משום שהאימפריות האיבריות הללו שלטו במסחר הימי באוקיינוס ההודי במאות ה-16 וה-17, מטבעות הכסף ה"ריאל" שלהם הציפו את חופי המפרץ הפרסי. הבדואים וסוחרי הפנינים של קטר אימצו את המילה "ריאל" כשם גנרי למטבע אמין וחזק, וכאשר קטר הפכה למדינה מודרנית ועשירה - היא קראה לכסף הלאומי שלה על שם אותו מטבע היסטורי שהביאו אליה יורדי הים מאירופה.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- פוטר -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-12 w-full">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm font-medium">
+                נחקר, נכתב וקודד על ידי <strong class="text-red-600">רם</strong> &copy; 2026.
+            </p>
+            <p class="text-slate-600 text-xs mt-2">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשיר Samsung S25 Ultra.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
