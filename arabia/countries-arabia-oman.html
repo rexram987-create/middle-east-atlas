@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקרי חצי האי ערב: עומאן</title>
+    
+    <!-- ייבוא פונט Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-select { user-select: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-amber-700 selection:text-white pb-10">
+
+    <!-- סרגל ניווט עליון -->
+    <nav class="w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="../index.html" class="flex items-center text-amber-500 hover:text-amber-400 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <span class="font-medium text-lg">חזרה לאטלס הראשי</span>
+            </a>
+            <div class="text-slate-400 font-medium">נתיב המדינות / חצי האי ערב</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-6 sm:p-10 max-w-4xl mx-auto w-full">
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-12 text-center mt-6">
+            <div class="inline-block bg-amber-900/30 border border-amber-700 text-amber-500 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                קובץ מחקר היסטורי מורחב
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500 mb-4">
+                סולטנות עומאן
+            </h1>
+            <p class="text-xl text-slate-400 font-light">سلطنة عُمان (Salṭanat ʿUmān)</p>
+        </header>
+
+        <div class="space-y-10">
+            
+            <!-- תעודת זהות וייסוד -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-amber-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    תעודת זהות היסטורית
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">תאריכי ייסוד ואירועים מכוננים</h3>
+                        <ul class="text-slate-400 space-y-3 leading-relaxed list-disc list-inside">
+                            <li><strong class="text-slate-200">26 בינואר 1650:</strong> ציון דרך היסטורי! כוחות עומאניים מגרשים סופית את האימפריה הפורטוגזית מהעיר מוסקט לאחר 143 שנות כיבוש. תאריך זה הופך את עומאן למדינה הערבית העצמאית העתיקה ביותר במזרח התיכון המודרני.</li>
+                            <li><strong class="text-slate-200">1744:</strong> ייסוד שושלת "אאל סעיד" (آل سعيد). השושלת הדפה פלישות פרסיות וביססה את עומאן כאימפריה ימית ששלטה על נתיבי הסחר באוקיינוס ההודי.</li>
+                            <li><strong class="text-amber-400">23 ביולי 1970 (יום הרנסאנס - א-נהד'ה):</strong> הפיכת חצר דרמטית. הסולטאן קאבוס, בגיבוי בריטי, מדיח את אביו השמרן והמסתגר, ופותח את עומאן לעידן של מודרניזציה, בניית תשתיות ושלום פנימי.</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">המייסד המודרני ושנות חייו</h3>
+                        <p class="text-slate-400 leading-relaxed mb-2">
+                            <strong class="text-white text-xl">הסולטאן קאבוס בן סעיד אאל סעיד</strong>
+                            <br>(אבי האומה המודרנית והרנסאנס העומאני)
+                        </p>
+                        <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-amber-500 text-sm font-medium mb-4">
+                            <span>18 בנובמבר 1940 (סלאלה)</span>
+                            <span class="mx-2">-</span>
+                            <span>10 בינואר 2020 (מוסקט)</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            הסולטאן קאבוס נחשב לאחת הדמויות המוערכות ביותר בעולם הערבי. הוא התחנך באקדמיה הצבאית סנדהרסט בבריטניה, וכשחזר לארצו מצא מדינה ענייה ומבודדת עם קילומטרים ספורים של כבישים סלולים ובית חולים אחד. במהלך 50 שנות שלטונו הוא הפך את עומאן לפנינה של קידמה, יציבות וניטרליות דיפלומטית עולמית.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" class="w-14 h-7 ml-3 rounded-sm shadow-sm border border-slate-600">
+                            <!-- חלקים אופקיים -->
+                            <rect width="900" height="150" fill="#fff"/>
+                            <rect width="900" height="150" y="150" fill="#ce1126"/>
+                            <rect width="900" height="150" y="300" fill="#007a3d"/>
+                            <!-- פס אדום אנכי (בצד התורן - שמאל) -->
+                            <rect width="250" height="450" fill="#ce1126"/>
+                            <!-- סמל עומאן מופשט בלבן (חנג'ר ושתי חרבות מוצלבות) -->
+                            <g transform="translate(125, 75) scale(0.6)">
+                                <line x1="-35" y1="-35" x2="35" y2="35" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+                                <line x1="35" y1="-35" x2="-35" y2="35" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+                                <path d="M -10 -15 Q 0 15 -15 35 Q -5 45 10 35 Q 25 15 10 -15 Z" fill="#fff"/>
+                            </g>
+                        </svg>
+                        דגל המדינה ומשמעותו החזותית
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            הדגל העומאני אומץ רשמית עם עלייתו של הסולטאן קאבוס ב-1970, והוא מהווה מפת דרכים גיאוגרפית והיסטורית של המדינה: הצבע <strong>הלבן</strong> מסמל שלום, וכן מייצג את ה"אימאמות" - הזרם הדתי העתיק ששלט בהרי הפנים של המדינה. ה<strong>אדום</strong> מסמל את שושלת אאל סעיד השולטת באזורי החוף (עיר הבירה מוסקט), ואת המאבקים להגנת המולדת. ה<strong>ירוק</strong> מסמל את "ההר הירוק" (ג'בל אח'דר) הפורה שבצפון, ואת החקלאות הייחודית של המדינה.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            <strong class="text-slate-300">הסמל הלאומי (הח'נג'ר):</strong> בפינה העליונה של הדגל ניצב סמל מרהיב המורכב משתי חרבות ערביות מוצלבות, ועליהן <strong>ח'נג'ר (خنجר - פגיון מסורתי מעוקל)</strong> בחגורתו המעוטרת. הח'נג'ר אינו רק סמל מדיני, אלא הפריט החשוב ביותר בלבוש המסורתי של הגבר העומאני עד היום. הוא נענד בטקסים, בחתונות ובפגישות רשמיות, ומהווה סמל אותנטי לגבריות, כבוד והגנה על המשפחה והשבט.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3">סיבת הייסוד והקשר גיאופוליטי אדיר ממדים</h3>
+                    <p class="text-slate-400 leading-relaxed text-lg">
+                        בשונה מרוב מדינות ערב המודרניות ששורטטו על ידי מעצמות זרות (סייקס-פיקו), <strong>עומאן הייתה אימפריה בעצמה</strong>. במאות ה-18 וה-19, האימפריה העומאנית החזיקה בצי ימי אדיר ששלט ממיצרי הורמוז, דרך חופי פקיסטן (העיר גוואדר) ועד מזרח אפריקה (זנזיבר ומומבסה). המדינה המודרנית של ימינו עוצבה מתוך רצון לשמר את ריבונותה הבלתי-תלויה בנקודה הקריטית ביותר בעולם ליצוא נפט – <strong>מיצר הורמוז</strong>.
+                        <br><br>
+                        גיאופוליטית, עומאן מתפקדת כ<strong>"שווייץ של המזרח התיכון"</strong>: היא המדינה היחידה שמקיימת יחסים חמים ופתוחים במקביל עם איראן, סעודיה, ארצות הברית, בריטניה, ובעלת קשרים היסטוריים עם ישראל. היא משמשת כמתווכת השקטה בכל משבר אזורי (כולל עסקת הגרעין האיראנית ושחרור בני ערובה).
+                    </p>
+                </div>
+            </section>
+
+            <!-- אטימולוגיה ופוליטיקה של השם ושל המונח סולטנות -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-orange-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                    אטימולוגיה ופוליטיקה: מה זו "סולטנות" ולמה לא אמירות?
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    המשכנו את המחקר הלשוני שלנו! אם באיחוד האמירויות למדנו מה זה "אמיר", עכשיו ננתח את המושג הבלעדי לעומאן כיום: "סולטנות" (Sultanate), וכן את מקור שמה הגיאוגרפי של המדינה.
+                </p>
+
+                <div class="space-y-6">
+                    <!-- מקור השם עומאן -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-cyan-500"></div>
+                        <h3 class="text-xl font-bold text-cyan-400 mb-3 text-2xl">1. השם הגיאוגרפי: עֻומאן (عُمان)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            כמו במקרים רבים של שמות עתיקים בני אלפי שנים, המקור המדויק לוט בערפל, אך הבלשנים מציעים שתי תיאוריות מרכזיות (ויש שיאמרו אף פואטיות):
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-slate-400 mb-1">תאוריית ההתיישבות השורשית:</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    השם נגזר מהשורש הערבי <strong>ע-מ-ן (ع-م-ن)</strong>, שפירושו המקורי הוא "להתיישב", "לנוח" או "לשהות במקום אחד" (קשור גם למילה הערבית 'אמן' - ביטחון ויציבות). מכיוון שעומאן נהנית ממקורות מים, מעיינות וחקלאות (בניגוד למדבר רובע אל-ח'אלי הריק שמאחוריה), היא היוותה מאז ומתמיד ארץ של יישובי קבע, בניגוד למרחבי הנוודות של הבדואים.
+                                </p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-slate-400 mb-1">תאוריית ההגירה מתימן:</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    מסורת היסטורית ענפה גורסת כי לאחר קריסת "סכר מאריב" המפורסם בתימן העתיקה, היגרו שבטים ערביים גדולים מזרחה. לטענתם, הם הגיעו מאזור בתימן שנקרא "אומאן" (Uman), ופשוט העניקו את שם מולדתם הישנה והאהובה למולדתם החדשה שלחופי האוקיינוס.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- פוליטיקה של סולטנות -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-amber-500"></div>
+                        <h3 class="text-xl font-bold text-amber-400 mb-3 text-2xl">2. פוליטיקה: מה זה בעצם "סולטאן"? (سلطان)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            התואר "סולטאן" הוא הרבה יותר מסתם מילה נרדפת למלך. בעוד "אמיר" מסמל פיקוד צבאי או ניהול טריטוריה קטנה, התואר סולטאן מציין <strong>את הסמכות המוחלטת והשלטון הארצי עצמו</strong>.
+                        </p>
+                        
+                        <div class="bg-slate-800 p-5 rounded-xl border border-slate-600 mb-4">
+                            <span class="block text-sm font-bold text-amber-300 mb-1">השורש: ס-ל-ט (س - ل - ط)</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                השורש השמי משמעותו כוח, עוצמה, סמכות או אכיפה. (זהו בדיוק אותו שורש של המילה העברית <strong>"לשלוט" או "שלטון"</strong>). היסטורית, הסולטאן היה המנהיג החילוני-ביצועי שהחזיק בכוח הפוליטי האמיתי, בניגוד לח'ליף או לאימאם שהחזיקו בסמכות דתית-רוחנית בלבד.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- החיבור לסולטנות אחת -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-emerald-500"></div>
+                        <h3 class="text-xl font-bold text-emerald-400 mb-3 text-2xl">3. "סולטנות עומאן" המאוחדת: סוף הפיצול</h3>
+                        <p class="text-slate-300 text-base leading-relaxed">
+                            הסיבה שעומאן קוראת לעצמה היום סולטנות נעוצה בהיסטוריה המפוצלת שלה. במשך מאות שנים, הארץ חולקה לשניים: 
+                            <br>1. <strong>"עומאן" (הפנים ההררי)</strong> – נשלטה על ידי מנהיגי דת שמרנים שנקראו "אימאמים". 
+                            <br>2. <strong>"מוסקט" (עיר החוף)</strong> – נשלטה על ידי שליטים חילוניים, סוחרים ופוליטיקאים שכונו "סולטאנים".
+                            <br><br>
+                            למעשה, שמה הרשמי של המדינה עד המאה ה-20 היה "סולטנות מוסקט ועומאן". רק בשנת 1970, כשעלה הסולטאן קאבוס, הוא החליט לאחד סופית את החוף וההרים, ביטל את הפיצול הדתי-חילוני, והכריז על ישות שלטונית אחידה אחת: <strong>"סולטנות עומאן"</strong>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- פרק הנפט והגז -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-slate-100 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                    עידן הזהב השחור: מאבק גיאולוגי וברכה במסווה
+                </h2>
+                
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-amber-500 mb-3">מי גילה את המשאבים?</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                בניגוד לסעודיה שבה הנפט פרץ מן החולות בקלות יחסית, בעומאן הטופוגרפיה הייתה סיוט לגיאולוגים: הרים מבותרים, סלעים עתיקים ואזורים ללא גישה. קבוצות מערביות – בעיקר <strong>Shell</strong> (חברת הנפט המלכותית ההולנדית) ו-<strong>BP</strong> – הקימו תאגיד שקיבל את הזיכיון לחפש במדינה. האכזבות היו כה גדולות, שלאחר סדרת קידוחים יבשים ב-1960, רוב השותפות (כולל BP) נטשו את הפרויקט בייאוש, והשאירו את Shell להמשיך לחפור כמעט לבדה.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-amber-500 mb-3">היסטוריית הגילוי והטכנולוגיה הקיצונית</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                ההתעקשות השתלמה בסוף. בשנת <strong>1962</strong>, באיחור של עשרות שנים אחרי שכנותיה למפרץ, התגלה שדה הנפט המסחרי הראשון בשדה יבאל (Yibal). יצוא הנפט הראשון יצא מנמלי עומאן רק ב-1967. 
+                                <br><br>
+                                המאפיין הבולט ביותר של הנפט העומאני הוא הקושי להפיק אותו. שדות הנפט קטנים, מורכבים וסמיכים מאוד. כדי להוציא אותו מהאדמה, עומאן נאלצה להפוך לחלוצה עולמית בטכנולוגיות <strong>EOR (Enhanced Oil Recovery)</strong> – כמו קידוחים אופקיים עמוקים, הזרקת פולימרים, והזרקת קיטור בטמפרטורות אדירות (המיוצר באמצעות אנרגיה סולארית!) כדי להמיס את הנפט הסמיך ולאפשר לו לזרום החוצה.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-600">
+                        <h3 class="text-xl font-bold text-emerald-400 mb-3">ההשפעה על המדינה (ברכה במסווה)</h3>
+                        <p class="text-slate-300 leading-relaxed">
+                            הנפט הוציא את עומאן מעידן החושך. כדי להבין את הפער: עד 1970 היו בכל עומאן רק 3 בתי ספר יסודיים, שני רופאים, ופחות מ-10 ק"מ של כבישים סלולים! כספי הנפט מימנו את "רנסאנס קאבוס" שבנה מערכת חינוך ובריאות מתקדמת בחינם.
+                            <br><br>
+                            באופן אירוני, העובדה שיש לעומאן <strong>הרבה פחות נפט</strong> מסעודיה או האמירויות – התגלתה כברכה היסטורית ארוכת טווח. המחסור בכסף קל הכריח את עומאן להתנהל בשמרנות פיננסית. היא לא נכנסה להרפתקאות צבאיות או מירוצי חימוש, מיהרה לפתח תעשיות חלופיות (לוגיסטיקה ימית, דיג, מפעלי אלומיניום), ושמרה בקנאות על התרבות והאדריכלות המקומית. במקום גורדי השחקים המפלצתיים מפלדה וזכוכית של דובאי או דוחה, מוסקט היא עיר לבנה, נמוכת קומה, קסומה ואותנטית, המשתלבת בהרי הגרניט המקיפים אותה.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- נתונים גיאוגרפיים, דמוגרפיים וכלכליים -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    נתונים גיאוגרפיים, דמוגרפיים וכלכליים
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- שטח -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-900/30 p-2 rounded-lg text-indigo-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">גיאוגרפיה של הפכים</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-indigo-300 mb-2">309,500 <span class="text-lg font-medium text-slate-500">קמ"ר</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            עומאן היא המדינה השנייה בגודלה בחצי האי ערב. הטופוגרפיה שלה מרהיבה ומגוונת: רצועת חוף ארוכה של מעל 3,000 ק"מ, הרי חג'אר הנישאים לגובה של מעל 3,000 מטר (ג'בל שאמס), ומדבר חולות צחיח במרכז. 
+                            הפלא הגיאוגרפי הגדול ביותר מתרחש בדרום, באזור העיר <strong>סלאלה</strong>: מדי קיץ האזור מושפע מעונת המונסונים (ה"ח'ריף"), והופך ממדבר צחיח לג'ונגל ירוק ועבות עם מפלי מים ומזג אוויר ערפילי, המושך אליו מיליוני תיירים סעודים הבורחים מהחום.
+                        </p>
+                    </div>
+
+                    <!-- אוכלוסייה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-900/30 p-2 rounded-lg text-pink-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">אוכלוסייה: סובלנות איבאדית</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-pink-300 mb-2">~ 4.6 <span class="text-lg font-medium text-slate-500">מיליון</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            עומאן מאוזנת דמוגרפית הרבה יותר משכנותיה (כ-60% אזרחים ו-40% עובדים זרים). אך מה שבאמת מייחד אותה הוא הדת. רוב אזרחיה המוסלמים אינם סונים ואינם שיעים, אלא משתייכים לזרם ה<strong>איבאדי (Ibadi)</strong> – זרם אסלאמי עתיק הקיים כמעט בלעדית בעומאן. זהו זרם מתון, שקט ופייסני, הדוגל בסובלנות קיצונית, קבלת האחר והימנעות משפיכות דמים. אידאולוגיה דתית זו היא הבסיס לניטרליות ולרוגע המאפיינים את רחובות המדינה.
+                        </p>
+                    </div>
+
+                    <!-- כלכלה ותל"ג -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-emerald-900/30 p-2 rounded-lg text-emerald-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">כלכלה ותל"ג (GDP)</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-emerald-300 mb-2">~ 108 <span class="text-lg font-medium text-slate-500">מיליארד $</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            כלכלת עומאן נחשבת לכלכלה מבוססת ובעלת הכנסה גבוהה, הנשענת בעיקר על יצוא נפט וגז טבעי. בשל הידלדלות המשאבים, המדינה מובילה את פרויקט "חזון עומאן 2040", שבמסגרתו מוקמים מיזמי ענק חלופיים כמו <strong>נמל דוקם (Duqm)</strong> - עיר נמל ותעשייה עצומה הנבנית על שפת האוקיינוס ההודי, המאפשרת לספינות סחר עולמיות לפרוק סחורות מבלי להיכנס אל המים המסוכנים של המפרץ הפרסי.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- מטבע ואטימולוגיה של המטבע -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    הכלכלה והמטבע: הריאל העומאני וסוד ה"ביסה" מהודו
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="bg-yellow-600/20 text-yellow-500 px-3 py-1 rounded-lg ml-3 border border-yellow-700/50">OMR</span>
+                        ריאל עומאני (ريال عُماني)
+                    </h3>
+                    
+                    <div class="mt-4 bg-slate-900/50 p-5 rounded-xl border border-slate-700">
+                        <h4 class="text-yellow-400 font-semibold mb-2">ההיסטוריה המוניטרית: המטבע מהודו למפרץ</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            עומאן היא מדינה שפניה תמיד הופנו אל הים הפתוח (האוקיינוס ההודי) ולא אל המדבר. בשל כך, השותפה המסחרית הגדולה ביותר שלה לאורך ההיסטוריה הייתה תת-היבשת ההודית. עד שנת 1970, המטבע הרשמי בעומאן היה "רופי המפרץ" (גרסה של הרופי ההודי שהודפסה על ידי הבריטים), ומטבעות כסף כבדים. 
+                            <br><br>
+                            כאשר הסולטאן קאבוס עלה לשלטון, הוא רצה לבסס עצמאות גמורה והנהיג מטבע לאומי בשם "ריאל סעידי" (על שם שושלת אאל סעיד). ב-1973, עם שינוי שם המדינה לסולטנות עומאן, שונה שם המטבע ל"ריאל עומאני". המטבע מוחזק במכוון כשער חליפין גבוה וקבוע לדולר, מה שהופך אותו לאחד מ<strong>שלושת המטבעות היקרים בעולם</strong> (ריאל עומאני אחד שווה כ-2.6 דולר אמריקאי!).
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-400 mb-4">אטימולוגיה מפורטת: המסע מספרד להודו</h3>
+
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <!-- חלק 1: הריאל מספרד -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">1. המטבע השלם: ריאל (ريال)</span>
+                            <span class="text-xl font-bold text-white block mb-1">הירושה מהאימפריה הספרדית</span>
+                            <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                                בדומה למטבע הקטרי והסעודי, המילה מקורה בלטינית (<em>Regalis</em> - "של המלך"). במאות ה-16 וה-17, ספינות ספרדיות ופורטוגזיות הציפו את האוקיינוס ההודי במטבעות כסף שנקראו "ריאל". כסוחרי ים ממולחים שסחרו עם אירופה וזנזיבר, העומאנים הכירו היטב את הריאל הספרדי. השם נטמע בשפה הערבית המקומית כמונח ל"מטבע כסף איכותי", ואומץ רשמית במאה ה-20 כסמל לעוצמה לאומית.
+                            </p>
+                        </div>
+                        
+                        <!-- חלק 2: הביסה מהודו -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-yellow-500/5 rounded-2xl"></div>
+                            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest block mb-2 relative z-10">2. חלוקת המשנה: ביסה (بيسة)</span>
+                            <span class="text-xl font-bold text-yellow-500 block mb-1 relative z-10">החותמת של הודו (Paisa)</span>
+                            <p class="text-slate-400 text-sm mt-2 relative z-10 leading-relaxed">
+                                מכיוון שהריאל העומאני כה יקר ובעל ערך כבד, הוא אינו מתחלק ל-100 אגורות כמקובל, אלא מפוצל ל-<strong>1000 יחידות קטנות הנקראות "ביסה" (Baisa)</strong>. השם "ביסה" הוא שיבוש ערבי ישיר של המילה ההודית <strong>"פאיסה" (Paisa)</strong> – חלוקת המשנה של הרופי ההודי (שמקורה בסנסקריט ומשמעותה פשוט "עושר" או "כסף"). קיומה של ה"ביסה" במטבע העומאני מהווה עדות היסטורית ולשונית מרתקת לימי הסחר הגדולים שבהם ספינות המפרש (דאו) של עומאן נשאו תבלינים ופנינים אל חופי מומביי.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- פוטר -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-12 w-full">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm font-medium">
+                נחקר, נכתב וקודד על ידי <strong class="text-amber-600">רם</strong> &copy; 2026.
+            </p>
+            <p class="text-slate-600 text-xs mt-2">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשיר Samsung S25 Ultra.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
