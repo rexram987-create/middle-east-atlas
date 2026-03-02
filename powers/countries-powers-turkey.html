@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקרי מעצמות האזור: טורקיה</title>
+    
+    <!-- ייבוא פונט Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-select { user-select: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-red-700 selection:text-white pb-10">
+
+    <!-- סרגל ניווט עליון -->
+    <nav class="w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="../index.html" class="flex items-center text-red-500 hover:text-red-400 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <span class="font-medium text-lg">חזרה לאטלס הראשי</span>
+            </a>
+            <div class="text-slate-400 font-medium">נתיב המדינות / מעצמות אזוריות</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-6 sm:p-10 max-w-4xl mx-auto w-full">
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-12 text-center mt-6">
+            <div class="inline-block bg-red-900/30 border border-red-700 text-red-400 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                קובץ מחקר היסטורי מורחב
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-rose-500 mb-4 drop-shadow-md">
+                הרפובליקה של טורקיה
+            </h1>
+            <p class="text-xl text-slate-400 font-light">Türkiye Cumhuriyeti</p>
+        </header>
+
+        <div class="space-y-10">
+            
+            <!-- תעודת זהות וייסוד -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-red-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    תעודת זהות היסטורית: מאימפריה לרפובליקה
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">תאריכי ייסוד ותמורות היסטוריות</h3>
+                        <ul class="text-slate-400 space-y-3 leading-relaxed list-disc list-inside">
+                            <li><strong class="text-slate-200">1299:</strong> ייסוד האימפריה העות'מאנית (על ידי עות'מאן הראשון), ששלטה במזרח התיכון, צפון אפריקה ודרום אירופה במשך כ-600 שנה.</li>
+                            <li><strong class="text-slate-200">1453:</strong> כיבוש קונסטנטינופול (איסטנבול) על ידי הסולטאן מהמט השני, וסיום האימפריה הביזנטית.</li>
+                            <li><strong class="text-red-400">29 באוקטובר 1923 (יום הרפובליקה):</strong> לאחר תבוסת העות'מאנים במלחמת העולם הראשונה ו"מלחמת העצמאות הטורקית", מוכרזת הקמת <strong>הרפובליקה הטורקית החילונית</strong>.</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">מייסד המדינה המודרנית</h3>
+                        <p class="text-slate-400 leading-relaxed mb-1">
+                            <strong class="text-white text-lg">מוסטפא כמאל אטאטורק</strong>
+                            <br><span class="text-sm">(איש צבא, מהפכן, ואבי האומה הטורקית)</span>
+                        </p>
+                        <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-red-400 text-sm font-medium mb-4 mt-2">
+                            <span>1881 (סלוניקי)</span>
+                            <span class="mx-2">-</span>
+                            <span>10 בנובמבר 1938 (איסטנבול)</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            מוסטפא כמאל הוא הדמות הנערצת ביותר בטורקיה. הוא חילץ את טורקיה מאפר האימפריה הקורסת, ביטל את הח'ליפות האסלאמית (1924), הפריד דת ממדינה, העניק זכות הצבעה לנשים (הרבה לפני צרפת ואיטליה!), וכפה מודרניזציה מערבית מהירה ועמוקה על החברה הטורקית.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" class="w-14 h-9 ml-3 rounded-sm shadow-sm border border-slate-600">
+                            <!-- רקע אדום -->
+                            <rect width="900" height="600" fill="#E30A17"/>
+                            <!-- סהרון (עיגול לבן ועליו עיגול אדום מוזז) -->
+                            <circle cx="350" cy="300" r="150" fill="#fff"/>
+                            <circle cx="390" cy="300" r="120" fill="#E30A17"/>
+                            <!-- כוכב לבן -->
+                            <polygon points="560,300 500,320 520,380 470,340 410,360 450,310 430,250 480,280 540,260 500,310" fill="#fff"/>
+                        </svg>
+                        דגל המדינה: הסהרון ודם חללי המלחמה
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            דגל טורקיה (הידוע בשם "אל באיראק" - Al Bayrak, "הדגל האדום") נורש כמעט בשלמותו מדגלה של האימפריה העות'מאנית משנת 1844. הוא כולל רקע אדום בוהק עם סהרון (ירח) וכוכב מחומש בצבע לבן.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            <strong class="text-slate-300">אגדת קרב קוסובו:</strong> הסבר רומנטי ופופולרי בהיסטוריה הטורקית מספר כי לאחר "קרב קוסובו" העקוב מדם בשנת 1389, הסתובב המפקד העות'מאני בלילה בשדה הקרב. הוא הביט אל שלולית עצומה של דם החללים הטורקים, וראה בתוכה את ההשתקפות המדויקת של סהרון הירח והכוכב – וכך נולד עיצוב הדגל. 
+                            הסבר היסטורי ומציאותי יותר הוא שהסהרון והכוכב היו סמלים פגאניים קדומים של עמי הערבות הטורקיים ממרכז אסיה (שסימלו את שמי הלילה והנוודות), אשר אומצו מאוחר יותר על ידי האסלאם והפכו (בזכות העות'מאנים) לסמל המוכר ביותר של הדת המוסלמית בעולם כולו.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3">הקשר גיאופוליטי: הגשר שבין שתי יבשות</h3>
+                    <p class="text-slate-400 leading-relaxed text-lg">
+                        הנשק האסטרטגי הגדול ביותר של טורקיה איננו נפט, אלא <strong>הגיאוגרפיה שלה</strong>. היא המדינה היחידה (יחד עם רוסיה) שיושבת פיזית על שתי יבשות: אירופה (תראקיה) ואסיה (אנטוליה).
+                        <br><br>
+                        <strong class="text-red-400">מיצרי הבוספורוס והדרדנלים:</strong> טורקיה שולטת בבלעדיות על מיצרי המים המחברים בין הים השחור לים התיכון. זוהי חבל הטבור הימי היחיד של רוסיה (ומדינות הים השחור) אל שאר העולם. בזכות אמנת מונטרה (1936), לטורקיה יש זכות חוקית לחסום את המיצרים בפני ספינות מלחמה זרות בעת סכנה. מיקום זה הפך אותה לחברה קריטית בברית נאט"ו (כמעוז קדמי מול ברית המועצות/רוסיה), ולשחקנית מפתח שמתמרנת בין המערב, רוסיה והמזרח התיכון.
+                    </p>
+                </div>
+            </section>
+
+            <!-- אטימולוגיה מורחבת וסיפור השם המלא -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-orange-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                    אטימולוגיה: מסין, דרך תרנגולי הודו, ועד "אטאטורק"
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    ההיסטוריה האטימולוגית של טורקיה היא מסע חובק עולם שמתחיל בערבות מונגוליה וסין, ועובר דרך מהלכים פוליטיים מודרניים של הנשיא ארדואן.
+                </p>
+
+                <div class="space-y-6">
+                    <!-- השם הפנימי: טורק -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-red-500"></div>
+                        <h3 class="text-xl font-bold text-red-400 mb-3 text-2xl">1. השורש העתיק: טוּרְק (Türk) – הקשר הסיני</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            הטורקים לא הגיעו במקור מהמזרח התיכון, אלא ממרכז אסיה (אזור הרי אלטאי, קרוב למונגוליה). האזכור ההיסטורי הראשון של המילה "טורקי" לא נמצא בשפות המזרח התיכון, אלא דווקא <strong>בכתבים של האימפריה הסינית</strong> (שושלת סווי) מהמאה ה-6 לספירה.
+                            <br><br>
+                            הסינים כינו את שבטי הנוודים הקשוחים האלו בשם <strong>"טוּג'וּאֶה" (Tujue - 突厥)</strong>. המשמעות של השורש *Türk* בשפות הטורקיות הקדומות היא <strong>"חזק", "רב עוצמה", "נוצר" או "בשל"</strong>. אלו היו "הגוקטורקים" (הטורקים השמימיים) שהקימו אימפריית נוודים אדירה בערבות אסיה, בטרם נדדו מערבה אל תוך אנטוליה (טורקיה של ימינו).
+                        </p>
+                    </div>
+
+                    <!-- השם האימפריאלי: עות'מאן -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-teal-500"></div>
+                        <h3 class="text-xl font-bold text-teal-400 mb-3 text-2xl">2. השם האימפריאלי: עות'מאן (Ottoman)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            במשך כ-600 שנה, האזור לא נקרא "טורקיה" אלא <strong>האימפריה העות'מאנית</strong>. השם הזה נגזר ישירות משמו של מייסד השושלת, <strong>עות'מאן הראשון</strong> (Osman I).
+                            <br><br>
+                            המילה "עות'מאן" (عثمان) היא שם ערבי קדום שמשמעותו המקורית היא "גור של נחש" או סוג של ציפור מדברית (חובָּה). הטורקים, שלא יכלו להגות את העיצור הערבי "ת'" (Th), הגו את השם כ-<strong>"אוסמאן" (Osman)</strong>. לפיכך, בטורקית קראו לאימפריה "אוסמנלי" (Osmanlı - השייכים לאוסמאן). 
+                            <br><br>
+                            אז מאיפה הגיע השם "Ottoman" למערב? כשהשם הגיע לאירופה דרך סוחרי ונציה וג'נובה, האיטלקים התקשו להגות "אוסמאן" ושיבשו אותו ל-<strong>Ottomano</strong>, ומשם התקבע השם השגוי בכל רחבי אירופה והעולם.
+                        </p>
+                    </div>
+
+                    <!-- המעבר לרפובליקה -->
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-600 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-purple-500"></div>
+                        <h3 class="text-xl font-bold text-purple-400 mb-3 text-2xl">3. הדרמה של 1923: למה למחוק את השם העות'מאני?</h3>
+                        <p class="text-slate-300 text-base leading-relaxed">
+                            לאחר ניצחונו במלחמת העצמאות ב-1923, אטאטורק קיבל החלטה דרמטית: למחוק לחלוטין את השם "האימפריה העות'מאנית" ולקרוא למדינה החדשה <strong>"Türkiye" (טורקיה)</strong>. למהלך היו שתי סיבות עמוקות:
+                            <br><br>
+                            1. <strong>מזהות שושלתית לזהות לאומית:</strong> האימפריה לא נקראה על שם עם, אלא על שם <em>משפחת מלוכה אחת</em> (בית עות'מאן). אטאטורק רצה להבהיר שהמדינה כבר אינה רכושו של סולטאן יחיד, אלא שייכת באופן ריבוני ל<strong>עם (הטורקים)</strong>.
+                            <br>
+                            2. <strong>התנתקות מהעבר:</strong> השם "עות'מאני" ייצג בעיני אטאטורק עבר מיושן, דתי (הח'ליפות האסלאמית) ורב-לאומי. המטרה שלו הייתה לבנות מדינת-לאום חילונית, מערבית ומודרנית, שממוקדת בגרעין האתני הטורקי בתוך גבולות אנטוליה.
+                        </p>
+                    </div>
+
+                    <!-- שינוי השם באו"ם -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-orange-500"></div>
+                        <h3 class="text-xl font-bold text-orange-400 mb-3 text-2xl">4. המהלך של ארדואן: מ-Turkey ל-Türkiye</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            בשנת 2021, הנשיא רג'פ טאיפ ארדואן עשה מהלך דיפלומטי חריג ודרש מהאו"ם ומכל מדינות העולם להפסיק לקרוא למדינה "Turkey" באנגלית, ולשנות את הרישום הבינלאומי ל-<strong>Türkiye (טוּרְקִיָיה)</strong>.
+                            <br><br>
+                            הסיבה הרשמית הייתה "ייצוג טוב יותר של תרבות המדינה". הסיבה האמיתית (והכואבת) הייתה תדמיתית: השם "Turkey" זהה באנגלית ל<strong>תרנגול הודו</strong>. הטורקים מאסו בבדיחות של חג ההודיה (Thanksgiving) ובכך שמילונים תרגמו את שם ארצם כעוף מגושם או כסלנג ל"כישלון מהדהד" (A turkey). התוספת <em>-iye</em> היא סיומת בערבית/פרסית שמשמעותה "ארצם של-", ולכן השם המדויק הוא "ארצם של הטורקים החזקים".
+                        </p>
+                    </div>
+
+                    <!-- האטימולוגיה של אטאטורק -->
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-600 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-amber-500"></div>
+                        <h3 class="text-xl font-bold text-amber-400 mb-3 text-2xl">5. האטימולוגיה של "אַתָאטוּרְק" (Atatürk)</h3>
+                </p>
+
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-slate-900/80 p-6 rounded-2xl border border-rose-900/50">
+                            <h3 class="text-xl font-bold text-rose-400 mb-3">הבעיה: הכתב הערבי</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                במשך כאלף שנים, השפה הטורקית נכתבה באמצעות <strong>האלף-בית הערבי</strong> (מורשת מהכיבוש האסלאמי והאימפריה העות'מאנית). אולם, האותיות הערביות (שחסרות תנועות-אהו"י מפורשות) לא התאימו כלל לפונטיקה העשירה של השפה הטורקית (הכוללת 8 תנועות שונות כמו ö ו-ü). התוצאה הייתה קטלנית: רק כ-10% מאוכלוסיית טורקיה ידעו קרוא וכתוב.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-slate-900/80 p-6 rounded-2xl border border-rose-900/50">
+                            <h3 class="text-xl font-bold text-rose-400 mb-3">הפתרון: המעבר ללטינית (1928)</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                באוגוסט 1928, אטאטורק כינס ועדה והכריז על <strong>החלפת הכתב לגרסה מותאמת של האלף-בית הלטיני</strong>. המומחים אמרו לו שמעבר כזה ייקח חמש שנים. אטאטורק השיב: <em>"זה ייקח שלושה חודשים, או שזה לא יקרה לעולם"</em>. הוא יצא בעצמו למסע ברחבי המדינה עם לוח וגיר, ולימד פלאחים (איכרים) איך לכתוב את השפה שלהם באותיות חדשות.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-600 relative">
+                        <h3 class="text-xl font-bold text-white mb-3">התוצאה: ניתוק מהעבר</h3>
+                        <p class="text-slate-300 leading-relaxed">
+                            ב-1 בנובמבר 1928 נאסר בחוק להשתמש בכתב הערבי במסמכים רשמיים. ההצלחה הייתה מסחררת: אחוזי האוריינות זינקו בעשרות אחוזים בתוך שנים ספורות. אך למהלך הייתה מטרה פוליטית חבויה ועמוקה: <strong>ניתוק הדור החדש של הטורקים מהדת האסלאמית ומההיסטוריה העות'מאנית</strong>. ילד טורקי שנולד אחרי 1928 פשוט לא היה מסוגל לקרוא את הקוראן במקור או את ספרי ההיסטוריה של סבו, וכך נכפה עליו להתיישר עם התרבות האירופאית-המערבית שאטאטורק כה העריץ.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- נתונים גיאוגרפיים, דמוגרפיים וכלכליים -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    נתונים גיאוגרפיים, דמוגרפיים וכלכליים
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- שטח -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-900/30 p-2 rounded-lg text-indigo-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">שטח רחב מימדים</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-indigo-300 mb-2">783,562 <span class="text-lg font-medium text-slate-500">קמ"ר</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            מדינה ענקית המוקפת בים משלושה כיוונים (הים השחור בצפון, הים האגאי במערב, והים התיכון בדרום). כ-97% משטחה (אנטוליה) נמצא באסיה, ורק כ-3% (תראקיה) באירופה. היא גובלת ב-8 מדינות, ביניהן יוון, סוריה, עיראק ואיראן. המדינה גם מועדת לרעידות אדמה הרסניות בשל מיקומה על מספר לוחות טקטוניים.
+                        </p>
+                    </div>
+
+                    <!-- אוכלוסייה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-900/30 p-2 rounded-lg text-pink-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">פסיפס והמיעוט הכורדי</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-pink-300 mb-2">~ 85 <span class="text-lg font-medium text-slate-500">מיליון</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            אוכלוסייה גדולה וצעירה (דומה בגודלה לאיראן ולגרמניה). רוב מוחלט הם <strong>טורקים סונים</strong>. המיעוט הגדול ביותר הם ה<strong>כורדים</strong> (כ-15% עד 20% מהאוכלוסייה, בעיקר בדרום-מזרח), שמנהלים מאבק מתמשך להכרה וזכויות. טורקיה מארחת כיום גם את המספר הגדול בעולם של פליטים (כ-3.6 מיליון פליטים מסוריה).
+                        </p>
+                    </div>
+
+                    <!-- כלכלה ותל"ג -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-emerald-900/30 p-2 rounded-lg text-emerald-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">כלכלה תעשייתית</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-emerald-300 mb-2">1.1 <span class="text-lg font-medium text-slate-500">טריליון $</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            בניגוד לאיראן ולמדינות המפרץ, לטורקיה <strong>אין כמעט נפט או גז טבעי</strong>. כלכלתה (הנמנית על ה-G20) מבוססת על תעשייה כבדה, ייצור רכבים, טקסטיל, חקלאות מתקדמת, ותיירות עולמית. עם זאת, בעשור האחרון המדינה סובלת ממשבר כלכלי מתמשך, אינפלציה של עשרות אחוזים, וקריסה מתמדת של ערך המטבע המקומי (הלירה).
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- מטבע ואטימולוגיה של המטבע -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    הכלכלה והמטבע: הלירה הטורקית והקרוש
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="bg-yellow-600/20 text-yellow-500 px-3 py-1 rounded-lg ml-3 border border-yellow-700/50">TRY</span>
+                        לירה טורקית (Türk Lirası)
+                    </h3>
+                    
+                    <div class="mt-4 bg-slate-900/50 p-5 rounded-xl border border-slate-700">
+                        <h4 class="text-yellow-400 font-semibold mb-2">סיפור של אינפלציה וזהות:</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            הלירה הטורקית החליפה את המטבע העות'מאני ב-1927 כחלק מהרפורמות של אטאטורק (כל שטר נושא את דיוקנו). בעבר המטבע סבל מאינפלציה כה קשה שבתחילת שנות ה-2000 שטר של מיליון לירות היה שווה כמה דולרים בודדים. ב-2005 בוצעה רפורמה (ה"לירה החדשה") שבה נמחקו שישה אפסים מהמטבע, אך כיום המטבע שוב סובל מצניחת ערך קיצונית מול הדולר.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-400 mb-4">אטימולוגיה מפורטת לחלקי השם</h3>
+                    
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <!-- המטבע הרשמי (לירה) -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">1. המטבע השלם: לירה (Lira)</span>
+                            <span class="text-xl font-bold text-white block mb-1">הירושה מהאימפריה הרומית</span>
+                            <p class="text-slate-400 text-sm mt-2">
+                                בדומה למטבעות של סוריה ולבנון שחקרנו בלבנט, המקור למטבע הטורקי הוא המילה הלטינית <em>Libra</em> (מאזניים / יחידת משקל "פאונד"). המילה התגלגלה באיטליה של ימי הביניים ל"לירה", ואומצה על ידי האימפריה העות'מאנית באמצע המאה ה-19 כמטבע זהב, ממנו עברה לרפובליקה המודרנית.
+                            </p>
+                        </div>
+                        
+                        <!-- חלוקת המשנה (קרוש) -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-yellow-500/5 rounded-2xl"></div>
+                            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest block mb-2 relative z-10">2. חלוקת המשנה: קורוש (Kuruş)</span>
+                            <span class="text-xl font-bold text-yellow-500 block mb-1 relative z-10">מטבע "עבה" מגרמניה</span>
+                            <p class="text-slate-400 text-sm mt-2 relative z-10">
+                                הלירה הטורקית מתחלקת ל-100 <strong>קורוש</strong> (מוכר גם בשפת הדיבור כ"גרוש"). מקור המילה מרתק: הוא מגיע מהמילה הגרמנית/אוסטרית <em>Groschen</em>, שנגזרה מהלטינית <em>Grossus</em> (שפירושו "עבה" או "גדול" - מטבע כסף עבה שהיה נפוץ באירופה). המונח "גרוש" הובא לאימפריה העות'מאנית והפך לאגורה הטורקית!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- פוטר -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-12 w-full">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm font-medium">
+                נחקר, נכתב וקודד על ידי <strong class="text-red-600">רם</strong> &copy; 2026.
+            </p>
+            <p class="text-slate-600 text-xs mt-2">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשיר Samsung S25 Ultra.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
