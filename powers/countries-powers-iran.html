@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקרי מעצמות האזור: איראן</title>
+    
+    <!-- ייבוא פונט Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-select { user-select: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-emerald-700 selection:text-white pb-10">
+
+    <!-- סרגל ניווט עליון -->
+    <nav class="w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="../index.html" class="flex items-center text-emerald-500 hover:text-emerald-400 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <span class="font-medium text-lg">חזרה לאטלס הראשי</span>
+            </a>
+            <div class="text-slate-400 font-medium">נתיב המדינות / מעצמות אזוריות</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-6 sm:p-10 max-w-4xl mx-auto w-full">
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-12 text-center mt-6">
+            <div class="inline-block bg-emerald-900/30 border border-emerald-700 text-emerald-400 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                קובץ מחקר היסטורי מורחב
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-white to-red-500 mb-4 drop-shadow-md">
+                הרפובליקה האסלאמית של איראן
+            </h1>
+            <p class="text-xl text-slate-400 font-light">جمهوری اسلامی ایران (Jomhuri-ye Eslāmi-ye Irān)</p>
+        </header>
+
+        <div class="space-y-10">
+            
+            <!-- תעודת זהות וייסוד -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-emerald-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    תעודת זהות היסטורית: מציוויליזציה עתיקה לרפובליקה
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">תאריכי ייסוד ותמורות היסטוריות</h3>
+                        <ul class="text-slate-400 space-y-3 leading-relaxed list-disc list-inside">
+                            <li><strong class="text-slate-200">550 לפני הספירה:</strong> כורש הגדול מייסד את האימפריה האחמנית (האימפריה הפרסית הראשונה), הנחשבת לאימפריה הגדולה בעולם בעת העתיקה.</li>
+                            <li><strong class="text-slate-200">1501:</strong> ייסוד האימפריה הספווית. אירוע קריטי שבו <strong>השיעה</strong> הופכת לדת המדינה הרשמית, ומבדלת את איראן מהעולם הסוני שסביבה לנצח.</li>
+                            <li><strong class="text-emerald-400">11 בפברואר 1979 (המהפכה האסלאמית):</strong> קריסת שלטון השאה מוחמד רזא פהלווי (שנתמך על ידי המערב) בעקבות התקוממות עממית-דתית.</li>
+                            <li><strong class="text-red-400">1 באפריל 1979:</strong> לאחר משאל עם, מוכרזת רשמית "הרפובליקה האסלאמית של איראן", המשלבת מוסדות דמוקרטיים לכאורה עם שלטון הלכה עליון של אנשי דת.</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">מייסד המדינה המודרנית (המהפכה)</h3>
+                        <p class="text-slate-400 leading-relaxed mb-1">
+                            <strong class="text-white text-lg">האייתוללה רוחאללה ח'ומייני</strong>
+                            <br><span class="text-sm">("המנהיג העליון" הראשון ואדריכל המהפכה)</span>
+                        </p>
+                        <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-emerald-400 text-sm font-medium mb-4 mt-2">
+                            <span>24 בספטמבר 1902 (ח'ומיין)</span>
+                            <span class="mx-2">-</span>
+                            <span>3 ביוני 1989 (טהראן)</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            ח'ומייני ניהל את המהפכה מגלותו בצרפת בעזרת קלטות אודיו שהוברחו לאיראן. האידאולוגיה שלו, "וילאית-י פקיה" (שלטון איש הדת / חכם ההלכה), קבעה שרק איש דת בכיר יכול לעמוד בראש המדינה עד לחזרתו של האימאם הנעלם (המהדי).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" class="w-14 h-9 ml-3 rounded-sm shadow-sm border border-slate-600">
+                            <!-- פסים: ירוק, לבן, אדום -->
+                            <rect width="900" height="166.6" fill="#239f40"/>
+                            <rect width="900" height="166.6" y="166.6" fill="#fff"/>
+                            <rect width="900" height="166.6" y="333.3" fill="#da0000"/>
+                            
+                            <!-- סמל הרפובליקה במרכז -->
+                            <g transform="translate(450, 250) scale(1.5)" fill="#da0000">
+                                <!-- חרב מרכזית (אליף) -->
+                                <path d="M-2,-20 L2,-20 L2,20 L-2,20 Z" />
+                                <!-- סהרונים פנימיים -->
+                                <path d="M5,-15 Q15,0 5,15 Q8,0 3,-15 Z" />
+                                <path d="M-5,-15 Q-15,0 -5,15 Q-8,0 -3,-15 Z" />
+                                <!-- סהרונים חיצוניים -->
+                                <path d="M12,-10 Q25,5 12,20 Q18,5 10,-10 Z" />
+                                <path d="M-12,-10 Q-25,5 -12,20 Q-18,5 -10,-10 Z" />
+                                <!-- תשתדיד (W למעלה) -->
+                                <path d="M-5,-25 L0,-21 L5,-25 L3,-28 L0,-24 L-3,-28 Z" />
+                            </g>
+                        </svg>
+                        דגל המדינה וסמליותו המורכבת
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            הדגל האיראני (שאומץ ב-1980 לאחר המהפכה) מורכב משלושה פסים אופקיים היסטוריים: <strong>ירוק</strong> (אסלאם, חיוניות וצמיחה), <strong>לבן</strong> (שלום וטוהר), ו<strong>אדום</strong> (אומץ לב ודם השהידים). 
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            <strong class="text-slate-300">הסמל המרכזי והצבעוני:</strong> במרכז הפס הלבן מופיע סמל הרפובליקה בצבע אדום. הסמל מעוצב בצורה גאונית כך שהוא נקרא כמילה <strong>"אללה" (الله)</strong>, אך במקביל צורתו החזותית מזכירה <strong>צבעוני (Tulip)</strong>. במסורת הפרסית, פרח הצבעוני צומח מהאדמה שבה נשפך דמם של קדושים מעונים. (הסמל הזה החליף את סמל ה"אריה והשמש" העתיק של האימפריה הפרסית והשאה).
+                            <br><br>
+                            <strong class="text-emerald-400">פרט נסתר בדגל:</strong> בשוליים שבין הפס הלבן לירוק ולאדום, כתוב הביטוי "אללה אכבר" בכתב כופי מסוגנן. הביטוי מופיע בדיוק <strong>22 פעמים</strong> – לציון התאריך 22 בחודש "בהמן" בלוח השנה הפרסי (11 בפברואר), יום הניצחון של המהפכה האסלאמית!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3">הקשר גיאופוליטי: מדינת-ציוויליזציה בין מזרח למערב</h3>
+                    <p class="text-slate-400 leading-relaxed text-lg">
+                        איראן אינה מדינה שנוצרה על ידי קולוניאליזם, אלא ציוויליזציה ששורשיה נטועים באלף השני לפני הספירה. מיקומה הגיאוגרפי – גשר יבשתי עצום בין המזרח התיכון, הקווקז, מרכז אסיה, ותת-היבשת ההודית – הפך אותה לזירת מאבק נצחית. במאה ה-19 היא הייתה מוקד ל"משחק הגדול" בין האימפריה הרוסית (מצפון) לבריטית (מהודו). כיום, הרפובליקה האסלאמית רואה בעצמה את המעצמה ההגמונית הטבעית של האזור, ומובילה את "ציר ההתנגדות" (בגיבוי מיליציות שיעיות בלבנון, סוריה, עיראק ותימן) במאבק נגד ההשפעה המערבית, ישראל, והיריבה הסונית הגדולה – סעודיה.
+                    </p>
+                </div>
+            </section>
+
+            <!-- אטימולוגיה מורחבת של שם המדינה -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-orange-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                    אטימולוגיה: איראן מול פרס – המכתב ששינה את העולם
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    האם אומרים "פרס" או "איראן"? התשובה תלויה בשאלה מי מדבר. במשך אלפי שנים, היו למדינה שני שמות שונים לחלוטין – אחד שבו השתמשו בני המקום, ואחד שבו השתמש העולם החיצון.
+                </p>
+
+                <div class="space-y-6">
+                    <!-- השם הפנימי: איראן -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-emerald-500"></div>
+                        <h3 class="text-xl font-bold text-emerald-500 mb-3 text-2xl">1. השם המקומי: אִירָאן (Iran) – "ארץ הארים"</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            תושבי המדינה קראו לעצמם מאז ומתמיד "איראנים". השם נגזר מהמילה העתיקה בפרסית ובסנסקריט <strong>"אריה" (Arya)</strong>, שפירושה <strong>"אציל", "מכובד" או "בן חורין"</strong>. (אין קשר לאידאולוגיה הנאצית המודרנית של המאה ה-20 שגנבה את המונח).
+                            <br>
+                            בפרסית אמצעית, הביטוי <em>Erān-shahr</em> פירושו "אימפריית הארים" (ארץ האצילים). זהו שם גאוגרפי-אתני רחב הכולל את כל השבטים האיראניים (פרסים, כורדים, באלוצ'ים ועוד).
+                        </p>
+                    </div>
+
+                    <!-- השם החיצוני: פרס -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-orange-500"></div>
+                        <h3 class="text-xl font-bold text-orange-500 mb-3 text-2xl">2. השם המערבי: פָּרַס (Persia)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            איך קרה שכל העולם קרא למדינה "פרס"? הטעות מקורה ביוונים הקדמונים.
+                            <br><br>
+                            האימפריה האחמנית (של כורש ודריווש) צמחה מתוך מחוז דרומי אחד בשם <strong>פַּארְס (Pars / כיום Fars)</strong>. היוונים, שנלחמו באימפריה הזו, קראו לכל הישות העצומה על שם המחוז שממנו הגיעו מלכיה: <em>Persís</em> (פרסיה). העולם המערבי, ששאב את ההיסטוריה שלו מיוון ורומא, אימץ את השם "פרס", וכך גם התנ"ך היהודי. זה כמו לקרוא לכל ארצות הברית "טקסס" רק בגלל שהנשיא משם!
+                        </p>
+                    </div>
+
+                    <!-- המהפך של 1935 -->
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-600 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-red-500"></div>
+                        <h3 class="text-xl font-bold text-white mb-3 text-2xl">3. הדרמה של 1935: דרישת השאה</h3>
+                        <p class="text-slate-300 text-base leading-relaxed">
+                            בשנת 1935, רזא שאה פהלווי (אביו של השאה האחרון) החליט לעשות סדר ולקדם את הלאומיות המקומית. הוא הוציא מזכר רשמי לכל השגרירויות הזרות ודרש מהן <strong>להפסיק להשתמש במילה היוונית "פרס" (Persia)</strong> ולהתחיל להשתמש באופן בלעדי בשם ההיסטורי והאותנטי של המדינה בפי תושביה: <strong>"איראן"</strong>. בעקבות המכתב, שונו כל המפות בעולם.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- פרק הרפתקאות היסטורי: שחמט -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700 relative overflow-hidden">
+                <!-- אפקט רקע סגול מלכותי עדין -->
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-purple-500 via-fuchsia-400 to-amber-400"></div>
+                
+                <h2 class="text-2xl font-bold text-purple-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3 text-fuchsia-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+                    הרפתקה היסטורית: "משחק המלכים" – איראן והשחמט
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    האם הפרסים המציאו את השחמט? התשובה ההיסטורית המדויקת היא: <strong>הם לא המציאו אותו, אבל הם נתנו לו את זהותו המודרנית.</strong> ללא האימפריה הפרסית, המשחק ככל הנראה היה נעלם ונשכח במזרח. הנה המסע המרתק של המשחק מהודו לפרס, ומשם לעולם כולו:
+                </p>
+
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- המקור ההודי -->
+                        <div class="bg-slate-900/80 p-6 rounded-2xl border border-purple-900/50">
+                            <h3 class="text-xl font-bold text-amber-500 mb-3">1. המקור בהודו: "צ'טורנגה"</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                המשחק הומצא בצפון הודו במאה ה-6. בסנסקריט הוא נקרא <strong>צַ'טוּרַנְגַה (Chaturanga)</strong>. משמעות המילה היא "ארבע זרועות", והיא נועדה לדמות את ארבעת חלקי הצבא ההודי העתיק: חיילים רגלים, פרשים (סוסים), פילים ומרכבות מלחמה.
+                            </p>
+                        </div>
+                        
+                        <!-- האגדה הפרסית -->
+                        <div class="bg-slate-900/80 p-6 rounded-2xl border border-purple-900/50">
+                            <h3 class="text-xl font-bold text-amber-500 mb-3">2. האגדה: שגריר הודו וחידת השש-בש</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                ה"שאהנאמה" (האפוס הלאומי הפרסי) מספר שמלך הודו שלח שגריר עם הלוח לקיסר הפרסי ח'וסרו הראשון, כ"חידת מבחן" לחוכמתם של הפרסים. הווזיר הגאון של פרס, בוזורגמהר, לא רק שפיצח את חוקי המשחק בתוך יממה, אלא שהמציא בתגובה את משחק ה<strong>שש-בש (נרד)</strong> ושלח אותו חזרה להודו כחידת-נגד (שההודים לא הצליחו לפתור!).
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- האטימולוגיה המפורסמת של הכלים -->
+                    <div class="bg-purple-900/20 p-6 rounded-2xl border border-purple-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-fuchsia-500"></div>
+                        <h3 class="text-xl font-bold text-fuchsia-300 mb-4 text-2xl">3. ניפוץ מיתוסים והאטימולוגיה של הכלים</h3>
+                        <p class="text-slate-300 leading-relaxed mb-6">
+                            הפרסים אימצו את המשחק באהבה ושינו את שמו ל-<strong>צַ'טְרַנְג (Chatrang)</strong>. כשהמוסלמים כבשו את פרס, הם שיבשו את השם ל-<strong>שַׁטְרַנְג' (Shatranj)</strong> בגלל היעדר האות צ' בערבית, והעבירו אותו לאירופה דרך ספרד. הנה המקורות לשמות הכלים ששרדו עד היום:
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-amber-300 mb-1">הסוד של "שח-מט" (Checkmate):</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    טעות נפוצה היא לחשוב שפירוש המילה הוא בערבית "המלך מת". האמת היא שהמקור הוא פרסי: <strong>"שָׁאה מָאט"</strong>. בפרסית העתיקה "מאט" פירושו "חסר אונים" או "קפוא". המשמעות האמיתית היא <strong>"המלך חסר אונים"</strong> (שכן בשחמט לא הורגים את המלך, אלא לוכדים אותו).
+                                </p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-amber-300 mb-1">הצריח (Rook):</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    בפרסית הוא נקרא <strong>רוֹח' (Rokh)</strong> - מרכבת מלחמה כבדה. האירופאים לא הבינו את המילה אך שמרו על הצליל שלה, וכך נולדה המילה האנגלית <strong>Rook</strong> (שימור פונטי טהור מפרסית!).
+                                </p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-amber-300 mb-1">המלכה (Queen):</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    בפרס לא הייתה אישה על הלוח! הכלי הזה נקרא <strong>פַרְזִין (Farzin)</strong> - "הווזיר הגדול". רק כשהמשחק הגיע לאירופה במאה ה-15, הוא הותאם לחצר המלוכה האירופאית (כנראה בהשראת המלכה איזבלה מקסטיליה) והפך ל"מלכה" העוצמתית.
+                                </p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-amber-300 mb-1">הרץ (Bishop):</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    בפרס הוא היה <strong>פִּיל (Pil)</strong>. הכלים המזרחיים שהגיעו לאירופה הציגו פיל עם שני חטים. האנגלים (שלא ראו פיל מימיהם) חשבו שהחטים דומים לכובע המחודד של איש דת נוצרי, וקראו לו <strong>Bishop</strong> (הגמון). בספרדית, אגב, הוא עדיין נקרא <strong>Alfil</strong> (אל-פיל!).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- פרק הרפתקאות היסטורי: הנפט -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-slate-100 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                    עידן הנפט: התגלית הראשונה במזרח התיכון (ומבצע אייאקס)
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    הנפט לא התגלה לראשונה בסעודיה או בדובאי, אלא בהרי זגרוס הקשוחים של איראן. סיפור גילוי הנפט כאן הוא דרמת מתח בינלאומית ששינתה את הכלכלה העולמית.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- ההרפתקן ד'ארסי -->
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-emerald-500 mb-3">וויליאם נוקס ד'ארסי (1901)</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                הכל התחיל עם הרפתקן ומיליונר בריטי-אוסטרלי בשם וויליאם נוקס ד'ארסי. בשנת 1901 הוא חתם על זיכיון עם מלך פרס (מוזפר א-דין שאה) המעניק לו זכות בלעדית לחפש נפט ברוב שטחי איראן תבתמורה ל-16% מהרווחים. במשך 7 שנים, הצוות שלו קדח בהרים צחיחים, סבל מחום אימתני, מחלות, ותקיפות של שבטים מקומיים, תוך שד'ארסי כמעט פושט רגל.
+                            </p>
+                        </div>
+                        
+                        <!-- התגלית -->
+                        <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="text-xl font-bold text-emerald-500 mb-3">מסג'ד סולימאן (1908)</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                במאי 1908, הבריטים שלחו מברק ייאוש להפסיק את הקידוחים. מנהל העבודה, ג'ורג' ריינולדס, עיכב את פתיחת המברק בכוונה כדי להמשיך לקדוח. ההימור השתלם: ב-<strong>26 במאי 1908</strong>, באזור שנקרא <strong>מסג'ד סולימאן (Masjed Soleyman)</strong>, פרץ גייזר שחור לגובה של 25 מטרים. זו הייתה <strong>תגלית הנפט המסחרית הראשונה במזרח התיכון</strong>! בעקבותיה הוקמה חברת הנפט האנגלו-פרסית (APOC), שלימים הפכה לענקית האנרגיה <strong>BP</strong>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ההלאמה וההפיכה -->
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-600 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-red-600"></div>
+                        <h3 class="text-xl font-bold text-red-500 mb-3">קללת הנפט: מבצע אייאקס (1953)</h3>
+                        <p class="text-slate-300 leading-relaxed">
+                            הנפט האיראני הניע את צי האוניות הבריטי בשתי מלחמות עולם, אך איראן קיבלה אחוזים זעומים מהרווחים. ב-1951, ראש הממשלה האיראני הדמוקרטי <strong>מוחמד מוסאדק</strong> החליט על צעד היסטורי: <strong>הלאמת תעשיית הנפט</strong> וסילוק הבריטים.
+                            <br>
+                            בתגובה, בריטניה הטילה חרם ימי על איראן, ושכנעה את ארה"ב (באמתלה שמוסאדק נוטה לקומוניזם) להתערב. בשנת 1953, סוכנות הביון האמריקאית (CIA) והבריטית (MI6) הוציאו לפועל את <strong>"מבצע אייאקס" (Operation Ajax)</strong>: הפיכה צבאית חשאית שהפילה את מוסאדק, החזירה את השאה לשלטון אבסולוטי, והחזירה את הנפט לחברות המערביות. ההתערבות הזו יצרה טינה עמוקה כלפי המערב בקרב האיראנים, שהייתה מנועי הבעירה המרכזיים למהפכה האסלאמית ב-1979.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- נתונים גיאוגרפיים, דמוגרפיים וכלכליים -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    נתונים גיאוגרפיים, דמוגרפיים וכלכליים
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- שטח -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-900/30 p-2 rounded-lg text-indigo-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">שטח ומבצר גיאוגרפי</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-indigo-300 mb-2">1,648,195 <span class="text-lg font-medium text-slate-500">קמ"ר</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            איראן היא מדינת ענק (ה-17 בגודלה בעולם). היא מוגדרת כ"מבצר גיאוגרפי": היא מוקפת ברכסי הרים אדירים המשמשים כחומת מגן טבעית נגד פולשים (<strong>הרי זגרוס</strong> במערב ו<strong>הרי אלבורז</strong> בצפון). במרכז המדינה שוכנים מדבריות מלח צחיחים ובלתי עבירים.
+                        </p>
+                    </div>
+
+                    <!-- אוכלוסייה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-900/30 p-2 rounded-lg text-pink-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">פסיפס אתני</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-pink-300 mb-2">~ 89 <span class="text-lg font-medium text-slate-500">מיליון</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            בניגוד לתפיסה השגויה, <strong>איראן אינה מדינה ערבית!</strong> האוכלוסייה היא פסיפס אתני מורכב: ה<strong>פרסים</strong> (דוברי פרסית) מהווים כמחצית מהאוכלוסייה בלבד. שאר האוכלוסייה מורכבת ממיעוטים עצומים: אזרים (כ-20%, בצפון מערב), כורדים (במערב), ערבים (במחוז ח'וזסתאן עתיר הנפט), באלוצ'ים ולורים. הרוב המוחלט הם מוסלמים שיעים.
+                        </p>
+                    </div>
+
+                    <!-- כלכלה ותל"ג -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-emerald-900/30 p-2 rounded-lg text-emerald-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">כלכלת התנגדות (סנקציות)</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-emerald-300 mb-2">~ 400 <span class="text-lg font-medium text-slate-500">מיליארד $ (תנודתי)</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            איראן מחזיקה בעתודות הנפט ה-4 בגודלן בעולם, ובעתודות הגז הטבעי ה-2 בגודלן בעולם (אחרי רוסיה, ושותפה עם קטר בשדה הצפוני). עם זאת, כלכלתה סובלת קשות מסנקציות מערביות חונקות בגלל תוכנית הגרעין שלה, מה שהוביל להיפר-אינפלציה קריטית, אבטלת צעירים המונית, ופיתוח "כלכלת התנגדות" המבוססת על ייצור עצמי (מכוניות, תרופות וכטב"מים צבאיים) והברחות נפט לסין.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- מטבע ואטימולוגיה של המטבע -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    הכלכלה והמטבע: הריאל מול התומאן המונגולי
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="bg-yellow-600/20 text-yellow-500 px-3 py-1 rounded-lg ml-3 border border-yellow-700/50">IRR</span>
+                        ריאל איראני (ریال ایران)
+                    </h3>
+                    
+                    <div class="mt-4 bg-slate-900/50 p-5 rounded-xl border border-slate-700">
+                        <h4 class="text-yellow-400 font-semibold mb-2">סיפור של שתי שכבות פיננסיות:</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            המטבע הרשמי של המדינה על הנייר ובהסכמים הבינלאומיים הוא ה<strong>ריאל</strong> (שנקבע כמטבע הרשמי ב-1932 במקום ה"קראן" העתיק). עם זאת, הריאל איבד את ערכו בצורה כה דרסטית בעקבות הסנקציות, שיש בו המון אפסים. לכן, ברחוב האיראני הומצא פטנט עוקף-אינפלציה: כל המסחר היומיומי מתבצע במטבע (שאינו קיים פיזית כשטר) הנקרא <strong>תומאן (Toman)</strong>. תומאן אחד שווה בדיוק 10 ריאל (פשוט מוחקים אפס אחד מהמחיר).
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-400 mb-4">אטימולוגיה מרתקת: בין ספרד לערבות מונגוליה</h3>
+                    
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <!-- המטבע הרשמי (ריאל) -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">1. המטבע הרשמי: ריאל (ريال)</span>
+                            <span class="text-xl font-bold text-white block mb-1">הירושה מהאימפריה הספרדית</span>
+                            <p class="text-slate-400 text-sm mt-2">
+                                בדומה למטבעות של סעודיה, קטר, ותימן (שגם הן מתגוררות לחופי המפרץ הפרסי) – המקור לשם המטבע האיראני הוא אירופאי לחלוטין. הוא נגזר מהמילה הספרדית <em>Real</em> (מלכותי), בזכות מטבעות הכסף הספרדיים האמינים שהגיעו עם ספינות הסחר הפורטוגזיות למפרץ הפרסי במאה ה-16 ואומצו על ידי הסוחרים הפרסים.
+                            </p>
+                        </div>
+                        
+                        <!-- המטבע העממי (תומאן) -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-yellow-500/5 rounded-2xl"></div>
+                            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest block mb-2 relative z-10">2. מטבע הרחוב: תומאן (تومان)</span>
+                            <span class="text-xl font-bold text-yellow-500 block mb-1 relative z-10">חותמו של ג'ינגיס חאן (10,000)</span>
+                            <p class="text-slate-400 text-sm mt-2 relative z-10">
+                                כאן טמונה הפתעה אטימולוגית מדהימה! השם "תומאן" הגיע לאיראן יחד עם הכיבוש המונגולי האכזר במאה ה-13. בשפה המונגולית (וגם בטורקית), המילה <em>Tümen</em> פירושה המספר <strong>10,000</strong>. היא שימשה במקור לתיאור יחידה צבאית אדירה בת 10,000 לוחמים רוכבי סוסים בצבאו של ג'ינגיס חאן. במאה ה-17, האימפריה הספווית בפרס השתמשה במילה כדי לתאר שטר ששווה 10,000 דינרים זהב. עד היום, כשאיראני קונה לחם בשוק, הוא משתמש במונח צבאי מונגולי!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- פוטר -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-12 w-full">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm font-medium">
+                נחקר, נכתב וקודד על ידי <strong class="text-emerald-600">רם</strong> &copy; 2026.
+            </p>
+            <p class="text-slate-600 text-xs mt-2">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשיר Samsung S25 Ultra.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
