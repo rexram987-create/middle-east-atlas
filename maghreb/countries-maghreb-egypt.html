@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקרי ארץ הנילוס: מצרים</title>
+    
+    <!-- ייבוא פונט Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-select { user-select: none; }
+        .nile-gradient { background: linear-gradient(to bottom, #0f172a, #1e3a8a, #0f172a); }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-amber-600 selection:text-white pb-10">
+
+    <!-- סרגל ניווט עליון -->
+    <nav class="w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="../index.html" class="flex items-center text-amber-500 hover:text-amber-400 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <span class="font-medium text-lg">חזרה לאטלס הראשי</span>
+            </a>
+            <div class="text-slate-400 font-medium">נתיב המדינות / ארץ הנילוס והמגרב</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-6 sm:p-10 max-w-4xl mx-auto w-full">
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-12 text-center mt-6">
+            <div class="inline-block bg-blue-900/30 border border-blue-700 text-blue-400 px-4 py-1 rounded-full text-sm font-semibold mb-4 shadow-[0_0_15px_rgba(59,130,246,0.3)]">
+                קובץ מחקר היסטורי וגיאופוליטי
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-500 to-blue-500 mb-4 drop-shadow-md">
+                הרפובליקה הערבית של מצרים
+            </h1>
+            <p class="text-xl text-slate-400 font-light">جمهورية مصر العربية (Jumhūriyyat Miṣr Al-ʿArabiyyah)</p>
+        </header>
+
+        <div class="space-y-10">
+            
+            <!-- תעודת זהות וייסוד -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-amber-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    תעודת זהות היסטורית: "אם העולם"
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">תאריכי ייסוד: מהעת העתיקה לרפובליקה</h3>
+                        <ul class="text-slate-400 space-y-3 leading-relaxed list-disc list-inside">
+                            <li><strong class="text-amber-200">~3100 לפני הספירה:</strong> איחוד מצרים העליונה והתחתונה על ידי המלך נערמר (הפרעה הראשון). זוהי המדינה/הציוויליזציה הרציפה העתיקה ביותר בעולם.</li>
+                            <li><strong class="text-slate-200">28 בפברואר 1922:</strong> בריטניה מעניקה עצמאות חד-צדדית ל"ממלכת מצרים" (תחת המלך פואד הראשון), אך שומרת על נוכחות צבאית בתעלת סואץ.</li>
+                            <li><strong class="text-blue-400">23 ביולי 1952 (מהפכת הקצינים החופשיים):</strong> הפיכה צבאית היסטורית המדיחה את המלך פארוק, מסיימת את השלטון הבריטי ומכוננת את הרפובליקה הערבית המודרנית (רשמית ב-1953).</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">מייסד הרפובליקה המודרנית</h3>
+                        <p class="text-slate-400 leading-relaxed mb-1">
+                            <strong class="text-white text-lg">גמאל עבד אל נאצר</strong>
+                            <br><span class="text-sm">(קצין צבא, מנהיג המהפכה ואבי הפאן-ערביות)</span>
+                        </p>
+                        <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-amber-500 text-sm font-medium mb-4 mt-2">
+                            <span>15 בינואר 1918 (אלכסנדריה)</span>
+                            <span class="mx-2">-</span>
+                            <span>28 בספטמבר 1970 (קהיר)</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            נאצר לא היה הנשיא הראשון על הנייר (קדם לו מוחמד נגיב לזמן קצר), אך הוא נחשב למייסדה האמיתי של מצרים המודרנית. הוא הלאים את תעלת סואץ, יזם את הקמת סכר אסואן, והפך למנהיג הנערץ ביותר בעולם הערבי במאה ה-20 (עד לתבוסתו הצורבת במלחמת ששת הימים).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" class="w-14 h-9 ml-3 rounded-sm shadow-sm border border-slate-600 bg-white">
+                            <!-- פסים: אדום, לבן (שקוף ב-SVG כי הרקע לבן), שחור -->
+                            <rect width="900" height="200" fill="#ce1126"/>
+                            <rect width="900" height="200" y="400" fill="#000"/>
+                            <!-- סמל עיט צלאח א-דין במרכז (ייצוג גיאומטרי מופשט) -->
+                            <g transform="translate(450, 300) scale(1.5)" fill="#c09300">
+                                <!-- גוף העיט ומגן -->
+                                <path d="M-15,-20 L15,-20 L25,10 L0,30 L-25,10 Z" />
+                                <rect x="-10" y="-10" width="20" height="30" fill="#fff" />
+                                <!-- כנפיים -->
+                                <path d="M-15,-15 Q-40,-30 -50,-10 Q-30,10 -25,10 Z" />
+                                <path d="M15,-15 Q40,-30 50,-10 Q30,10 25,10 Z" />
+                                <!-- ראש -->
+                                <circle cx="0" cy="-25" r="8" />
+                                <!-- מגילה למטה -->
+                                <rect x="-30" y="32" width="60" height="10" />
+                            </g>
+                        </svg>
+                        דגל המדינה: המקור לצבעי הלאומיות הערבית
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            דגל מצרים הנוכחי אומץ ב-1984, אך מקורו ב"דגל השחרור הערבי" שהונף לראשונה ב<strong>מהפכת 1952</strong> במצרים. מהפכה זו השפיעה כל כך על המזרח התיכון, עד שסוריה, עיראק ותימן העתיקו את דגל מצרים והפכו אותו לבסיס דגלן! 
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            הצבע ה<strong>אדום</strong> מסמל את הדם שנשפך במאבק נגד הקולוניאליזם הבריטי. ה<strong>לבן</strong> מסמל את טוהר ליבת המהפכה (שהייתה ללא שפיכות דמים וללא הוצאה להורג של המלך). ה<strong>שחור</strong> מסמל את סיום "עידן החושך" של דיכוי העם.
+                            <br><br>
+                            <strong class="text-amber-400">עיט צלאח א-דין:</strong> במרכז הפס הלבן מופיע בזהב סמלה של הרפובליקה: עיט. זהו "עיט צלאח א-דין" – סמל לאומי שזוהה עם המצביא המוסלמי צלאח א-דין (ששלט במצרים במאה ה-12 וגירש את הצלבנים). העיט אוחז במקורו מגילה ועליה כתוב בערבית "הרפובליקה הערבית של מצרים".
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3">הקשר גיאופוליטי: אם העולם וגשר היבשות</h3>
+                    <p class="text-slate-400 leading-relaxed text-lg">
+                        מצרים (המכונה בפי תושביה "אום אל-דוניא" - אם העולם) היא המדינה הגיאופוליטית החשובה ביותר בעולם הערבי. היא מחזיקה בנכס אסטרטגי חסר תקדים: <strong>חצי האי סיני ותעלת סואץ</strong>, המהווים את הגשר היבשתי היחיד בין אפריקה לאסיה, ואת עורק השיט הקריטי ביותר בין אירופה למזרח. מעמדה נובע לא ממשאבי טבע, אלא מהיותה מרכז תרבותי, צבאי ודמוגרפי עצום שמשפיע על כל מדינות האזור. הסכם השלום שלה עם ישראל ב-1979 שינה לנצח את מאזן הכוחות במזרח התיכון.
+                    </p>
+                </div>
+            </section>
+
+            <!-- אטימולוגיה מורחבת של שם המדינה (משולשת) -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-blue-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                    אטימולוגיה משולשת: מ"הארץ השחורה" ועד "מצרים"
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    למצרים יש שלוש זהויות אטימולוגיות שונות לחלוטין – אחת של תושביה הקדמונים, אחת שהעניק לה העולם המערבי, ואחת שבה משתמשים הערבים והיהודים. הנה הניתוח ההיסטורי והבלשני המלא:
+                </p>
+
+                <div class="space-y-6">
+                    <!-- השם הפרעוני: קמט -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-slate-950"></div>
+                        <h3 class="text-xl font-bold text-slate-300 mb-3 text-2xl">1. השם המצרי הקדום: קֶמֶט (Kemet - 𓆎𓅓𓏏𓊖)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            המצרים הקדמונים (בתקופת הפרעונים) כלל לא קראו לארצם מצרים או אגיפטוס. הם קראו לה <strong>"קמט" (Kemet)</strong>, שמשמעותה בכתב חרטומים היא <strong>"הארץ השחורה"</strong>. 
+                        </p>
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                            <span class="block text-sm font-bold text-slate-400 mb-2">ההקשר הגיאוגרפי והמיתולוגי:</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                השם אינו מתייחס לצבע עורם של האנשים, אלא ל<strong>צבע האדמה</strong>. המצרים הקדמונים ראו את עולמם כדיכוטומיה מוחלטת: בכל שנה, נהר הנילוס עלה על גדותיו והותיר אחריו אדמת סחף שחורה, כהה ופורייה במיוחד ("קמט") שהעניקה להם חיים וחקלאות. מיד מעבר לרצועה השחורה הזו התחיל המדבר החולי, השומם והקטלני שנקרא בפיהם <strong>"דשרט" (Deshret) - "הארץ האדומה"</strong> (שנשלטה על ידי סת, אל הכאוס). "קמט" הייתה למעשה מילה נרדפת לחיים עצמם.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- השם המערבי: אגיפטוס -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-blue-500"></div>
+                        <h3 class="text-xl font-bold text-blue-400 mb-3 text-2xl">2. השם המערבי: מֵאֵגִיפְּטוֹס (Aegyptus) ל-Egypt</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            מאיפה הגיעה המילה האנגלית "Egypt"? זוהי אחת מ"טעויות התרגום" ההיסטוריות המפורסמות ביותר, שהתחילה ממקדש אחד בלבד:
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-blue-300 mb-1">המקור המצרי (שם המקדש):</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    בעיר ממפיס (מוף), שהייתה הבירה העתיקה, שכן המקדש המרכזי והמפואר ביותר של האל פְּתַח (האל הבורא). המקדש נקרא <em>Hwt-Ka-Ptah</em> (חוות-קא-פתח), שמשמעותו: <strong>"בית הנשמה של האל פתח"</strong>.
+                                </p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-blue-300 mb-1">השיבוש היווני:</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    סוחרים ויורדי ים יוונים (איוניים) שהגיעו לממפיס התקשו להגות את העיצורים המצריים הגרוניים. הם שיבשו את המילה "חוות-קא-פתח" והפכו אותה למילה היוונית <strong>Aigyptos (Αἴγυπτος)</strong>. הומרוס, ב"אודיסאה", כבר השתמש בשם זה כדי לתאר הן את נהר הנילוס והן את הארץ כולה.
+                                </p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-blue-300 mb-1">המעבר לאירופה:</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    הרומאים שכבשו את האזור אימצו את השם ללטינית כ-<em>Aegyptus</em> (הפרובינקיה אגיפטוס). משם השם התגלגל לצרפתית (Égypte) ולאנגלית המודרנית (Egypt).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- השם השמי/ערבי: מצר -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-amber-500"></div>
+                        <h3 class="text-xl font-bold text-amber-400 mb-3 text-2xl">3. השם השמי והערבי: מִצְר (مِصْر) / מִצְרַיִם</h3>
+                        <p class="text-slate-300 text-base leading-relaxed mb-4">
+                            העמים השמיים (האכדים, הכנענים, העברים והערבים) מעולם לא השתמשו במושג היווני. הם קראו לאזור על בסיס השורש השמי <strong>מ-צ-ר (M-S-R / M-Z-R)</strong>, שמשמעותו הקדומה היא <strong>"גבול", "מיצר" או "ארץ מבוצרת"</strong> (הנילוס הוא מעין מיצר צר של חיים הכלוא בין מדבריות).
+                        </p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-amber-300 mb-2">בעברית (מִצְרַיִם): סוד הזוגיות</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    למה המילה בעברית מסתיימת ב-<strong>"יִם" (Dual / צורת זוגי)</strong>? התשובה טמונה בגיאוגרפיה הפוליטית העתיקה. מצרים הייתה מורכבת משתי ישויות נפרדות ושונות: <strong>מצרים העליונה</strong> (דרום המדינה, עמק הנילוס הצר) ו<strong>מצרים התחתונה</strong> (צפון המדינה, הדלתא הרחבה). המלך שאיחד אותן ענד "כתר כפול", והמדינה כולה נתפסה כחיבור של "שתי המצָרים" (מצרים).
+                                </p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-amber-300 mb-2">בערבית (Miṣr - مِصْر): עיר המטרופולין</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    בתקופת הכיבוש האסלאמי המוקדם (המאה ה-7), המילה "מצר" בערבית הפכה למונח שמתאר <strong>"עיר מצב" (Garrison town) או מטרופולין שוקקת</strong> שניצבת על גבול האימפריה (כמו העיר פוסטאט שהקדימה את קהיר). מכיוון שמצרים הייתה הציוויליזציה והמעצמה העירונית העצומה והמתקדמת ביותר באזור, הערבים כינו אותה פשוט כ"ה-מטרופולין" (העיר הגדולה מכולן), וכך השם דבק בה לתמיד.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- הרפתקה היסטורית: תעלת סואץ -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700 relative overflow-hidden">
+                <!-- אפקט גלים של מים -->
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-700 via-cyan-400 to-blue-700"></div>
+                
+                <h2 class="text-2xl font-bold text-blue-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    הרפתקה היסטורית: כריית תעלת סואץ ו"משבר סואץ"
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    זהו סיפור על הנדסה בלתי אפשרית ששינתה את מפת הסחר העולמית, ועל משבר פוליטי שסימן את קץ האימפריות האירופאיות במזרח התיכון.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- בניית התעלה -->
+                        <div class="bg-slate-900/80 p-6 rounded-2xl border border-blue-900/50">
+                            <h3 class="text-xl font-bold text-cyan-400 mb-3">1. הצרפתי שחצה את המדבר (1869)</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                רעיון חיבור הים התיכון לים האדום היה קיים עוד מימי הפרעונים, אך הוגשם רק במאה ה-19. הדיפלומט הצרפתי ההרפתקן <strong>פרדיננד דה לספס</strong> הצליח לשכנע את שליט מצרים (הח'דיב סעיד פאשה) להעניק לו זיכיון לכריית התעלה. הפרויקט, שבוצע על ידי "חברת תעלת סואץ", נמשך עשור (1859-1869). הוא בוצע בעיקרו על ידי עבודת כפייה המונית של עשרות אלפי פלאחים מצרים (שנקראה 'קורווה'), שרבים מהם מתו ממגפות ותשישות. פתיחת התעלה קיצרה את נתיב השיט מאירופה להודו באלפי קילומטרים.
+                            </p>
+                        </div>
+                        
+                        <!-- הלאמה ומשבר -->
+                        <div class="bg-slate-900/80 p-6 rounded-2xl border border-red-900/50">
+                            <h3 class="text-xl font-bold text-red-400 mb-3">2. משבר סואץ / מלחמת סיני (1956)</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                המניות של תעלת סואץ הוחזקו בידי בריטניה וצרפת, שגרפו את הרווחים בזמן שמצרים נותרה ענייה. ביולי 1956, הנשיא <strong>גמאל עבד אל נאצר</strong> ביצע מהלך היסטורי מדהים: בנאום דרמטי ברדיו הוא הכריז על <strong>הלאמת תעלת סואץ</strong> והעברתה לבעלות מצרית מלאה (כדי לממן את סכר אסואן).
+                                <br><br>
+                                בתגובה, בריטניה וצרפת רקמו קנוניה חשאית (הסכם סוור) עם <strong>ישראל</strong>. ישראל כבשה את חצי האי סיני (מבצע קדש), מה שאיפשר לבריטניה וצרפת להנחית כוחות באזור התעלה בתואנה של החזרת הסדר. ארה"ב וברית המועצות, שזעמו על המהלך האימפריאליסטי, כפו על שלוש המדינות נסיגה משפילה, מה שהפך את נאצר לגיבור לאומי ולמנצח פוליטי אדיר.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- נתונים גיאוגרפיים, דמוגרפיים וכלכליים -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    נתונים גיאוגרפיים, דמוגרפיים וכלכליים
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- שטח -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-colors relative overflow-hidden">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-900/30 p-2 rounded-lg text-indigo-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">מתנת הנילוס (שטח)</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-indigo-300 mb-2">1,001,450 <span class="text-lg font-medium text-slate-500">קמ"ר</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            מצרים היא מדינת ענק גיאוגרפית, אך למעשה מתפקדת כנווה מדבר אחד ארוך. <strong>כ-95% משטחה הוא מדבר שומם לחלוטין</strong> (מדבר סהרה במערב והמדבר המזרחי). ההתיישבות והחיים מתאפשרים רק בזכות <strong>נהר הנילוס</strong>, שחוצה את המדינה מדרום לצפון ונשפך אל הים התיכון בדלתא פורייה. ההיסטוריון היווני הרודוטוס קבע בצדק כי "מצרים היא מתנת הנילוס".
+                        </p>
+                    </div>
+
+                    <!-- אוכלוסייה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-900/30 p-2 rounded-lg text-pink-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">פצצת דמוגרפיה</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-pink-300 mb-2">~ 111 <span class="text-lg font-medium text-slate-500">מיליון</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            מצרים היא המדינה המאוכלסת ביותר בעולם הערבי, ואחת הצפופות בעולם, מכיוון שמעל 100 מיליון איש מצטופפים אך ורק ברצועת הנילוס הצרה (5% משטח המדינה). הרוב המוחלט הם מוסלמים סונים. הקהילה הנוצרית ה<strong>קופטית</strong> (הצאצאים הישירים של המצרים הקדמונים) מהווה מיעוט משמעותי של כ-10%, השומר עד היום על שרידי השפה המצרית העתיקה בליטורגיה שלו.
+                        </p>
+                    </div>
+
+                    <!-- כלכלה ותל"ג -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-emerald-900/30 p-2 rounded-lg text-emerald-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">כלכלה תלויית עוגנים</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-emerald-300 mb-2">~ 400 <span class="text-lg font-medium text-slate-500">מיליארד $ (תנודתי)</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            למרות היותה מעצמה גיאופוליטית, כלכלת מצרים סובלת ממשברים כרוניים ומחובות עצומים לקרן המטבע הבינלאומית. הכלכלה נשענת על ארבעה עוגנים מרכזיים: 1. הכנסות מאגרות המעבר ב<strong>תעלת סואץ</strong>. 2. <strong>תיירות</strong> בינלאומית (פירמידות, לוקסור וסיני). 3. <strong>העברות כספים</strong> ממיליוני מצרים העובדים במדינות המפרץ העשירות. 4. חקלאות וגז טבעי מהים התיכון.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- מטבע ואטימולוגיה של המטבע -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    הכלכלה והמטבע: הפאונד המצרי וסוד ה"גיני" וה"קירש"
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="bg-yellow-600/20 text-yellow-500 px-3 py-1 rounded-lg ml-3 border border-yellow-700/50">EGP</span>
+                        פאונד מצרי / גְנֵיה מַסְרִי (جنيه مصري)
+                    </h3>
+                    
+                    <div class="mt-4 bg-slate-900/50 p-5 rounded-xl border border-slate-700">
+                        <h4 class="text-yellow-400 font-semibold mb-2">סיפור של שתי זהויות כלכליות:</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            על הנייר ובעולם העסקים הבינלאומי, המטבע המצרי נקרא "Egyptian Pound" (הפאונד המצרי), זאת בשל ההצמדה ההיסטורית ללירה שטרלינג הבריטית בימי הכיבוש הבריטי (1882-1922). אולם, כשתלך בשווקים התוססים של קהיר (כמו ח'אן אל-ח'לילי), אף רוכל לא יבקש ממך "פאונד". המקומיים קוראים למטבע שלהם אך ורק <strong>"גְנֵיה" (Guineh)</strong>. וזה מחזיר אותנו לאחת התעלומות האטימולוגיות המרתקות ביותר:
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-400 mb-4">אטימולוגיה מפורטת: מאיפה הגיע ה"גְנֵיה"?</h3>
+                    <p class="text-slate-400 mb-4">
+                        המילה הערבית-מצרית "גְנֵיה" (Guineh) אינה מגיעה כלל מהמזרח התיכון, אלא ממסע ימי של זהב שיצא מ<strong>מערב אפריקה</strong> לאימפריה הבריטית, ומשם למצרים.
+                    </p>
+
+                    <div class="flex flex-col md:flex-row gap-4 mb-6">
+                        <!-- המקור: ארץ גינאה באפריקה -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">1. המקור הגיאוגרפי באפריקה</span>
+                            <span class="text-xl font-bold text-white block mb-1">גינאה (Guinea)</span>
+                            <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                                במאה ה-17, האימפריה הבריטית ("החברה האפריקאית המלכותית") כרתה מחצבי זהב עצומים באזור חוף מערב אפריקה, אזור שנקרא בפי האירופאים "חוף גינאה" (Guinea). הזהב הטהור הזה הובל באוניות היישר לבריטניה.
+                            </p>
+                        </div>
+                        
+                        <!-- המטבע הבריטי: הגיני -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">2. המטבע הבריטי המלכותי</span>
+                            <span class="text-xl font-bold text-white block mb-1">מטבע ה"גיני" (The Guinea)</span>
+                            <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                                הבריטים השתמשו בזהב האפריקאי כדי לטבוע את המטבעות החדשים והיוקרתיים ביותר של הממלכה. כאות גאווה על מקור הזהב, הם קראו למטבע פשוט <strong>"גיני" (Guinea)</strong>. מטבע הגיני הפך למטבע היוקרה האולטימטיבי באנגליה של המאה ה-18 וה-19.
+                            </p>
+                        </div>
+
+                        <!-- האימוץ במצרים -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-yellow-500/5 rounded-2xl"></div>
+                            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest block mb-2 relative z-10">3. האימוץ בשווקי קהיר</span>
+                            <span class="text-xl font-bold text-yellow-500 block mb-1 relative z-10">جُنَيْه (Guineh / גניה)</span>
+                            <p class="text-slate-400 text-sm mt-2 relative z-10 leading-relaxed">
+                                כשהבריטים הגיעו למצרים במאה ה-19, הם הביאו איתם את מטבעות הזהב שלהם ("הגיני"). המצרים התרשמו מאיכותו, וכאשר הטביעו מטבע זהב עצמאי (שחפף בערכו לגיני הבריטי וללירה שטרלינג), הם פשוט "עירבו" (הפכו לערבית) את שם המטבע הבריטי היוקרתי. ההגייה הערבית הפכה את ה-Guinea ל-<strong>"גְנֵיה" (جنيه)</strong>. המטבע של ימינו כבר לא עשוי מזהב וערכו צנח, אך השם ההיסטורי נשמר!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-600 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-1 h-full bg-orange-400"></div>
+                        <h4 class="text-lg font-bold text-orange-400 mb-2">חלוקת המשנה: מאיטליה, דרך גרמניה, ל"קִירְש" הערבי</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-3">
+                            הגְנֵיה מתחלק ל-100 אגורות. באנגלית השם הרשמי הוא <strong>פיאסטר (Piastre)</strong>. בערבית, המצרים קוראים לזה <strong>קִירְש (قرش)</strong>. שני השמות האלו הם עדות ל"סלט הים-תיכוני" התרבותי של מצרים:
+                        </p>
+                        <ul class="text-slate-300 text-sm leading-relaxed space-y-2 list-disc list-inside">
+                            <li><strong class="text-white">פיאסטר (Piastre):</strong> מקור המילה בוונציה שבאיטליה העתיקה (Piastra), ומשמעותה המילולית היא "לוחית מתכת דקה". הסוחרים האיטלקים שלטו במסחר בים התיכון, והשם שלהם למטבעות הכסף הדקים אומץ במצרים לשפה האנגלית והצרפתית.</li>
+                            <li><strong class="text-white">קירש (Qirsh):</strong> מקור המילה הוא בגרמניה! המטבע הגרמני "גרוש" (Groschen), הגיע לאימפריה העות'מאנית והפך למטבע ה"קורוש" (Kuruş) הטורקי. כשהעות'מאנים שלטו במצרים, המצרים אימצו את הקורוש, ובהגייה הערבית המקומית זה הפך ל"קירש".</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- פוטר -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-12 w-full">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm font-medium">
+                נחקר, נכתב וקודד על ידי <strong class="text-amber-500">רם</strong> &copy; 2026.
+            </p>
+            <p class="text-slate-600 text-xs mt-2">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשיר Samsung S25 Ultra.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
