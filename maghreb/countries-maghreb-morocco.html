@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקרי ארץ הנילוס והמגרב: מרוקו</title>
+    
+    <!-- ייבוא פונט Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-select { user-select: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-red-700 selection:text-white pb-10">
+
+    <!-- סרגל ניווט עליון (לא דביק, לפי בקשתך) -->
+    <nav class="w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="../index.html" class="flex items-center text-red-500 hover:text-red-400 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <span class="font-medium text-lg">חזרה לאטלס הראשי</span>
+            </a>
+            <div class="text-slate-400 font-medium">נתיב המדינות / ארץ הנילוס והמגרב</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-6 sm:p-10 max-w-4xl mx-auto w-full">
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-12 text-center mt-6">
+            <div class="inline-block bg-red-900/30 border border-red-700 text-red-400 px-4 py-1 rounded-full text-sm font-semibold mb-4 shadow-[0_0_15px_rgba(220,38,38,0.3)]">
+                קובץ מחקר היסטורי וגיאופוליטי
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-red-500 to-emerald-500 mb-4 drop-shadow-md">
+                ממלכת מרוקו
+            </h1>
+            <p class="text-xl text-slate-400 font-light">المملكة المغربية (Al-Mamlaka al-Maghribiyya)</p>
+        </header>
+
+        <div class="space-y-10">
+            
+            <!-- תעודת זהות וייסוד -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-red-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    תעודת זהות היסטורית: שער המערב
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">תאריכי ייסוד ותמורות</h3>
+                        <ul class="text-slate-400 space-y-3 leading-relaxed list-disc list-inside">
+                            <li><strong class="text-slate-200">שנת 788 לספירה:</strong> ייסוד השושלת האידריסית, הנחשבת למדינה המרוקאית האסלאמית הראשונה, שאיחדה את שבטי הברברים המקומיים.</li>
+                            <li><strong class="text-slate-200">המאה ה-11 עד ה-13:</strong> תור הזהב של האימפריות הברבריות (המוראביטון והמוואחידון) ששלטו ממרוקו ועד ספרד.</li>
+                            <li><strong class="text-red-400">2 במרץ 1956:</strong> מרוקו זוכה מחדש בעצמאותה ומסיימת את עידן פולשנות החסות (הפרוטקטורט) הצרפתית והספרדית.</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">מייסדי השושלת העכשווית (העלווית)</h3>
+                        <p class="text-slate-400 leading-relaxed mb-1">
+                            <strong class="text-white text-lg">השושלת העלווית</strong>
+                            <br><span class="text-sm">(המשפחה המלכותית השולטת מאז שנת 1631 ועד היום)</span>
+                        </p>
+                        <p class="text-slate-400 text-sm leading-relaxed mt-2">
+                            בניגוד לרוב מדינות ערב המודרניות שנוצרו על ידי קולוניאליזם, מרוקו היא ממלכה בעלת רצף שלטוני עתיק. המלך הנוכחי (מוחמד השישי) הוא בן ל<strong>שושלת העלווית</strong>, המייחסת את מוצאה ישירות למוחמד (נביא האסלאם) דרך בתו פאטמה וחתנו עלי. עובדה זו מעניקה למלך המרוקאי לא רק סמכות פוליטית אלא גם מעמד דתי עליון כ"אמיר המאמינים" (מנהיג דתי).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" class="w-14 h-9 ml-3 rounded-sm shadow-sm border border-slate-600">
+                            <!-- רקע אדום -->
+                            <rect width="900" height="600" fill="#c1272d"/>
+                            <!-- פנטגרם ירוק -->
+                            <g transform="translate(450, 300) scale(1.6)">
+                                <path d="M 0 -100 L 22.45 30.9 L -89.1 -50 L 89.1 -50 L -22.45 30.9 Z" fill="none" stroke="#006233" stroke-width="12" stroke-linejoin="miter"/>
+                            </g>
+                        </svg>
+                        דגל המדינה: חותם שלמה על רקע אדום
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            הדגל המרוקאי הוא אחד המזוהים והעתיקים באזור. ה<strong>רקע האדום</strong> היה צבעם של שליטי מרוקו (השושלת העלווית) במשך מאות שנים, ומסמל במקור אומץ לב, כוח ואת דם השושלת.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            <strong class="text-emerald-400">הכוכב הירוק (חותם שלמה):</strong> בשנת 1915, הוסיף הסולטאן מולאי יוסף למרכז הדגל פנטגרם (כוכב בעל חמישה קודקודים) בצבע ירוק. הירוק מסמל את צבעו המסורתי של האסלאם והתקווה. הכוכב עצמו נקרא במסורת המקומית "חותם שלמה" (מלך ישראל שנודע בחוכמתו גם במסורת האסלאמית). חמשת קודקודי הכוכב מסמלים את <strong>חמשת עמודי האסלאם</strong>, והוא נועד להבדיל את דגל מרוקו מדגלים אדומים חלקים של מדינות אחרות.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3">הקשר גיאופוליטי: גשר בין אירופה, אפריקה והעולם הערבי</h3>
+                    <p class="text-slate-400 leading-relaxed text-lg">
+                        מרוקו היא מדינה של שערים ומיצרים. היא מחזיקה בצידו הדרומי של <strong>מצר גיברלטר</strong>, במרחק של 14 קילומטרים בלבד מספרד (אירופה). יש לה חוף כפול עצום – גם לים התיכון וגם לאוקיינוס האטלנטי. מבחינה תרבותית, היא מנהלת זהות משולשת: היא מדינה ערבית מובילה, אך בעלת שורשים ברבריים (אמאזיגיים) עתיקים, והשפעה אפריקאית ומערבית (פרנקופונית) חזקה. 
+                    </p>
+                </div>
+            </section>
+
+            <!-- אטימולוגיה מורחבת וסיפור השם -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-orange-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                    אטימולוגיה כפולה: מ"מרקש" ועד ל"מקום השקיעה"
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    האם אנחנו במרוקו או באל-מגרב? התשובה תלויה בשפה שבה אתם מדברים. למדינה הזו יש שני נתיבים אטימולוגיים מקבילים ומרתקים המספרים את ההיסטוריה של עמי האזור.
+                </p>
+
+                <div class="space-y-6">
+                    <!-- השם המערבי: מרוקו -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-red-500"></div>
+                        <h3 class="text-xl font-bold text-red-400 mb-3 text-2xl">1. השם המערבי: מרוקו (Morocco / Maroc)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            השם שבו משתמש העולם המערבי (וגם השפה העברית) אינו השם שבו קוראים לעצמם המקומיים!
+                        </p>
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-600 mb-2">
+                            <span class="block text-sm font-bold text-red-300 mb-1">המקור: העיר "מרקש" (Marrakech)</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                השם מרוקו נגזר משמה של עיר הבירה העתיקה והמפוארת, <strong>מרקש</strong>. האירופאים של ימי הביניים פשוט קראו לכל הממלכה על שם עיר הבירה שלה. המילה "מרקש" עצמה מגיעה מהשפה הברברית (השפה של התושבים המקוריים של צפון אפריקה, הנקראים אמאזיגים). בברברית, המילה <em>amur (אמור)</em> פירושה "ארץ" או "חלק", והמילה <em>akush (אקוש)</em> פירושה "אלוהים". לכן, מרקש (ומכאן מרוקו) פירושה: <strong>"ארץ האלוהים"</strong>. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- השם הערבי: אל-מגרב -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-orange-500"></div>
+                        <h3 class="text-xl font-bold text-orange-400 mb-3 text-2xl">2. השם הערבי: אל-מגרב (المغرب)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            כאשר הערבים כבשו את צפון אפריקה במאה ה-7, הם העניקו לאזור שם המבוסס על הגיאוגרפיה והאסטרונומיה שלהם.
+                        </p>
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-600 mb-2">
+                            <span class="block text-sm font-bold text-orange-300 mb-1">משמעות: "מקום שקיעת השמש"</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                בערבית, השורש ע-ר-ב מציין תנועה של כניסה או היעלמות, ומכאן המילה לשקיעת השמש (ע'רוב). <strong>"מגרב"</strong> הוא "המקום שבו השמש שוקעת" – כלומר, <strong>המערב</strong>. מבחינת הגיאוגרפים הערבים שישבו בחצי האי ערב, מרוקו הייתה קצה העולם המוכר, המקום בו השמש נופלת אל תוך האוקיינוס. השם ההיסטורי המלא של המדינה היה <em>אל-מגרב אל-אקצא</em> (המערב הרחוק ביותר), כדי להבדיל אותה מאלג'יריה ותוניסיה (המערב התיכון).
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- הכינוי המורטי -->
+                    <div class="bg-slate-800 p-6 rounded-2xl border border-slate-600 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-emerald-500"></div>
+                        <h3 class="text-xl font-bold text-emerald-400 mb-3 text-2xl">3. הקישור הקדום: "מורים" (Moors)</h3>
+                        <p class="text-slate-300 text-base leading-relaxed">
+                            חשוב להזכיר גם את הכינוי העתיק ביותר לאנשי האזור: הרומאים קראו לתושבי צפון מערב אפריקה בשם <strong>Mauri (מאורי)</strong>, ומשם התפתחה המילה "מורים" (Moors), שבה השתמשו האירופאים כדי לתאר את המוסלמים והברברים ששלטו בספרד ובמרוקו לאורך ימי הביניים. משם זה גם נגזר שמה של המדינה השכנה מדרום, מאוריטניה.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- הרפתקה היסטורית: המורשת האנדלוסית -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700 relative overflow-hidden">
+                <!-- אפקט קישוט מסגנון זליג' מרוקאי -->
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-emerald-700 via-teal-400 to-emerald-700"></div>
+                
+                <h2 class="text-2xl font-bold text-emerald-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" /></svg>
+                    הרפתקה היסטורית: משמרת תור הזהב האנדלוסי
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    ההיסטוריה של מרוקו קשורה בעבותות בלתי נפרדים לשכנתה מצפון – ספרד. הקשר הזה יצר את אחת מהתרבויות העשירות והמרהיבות בעולם המוכרת כתרבות "אנדלוסית-מגרבית".
+                </p>
+
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- ההיתוך התרבותי -->
+                        <div class="bg-slate-900/80 p-6 rounded-2xl border border-emerald-900/50">
+                            <h3 class="text-xl font-bold text-teal-400 mb-3">מעבר הים: מאירופה לאפריקה</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                במשך למעלה מ-700 שנה (החל משנת 711), חלקים גדולים מספרד ופורטוגל נשלטו על ידי מוסלמים שנקראו בפי האירופאים "מורים", אשר הגיעו ברובם מחופי מרוקו של ימינו. האזור שנקרא "אל-אנדלוס" חווה תור זהב של פריחה מדעית, שירה מרהיבה, אדריכלות עשירה (כמו ארמון אלהמברה) ודו-קיום יוצא דופן של חכמי דת ופילוסופים. מרוקו ואנדלוסיה היו לעיתים קרובות אימפריה אחת שמיצרי גיברלטר רק חיברו ביניהן.
+                            </p>
+                        </div>
+                        
+                        <!-- שימור המסורת -->
+                        <div class="bg-slate-900/80 p-6 rounded-2xl border border-teal-900/50">
+                            <h3 class="text-xl font-bold text-teal-400 mb-3">נדידת התרבויות והמוזיאון החי</h3>
+                            <p class="text-slate-300 leading-relaxed text-sm">
+                                בסוף המאה ה-15, התרחש מהפך היסטורי כאשר המלכים הקתולים השלימו את הכיבוש מחדש של ספרד (הרקונקיסטה). אירוע זה הוביל לנדידה גדולה והגירה של מאות אלפי מוסלמים ויהודים שעזבו את חצי האי האיברי וחצו את הים דרומה אל תוך מרוקו. 
+                                <br><br>
+                                המהגרים האלו, שהתיישבו בערים כמו פאס, תטואן ושפשאוון, לא באו בידיים ריקות: הם הביאו איתם את ה"אמנות האנדלוסית". הם הביאו את מוזיקת ה"אלא" (מוזיקה קלאסית רב-כלית המושרת עד היום), את סגנון עבודת הפסיפס העדינה (זליג'), את אמנות המזרקות בחצרות הפנימיות (הריאד), ואת סגנון הקולינריה המיוחד. עד היום, מרוקו משמשת כמעין "מוזיאון חי" ונושם השומר באהבה על התרבות האנדלוסית המפוארת שנעלמה מאירופה.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- נתונים גיאוגרפיים, דמוגרפיים וכלכליים -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    נתונים גיאוגרפיים, דמוגרפיים וכלכליים
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- שטח -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-900/30 p-2 rounded-lg text-indigo-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">ארץ ההרים והים</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-indigo-300 mb-2">446,550 <span class="text-lg font-medium text-slate-500">קמ"ר</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            הגיאוגרפיה של מרוקו היא מהמגוונות באפריקה: רכס <strong>הרי האטלס</strong> הגבוה והמושלג חוצה את המדינה ומהווה מחסום טבעי, מישור חוף אטלנטי ירוק ופורה במערב, ומדבר הסהרה הצחיח בדרום. היא נהנית מאקלים ים-תיכוני נוח לאורך חופיה. (השטח הנקוב אינו כולל את אזור סהרה המערבית השנוי במחלוקת בינלאומית, אותה מרוקו מחשיבה כחלק בלתי נפרד משטחה ההיסטורי).
+                        </p>
+                    </div>
+
+                    <!-- אוכלוסייה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-900/30 p-2 rounded-lg text-pink-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">זהות ברברית-ערבית</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-pink-300 mb-2">~ 37.5 <span class="text-lg font-medium text-slate-500">מיליון</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            האוכלוסייה היא פסיפס המשלב זהות <strong>ערבית</strong> (המקושרת לדת ולאליטות העירוניות ההיסטוריות) וזהות <strong>אמאזיגית/ברברית</strong> עמוקה (ילידי המקום ההיסטוריים, השומרים על שפה ומסורות נפרדות, בעיקר באזורי ההרים). השפות הרשמיות הן ערבית ותמאזיגת (השפה הברברית), והצרפתית משמשת באופן נרחב בעסקים ובאקדמיה. הדת השלטת היא אסלאם סוני.
+                        </p>
+                    </div>
+
+                    <!-- כלכלה ותל"ג -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-emerald-900/30 p-2 rounded-lg text-emerald-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">מעצמת הפוספטים</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-emerald-300 mb-2">~ 147 <span class="text-lg font-medium text-slate-500">מיליארד $</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            למרוקו אין נפט או גז טבעי (בניגוד לאלג'יריה השכנה), אך היא מחזיקה במונופול עולמי על משאב קריטי אחר: <strong>פוספטים</strong> (זרחות). כ-70% מעתודות הפוספט העולמיות (הכרחיות לייצור דשן חקלאי שיאכיל את אוכלוסיית העולם) נמצאות בשטחה. בנוסף, כלכלתה נשענת על תיירות ענפה, חקלאות, ומרכזי ייצור מתקדמים (כמו תעשיית רכב ענקית ורכבות מהירות) המייצאים ישירות לאירופה.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- מטבע ואטימולוגיה של המטבע -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    הכלכלה והמטבע: הדירהם והמורשת היוונית
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="bg-yellow-600/20 text-yellow-500 px-3 py-1 rounded-lg ml-3 border border-yellow-700/50">MAD</span>
+                        דירהם מרוקאי (درهم مغربي)
+                    </h3>
+                    
+                    <div class="mt-4 bg-slate-900/50 p-5 rounded-xl border border-slate-700">
+                        <h4 class="text-yellow-400 font-semibold mb-2">מטבע הריבונות החדשה:</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            הדירהם המרוקאי הושק בשנת 1960 על ידי המלך מוחמד החמישי, כסמל לעצמאות הכלכלית של הממלכה, והחליף את ה"פרנק המרוקאי" שהיה נהוג בימי השלטון הצרפתי (אם כי תושבים רבים בכפרים עדיין מחשבים מחירים ב"פרנקים" עד היום מתוך הרגל). כל שטר של דירהם נושא את דיוקנו של מלך מרוקו. 
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-400 mb-4">אטימולוגיה מפורטת: המסע מיוון לאימפריה המוסלמית</h3>
+                    <p class="text-slate-400 mb-4">
+                        שמו של המטבע המרוקאי (בדיוק כמו זה של איחוד האמירויות) הוא הוכחה לכך שכלכלות העולם הקדום היו מחוברות בשרשרת אחת ארוכה:
+                    </p>
+
+                    <div class="flex flex-col md:flex-row gap-4 mb-6">
+                        <!-- המקור היווני -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">1. המקור ביוון העתיקה</span>
+                            <span class="text-xl font-bold text-white block mb-1">דְרַכְמָה (Drachma)</span>
+                            <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                                שורש המילה "דירהם" אינו ערבי! הוא מתחיל ביוון העתיקה במילה <em>Drachma</em> (דְרַכְמָה). משמעות המילה ביוונית עתיקה היא <strong>"חופן" או "מלוא היד"</strong> (של שיפודי ברזל ששימשו כמטבעות מוקדמים). הדרכמה הפכה למטבע הכסף הנפוץ והמוכר ביותר בעולם ההלניסטי.
+                            </p>
+                        </div>
+                        
+                        <!-- הגלגול הפרסי/סאסאני -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">2. המעבר מזרחה לממלכת פרס</span>
+                            <span class="text-xl font-bold text-white block mb-1">דְרַם (Dram)</span>
+                            <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                                האימפריה הסאסאנית (הפרסית), שסחרה ונלחמה עם הביזנטים ההלניסטיים, אימצה את רעיון מטבעות הכסף וקראה להם בשם "דראם", כשיבוש ישיר של הדרכמה היוונית.
+                            </p>
+                        </div>
+
+                        <!-- האימוץ באסלאם -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-yellow-500/5 rounded-2xl"></div>
+                            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest block mb-2 relative z-10">3. החותם הערבי</span>
+                            <span class="text-xl font-bold text-yellow-500 block mb-1 relative z-10">דִירְהַם (درهم)</span>
+                            <p class="text-slate-400 text-sm mt-2 relative z-10 leading-relaxed">
+                                כאשר הערבים המוסלמים כבשו את המזרח התיכון ופרס במאה ה-7, הם המשיכו להשתמש במטבעות הכסף הקיימים. הם התאימו את השם להגייה הערבית – <strong>דירהם</strong>. המטבע נדד עם הכובשים המוסלמים לאורך כל צפון אפריקה עד שהגיע למרוקו (ואף לספרד), ונשאר שמה של יחידת המטבע המקומית עד עצם היום הזה.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-600 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-1 h-full bg-blue-400"></div>
+                        <h4 class="text-lg font-bold text-blue-400 mb-2">חלוקת המשנה: מורשת צרפת (סנטים)</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            הדירהם המרוקאי מתחלק ל-100 <strong>סנטים (Santim / سنتيم)</strong>. בניגוד לדירהם העתיק והמזרחי, ה"סנטים" הוא ירושה אירופאית ישירה מימי הפרוטקטורט הצרפתי (בדומה ל-Centime שמחלק את הפרנק הצרפתי), שורשו במילה הלטינית <em>Centum</em> שפירושה – מאה.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- פוטר -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-12 w-full">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm font-medium">
+                נחקר, נכתב וקודד על ידי <strong class="text-red-500">רם</strong> &copy; 2026.
+            </p>
+            <p class="text-slate-600 text-xs mt-2">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשיר Samsung S25 Ultra.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
