@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקרי המגרב: אלג'יריה</title>
+    
+    <!-- ייבוא פונט Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-select { user-select: none; }
+        .algeria-gradient { background: linear-gradient(135deg, #006233 0%, #ffffff 100%); }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-emerald-700 selection:text-white pb-10">
+
+    <!-- סרגל ניווט עליון -->
+    <nav class="w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="../index.html" class="flex items-center text-emerald-500 hover:text-emerald-400 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <span class="font-medium text-lg">חזרה לאטלס הראשי</span>
+            </a>
+            <div class="text-slate-400 font-medium">נתיב המדינות / המגרב</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-6 sm:p-10 max-w-4xl mx-auto w-full">
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-12 text-center mt-6">
+            <div class="inline-block bg-emerald-900/30 border border-emerald-700 text-emerald-400 px-4 py-1 rounded-full text-sm font-semibold mb-4 shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+                קובץ מחקר היסטורי וגיאופוליטי
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 via-slate-100 to-emerald-500 mb-4 drop-shadow-md">
+                הרפובליקה האלג'יראית
+            </h1>
+            <p class="text-xl text-slate-400 font-light">الجمهورية الجزائرية الديمقراطית الشعبية</p>
+        </header>
+
+        <div class="space-y-10">
+            
+            <!-- תעודת זהות וייסוד -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-emerald-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    תעודת זהות היסטורית: ארץ מיליון השהידים
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">תאריכי מפתח וריבונות</h3>
+                        <ul class="text-slate-400 space-y-3 leading-relaxed list-disc list-inside">
+                            <li><strong class="text-slate-200">1516:</strong> תחילת השלטון העות'מאני באלג'יריה (הקמת ה'איילט' של אלג'יר).</li>
+                            <li><strong class="text-slate-200">1830:</strong> תחילת הפלישה הצרפתית וקולוניאליזם ארוך שנמשך 132 שנים.</li>
+                            <li><strong class="text-emerald-400">5 ביולי 1962 (יום העצמאות):</strong> הכרזה על עצמאות מצרפת לאחר מלחמה אכזרית (1954–1962) שגבתה את חייהם של כמיליון וחצי אלג'יראים.</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2">אבי האומה וההתנגדות</h3>
+                        <p class="text-slate-400 leading-relaxed mb-1">
+                            <strong class="text-white text-lg">האמיר עבד אל-קאדר אל-ג'זאירי</strong>
+                            <br><span class="text-sm">(מנהיג צבאי, הוגה דעות ומייסד המדינה האלג'יראית המודרנית)</span>
+                        </p>
+                        <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-emerald-500 text-sm font-medium mb-4 mt-2">
+                            <span>1808 (מסקרה)</span>
+                            <span class="mx-2">-</span>
+                            <span>1883 (דמשק)</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            האמיר עבד אל-קאדר הוא הדמות הנערצת ביותר באלג'יריה. הוא איחד את השבטים הברבריים והערביים נגד הפלישה הצרפתית במאה ה-19, הקים צבא וניהל מדינה דה-פקטו. הוא נודע גם בזכות יחסו ההומניטרי לשבויים והגנתו על נוצרים בדמשק בשנות גלותו.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" class="w-14 h-9 ml-3 rounded-sm shadow-sm border border-slate-600">
+                            <!-- חלוקה ללבן וירוק -->
+                            <rect width="450" height="600" fill="#006233"/>
+                            <rect width="450" height="600" x="450" fill="#ffffff"/>
+                            <!-- סהרון וכוכב אדום במרכז -->
+                            <g transform="translate(450, 300) scale(1.2)">
+                                <circle r="80" fill="#d21034"/>
+                                <circle cx="20" r="70" fill="#ffffff"/>
+                                <polygon points="30,-20 45,20 85,20 52,45 65,85 30,60 -5,85 8,45 -25,20 15,20" fill="#d21034" transform="rotate(-18, 30, 30)"/>
+                            </g>
+                        </svg>
+                        דגל המדינה: טוהר המאבק והאסלאם
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            דגל אלג'יריה הנוכחי אומץ רשמית עם העצמאות ב-1962, אך עוצב כבר בשנות ה-20 (מיוחס למסיאלי חאג', מנהיג לאומי). הוא מחולק לשני פסים אנכיים שווים.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            <strong class="text-emerald-400">הצבעים והסמלים:</strong> ה<strong>ירוק</strong> מייצג את האסלאם ואת הטבע הפורח של הצפון. ה<strong>לבן</strong> מייצג את הטוהר ואת השלום שאליו שאפה האומה. ה<strong>סהרון והכוכב האדום</strong> הם סמלי האסלאם, אך הצבע האדום שלהם נבחר במיוחד כדי להנציח את דמם של החללים (השהידים) שנפלו למען חירות המולדת.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- אטימולוגיה מורחבת ומפורטת (החוק מה-23.2.2026) -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-emerald-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                    ניתוח אטימולוגי: תעלומת "האיים" במדבר
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    השם "אלג'יריה" הוא דוגמה קלאסית לשם של עיר בירה שהפך לשמה של מדינה שלמה, תוך שהוא נושא בתוכו תיאור גיאוגרפי של מקום שכבר לא קיים.
+                </p>
+
+                <div class="space-y-6">
+                    <!-- חלק א: השורש הערבי -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-emerald-500"></div>
+                        <h3 class="text-xl font-bold text-emerald-400 mb-3 text-2xl">1. השורש: אל-גַ'זַאאִיר (الجزائر)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            השם הערבי של המדינה הוא <em>al-Jaza'ir</em>. זהו צורת הריבוי של המילה הערבית <strong>ג'זירה (جزيرة)</strong>, שפירושה "אי". כלומר, אל-ג'זאא'יר פירושו: <strong>"האיים"</strong>.
+                        </p>
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                            <span class="block text-sm font-bold text-slate-400 mb-1">הסיבה הגיאוגרפית:</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                מדוע לקרוא למדינת ענק יבשתית "האיים"? השם ניתן במאה ה-10 על ידי בולוגין אבן זירי, מייסד העיר אלג'יר המודרנית. באותה תקופה, מול חופי העיר אלג'יר שכנו <strong>ארבעה איים קטנים</strong>. במאה ה-16, השלטון העות'מאני בנה מזח ענק שחיבר את האיים האלו ליבשה (כדי ליצור נמל מבוצר), והאיים נעלמו גיאוגרפית – אך השם "האיים" נשאר לנצח.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- חלק ב: הגרסה המערבית -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-slate-100"></div>
+                        <h3 class="text-xl font-bold text-slate-300 mb-3 text-2xl">2. המעבר למערב: Algeria / Algérie</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            השם שבו משתמש העולם המערבי הוא שיבוש פונטי של השם הערבי.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-emerald-400 mb-1">בצרפתית (Algérie):</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    הצרפתים אימצו את השם <em>Alger</em> עבור העיר, והוסיפו את הסיומת הלטינית <em>-ia</em> (או <em>-ie</em>) כדי לציין "ארץ של". כך נוצר השם "אלג'יריה" במאה ה-19.
+                                </p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                                <span class="block text-sm font-bold text-emerald-400 mb-1">הקשר הברברי (אמאזיגי):</span>
+                                <p class="text-slate-300 text-sm leading-relaxed">
+                                    ישנה סברה נוספת לפיה השם הערבי "אל-ג'זאא'יר" הוא עצמו ערביזציה של השם הברברי <strong>זירי</strong> (Ziri), על שם השושלת שייסדה את העיר. פירוש המילה "זירי" בברברית הוא "אור ירח".
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- הרפתקה היסטורית: המאבק לחופש -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-emerald-600 via-white to-red-600"></div>
+                
+                <h2 class="text-2xl font-bold text-emerald-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    הרפתקה היסטורית: מלחמת השחרור (1954–1962)
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    זהו סיפור על דוד מול גוליית; על אומה שסירבה להימחק תרבותית מול אחת המעצמות החזקות בעולם.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="bg-slate-900/80 p-6 rounded-2xl border border-red-900/50">
+                        <h3 class="text-xl font-bold text-red-400 mb-3">הניסיון הצרפתי למחיקת זהות</h3>
+                        <p class="text-slate-300 leading-relaxed text-sm">
+                            בניגוד לשאר מושבות צרפת, אלג'יריה לא נחשבה ל"קולוניה" אלא לחלק בלתי נפרד מצרפת (מחוז מעבר לים). הצרפתים ניסו להפוך את אלג'יריה לצרפתית: הם אסרו על לימוד ערבית בבתי הספר, הפכו מסגדים לכנסיות ושינו שמות של ערים. מעל מיליון מתיישבים אירופאים (ה"פיאד-נואר") חיו באלג'יריה ושלטו ברוב הקרקעות והמשאבים.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-slate-900/80 p-6 rounded-2xl border border-emerald-900/50">
+                        <h3 class="text-xl font-bold text-emerald-400 mb-3">חזית השחרור הלאומית (FLN)</h3>
+                        <p class="text-slate-300 leading-relaxed text-sm">
+                            ב-1 בנובמבר 1954, קבוצת מורדים אלג'יראים פתחה במתקפה משולבת שהציתה את המלחמה. המאבק היה אכזרי במיוחד וכלל לוחמת גרילה בהרים וקרבות טרור עירוניים בתוך אלג'יר (הידועים מהסרט "הקרב על אלג'יר"). המלחמה זעזעה את צרפת, הפילה ממשלות והביאה את הגנרל דה-גול לשלטון, שבסופו של דבר הבין כי צרפת לא תוכל להחזיק באלג'יריה לעד. ב-1962, אלג'יריה זכתה לחופש, ורוב האירופאים עזבו את המדינה בבת אחת.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- נתונים גיאוגרפיים, דמוגרפיים וכלכליים -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    נתונים גיאוגרפיים, דמוגרפיים וכלכליים
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- שטח -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-900/30 p-2 rounded-lg text-indigo-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">הענקית של אפריקה</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-indigo-300 mb-2">2,381,741 <span class="text-lg font-medium text-slate-500">קמ"ר</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            המדינה הגדולה ביותר באפריקה (מאז פיצול סודן). <strong>כ-80% משטחה הוא מדבר סהרה</strong>. רק רצועת החוף הצפונית, למרגלות הרי האטלס, נהנית מאקלים ים-תיכוני ומתאימה לחקלאות ומגורים. המרחבים העצומים בדרום מכילים אוצרות טבע אדירים אך הם כמעט בלתי מיושבים.
+                        </p>
+                    </div>
+
+                    <!-- אוכלוסייה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-900/30 p-2 rounded-lg text-pink-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">דמוגרפיה צעירה</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-pink-300 mb-2">~ 45 <span class="text-lg font-medium text-slate-500">מיליון</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            האלג'יראים הם ברובם המוחלט מוסלמים סונים. בדומה למרוקו, האוכלוסייה מורכבת ממיזוג של ערבים וברברים (אמאזיגים). השפה הרשמית היא ערבית, אך השפה הברברית (תמאזיגת) הוכרה כשפה רשמית ב-2016. הצרפתית עדיין משמשת כשפת המינהל וההשכלה הגבוהה, עדות לשלטון העבר.
+                        </p>
+                    </div>
+
+                    <!-- כלכלה ותל"ג -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-emerald-900/30 p-2 rounded-lg text-emerald-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">כלכלת זהב שחור</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-emerald-300 mb-2">~ 195 <span class="text-lg font-medium text-slate-500">מיליארד $</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            כלכלת אלג'יריה נשענת כמעט לחלוטין (95% מהייצוא) על <strong>נפט וגז טבעי</strong>. היא ספקית הגז הגדולה ביותר לאירופה אחרי רוסיה ונורבגיה. התלות המוחלטת הזו הופכת את המדינה לפגיעה מאוד לשינויים במחירי האנרגיה בעולם, והיא מנסה בשנים האחרונות לגוון את הכלכלה לייצור תעשייתי וחקלאות.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- מטבע ואטימולוגיה של המטבע -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    הכלכלה והמטבע: הדינאר האלג'יראי
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="bg-yellow-600/20 text-yellow-500 px-3 py-1 rounded-lg ml-3 border border-yellow-700/50">DZD</span>
+                        דינאר אלג'יראי (دينار جزائري)
+                    </h3>
+                    
+                    <div class="mt-4 bg-slate-900/50 p-5 rounded-xl border border-slate-700">
+                        <h4 class="text-yellow-400 font-semibold mb-2">מטבע העצמאות:</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            הדינאר האלג'יראי הוכנס לשימוש בשנת 1964, שנתיים לאחר העצמאות, כשהוא מחליף את ה"פרנק האלג'יראי" הקולוניאלי. המטבע נחשב לסמל של ריבונות, ושמותיו ועיצוביו משקפים את ההיסטוריה המוסלמית והברברית של המדינה. בשפת הרחוב, האלג'יראים עדיין משתמשים לעיתים במונח "פרנק" או "סורו" (שיבוש של סו - המטבע הצרפתי הישן) כדי לספור כסף, למרות שהם כבר לא קיימים.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-400 mb-4">אטימולוגיה מפורטת: מקיסר רומא ועד היום</h3>
+                    
+                    <div class="flex flex-col md:flex-row gap-4 mb-6">
+                        <!-- המקור הרומי -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">1. המקור באימפריה הרומית</span>
+                            <span class="text-xl font-bold text-white block mb-1">דֵנַארִיוּס (Denarius)</span>
+                            <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                                המילה "דינאר" היא אחת המילים העתיקות ביותר בעולם המטבעות. היא נגזרת מהמילה הלטינית <em>Denarius</em>. ברומא העתיקה, הדנאריוס היה מטבע כסף ששוויו היה "עשרה" (Deni) מטבעות נחושת קטנים. הרומאים שלטו בצפון אפריקה במשך מאות שנים והנחילו את השם הזה לאוכלוסייה המקומית.
+                            </p>
+                        </div>
+                        
+                        <!-- האימוץ המוסלמי -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">2. השכלול המוסלמי</span>
+                            <span class="text-xl font-bold text-white block mb-1">דִינַאר (Dinar)</span>
+                            <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                                עם עליית האסלאם והקמת הח'ליפות, המוסלמים החלו להטביע מטבעות זהב משלהם. הם אימצו את השם הרומי ושינו אותו ל"דינאר". הדינאר של ימי הביניים נחשב ל"דולר" של אותה תקופה – המטבע החזק והיציב ביותר ששימש למסחר מהודו ועד אלג'יריה וספרד.
+                            </p>
+                        </div>
+
+                        <!-- חלוקת המשנה -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-yellow-500/5 rounded-2xl"></div>
+                            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest block mb-2 relative z-10">3. חלוקת המשנה: סנטימה</span>
+                            <span class="text-xl font-bold text-yellow-500 block mb-1 relative z-10">Santeem (سنتيم)</span>
+                            <p class="text-slate-400 text-sm mt-2 relative z-10 leading-relaxed">
+                                הדינאר מתחלק ל-100 <strong>סנטימה</strong>. השם הזה (בדומה למרוקו) הוא ירושה צרפתית ישירה מה-<em>Centime</em>. זהו שילוב מרתק: מטבע שלם עם שם רומי-מוסלמי עתיק, שמחולק לאגורות עם שם צרפתי-לטיני מודרני.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- פוטר -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-12 w-full">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm font-medium">
+                נחקר, נכתב וקודד על ידי <strong class="text-emerald-500">רם</strong> &copy; 2026.
+            </p>
+            <p class="text-slate-600 text-xs mt-2">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשיר Samsung S25 Ultra.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
