@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקרי המגרב: תוניסיה</title>
+    
+    <!-- ייבוא פונט Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-select { user-select: none; }
+        .tunis-gradient { background: linear-gradient(135deg, #ce1126 0%, #ffffff 100%); }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-red-700 selection:text-white pb-10">
+
+    <!-- סרגל ניווט עליון -->
+    <nav class="w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="../index.html" class="flex items-center text-red-500 hover:text-red-400 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <span class="font-medium text-lg">חזרה לאטלס הראשי</span>
+            </a>
+            <div class="text-slate-400 font-medium">נתיב המדינות / המגרב</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-6 sm:p-10 max-w-4xl mx-auto w-full">
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-12 text-center mt-6">
+            <div class="inline-block bg-red-900/30 border border-red-700 text-red-400 px-4 py-1 rounded-full text-sm font-semibold mb-4 shadow-[0_0_15px_rgba(206,17,38,0.2)]">
+                קובץ מחקר היסטורי וגיאופוליטי מורחב
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-slate-100 to-red-500 mb-4 drop-shadow-md">
+                הרפובליקה התוניסאית
+            </h1>
+            <p class="text-xl text-slate-400 font-light font-sans">الجمهورية التونسية (al-Jumhūriyyah at-Tūnisiyya)</p>
+        </header>
+
+        <div class="space-y-10">
+            
+            <!-- תעודת זהות וייסוד -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-red-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    תעודת זהות היסטורית: יורשת קרתגו
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2 font-bold">ציוני דרך בריבונות</h3>
+                        <ul class="text-slate-400 space-y-3 leading-relaxed list-disc list-inside">
+                            <li><strong class="text-slate-200">814 לפנה"ס:</strong> ייסוד אימפריית קרתגו על ידי הפיניקים (המלכה דידו שהגיעה מלבנון של ימינו). המעצמה שהפכה לשליטת הסחר הבלעדית בים התיכון.</li>
+                            <li><strong class="text-slate-200">המאה ה-7 לספירה:</strong> הכיבוש המוסלמי. הערבים מייסדים את העיר <strong>קאירואן</strong> (Kairouan), שהפכה למרכז הדתי והרוחני הראשון והחשוב ביותר במגרב כולו.</li>
+                            <li><strong class="text-red-400">20 במרץ 1956:</strong> תוניסיה זוכה בעצמאות מלאה מצרפת (לאחר שהייתה תחת פרוטקטורט נוקשה מאז 1881), ומבטלת את שלטון המלוכה (ה"ביי") לטובת רפובליקה.</li>
+                            <li><strong class="text-slate-200">14 בינואר 2011:</strong> "מהפכת היסמין". בעקבות הצתתו העצמית של רוכל הירקות מוחמד בועזיזי, המונים יוצאים לרחובות ומפילים את הדיקטטור זין אל-עאבדין בן עלי. אירוע זה הצית את "האביב הערבי" כולו, והפך את תוניסיה (למשך עשור לפחות) לדמוקרטיה הערבית הראשונה.</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2 font-bold">אבי האומה המודרנית</h3>
+                        <p class="text-slate-400 leading-relaxed mb-1">
+                            <strong class="text-white text-lg">חביב בורגיבה (Habib Bourguiba)</strong>
+                            <br><span class="text-sm">(משפטן, מנהיג תנועת הלאומיות, ומי שכונה "המוג'אהיד הגדול")</span>
+                        </p>
+                        <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-red-500 text-sm font-medium mb-4 mt-2 font-mono">
+                            <span>1903 (מונסטיר)</span>
+                            <span class="mx-2">-</span>
+                            <span>2000 (מונסטיר)</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            בורגיבה היה אחד המנהיגים הנאורים, האמיצים והמורכבים ביותר בעולם הערבי. הוא חילן את המדינה בכוח, סגר בתי דין שרעיים, והעביר ב-1956 את "חוק המעמד האישי" ההיסטורי – שאסר על פוליגמיה (ריבוי נשים), איפשר גירושין בהסכמה, והעניק לנשים שוויון זכויות חסר תקדים במזרח התיכון. למרות סגנונו הדיקטטורי והאגוצנטרי, הוא נחשב לאדריכל שבנה את החברה התוניסאית המשכילה והמערבית של ימינו.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" class="w-14 h-9 ml-3 rounded-sm shadow-sm border border-slate-600">
+                            <rect width="900" height="600" fill="#ce1126"/>
+                            <circle cx="450" cy="300" r="150" fill="#ffffff"/>
+                            <path d="M 470 200 A 100 100 0 1 0 470 400 A 80 80 0 1 1 470 200" fill="#ce1126" transform="rotate(-20, 450, 300)"/>
+                            <polygon points="480,240 500,290 550,290 515,315 530,365 480,335 430,365 445,315 410,290 460,290" fill="#ce1126" transform="rotate(-20, 480, 300)"/>
+                        </svg>
+                        דגל המדינה: מורשת עות'מאנית בלב הים התיכון
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="text-slate-400 leading-relaxed text-lg font-light">
+                            דגל תוניסיה אומץ באופן רשמי כבר בשנת 1831 על ידי שליט תוניסיה דאז (הוסיין ביי השני), הרבה לפני העצמאות המודרנית. עובדה זו הופכת אותו לאחד הדגלים הלאומיים העתיקים ביותר בעולם שעדיין בשימוש כמעט ללא שינוי.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            הדגל הושפע ישירות מהצי העות'מאני (שתוניסיה הייתה חלק ממנו). ה<strong>סהרון והכוכב האדומים</strong> (סמלי האסלאם המייצגים מזל, אור והגנה) מוקפים ב<strong>עיגול לבן</strong> המייצג את השמש הזורחת ואת טוהר השלום. הרקע ה<strong>אדום</strong> העז מסמל את דם הקדושים שנשפך במאבקים ההיסטוריים, תחילה נגד האימפריה הספרדית שניסתה לכבוש את האזור, ומאוחר יותר במאבק נגד הקולוניאליזם הצרפתי.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- אטימולוגיה מורחבת ומפורטת -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-red-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                    ניתוח אטימולוגי: בין האלה תנית למקום הלינה במדבר
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    השם "תוניסיה" נגזר ישירות משמה של עיר הבירה תוניס. מקור השם עתיק מאוד ומעורר מחלוקת מרתקת בין חוקרי שפות שמיות לבין חוקרי שפות ברבריות (אמאזיגיות). להלן הפירוק המלא:
+                </p>
+
+                <div class="space-y-6">
+                    <!-- חלק א: השורש הברברי (אמאזיגי) -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-red-500"></div>
+                        <h3 class="text-xl font-bold text-slate-200 mb-3 text-2xl font-bold">1. המקור הברברי: תֶנְס (Tens)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            הסברה הבלשנית וההיסטורית המקובלת ביותר היא שהשם מגיע מהשפה הברברית (השפה של ילידי צפון אפריקה לפני הכיבוש הערבי), מהשורש <strong>ת-נ-ס (T-N-S)</strong>.
+                        </p>
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                            <span class="block text-sm font-bold text-red-400 mb-2 uppercase tracking-wider">משמעות: "ללון", "לחנות" או "להעביר את הלילה"</span>
+                            <p class="text-slate-300 text-sm leading-relaxed italic">
+                                הפועל "תֶנְס" (Tens) פירושו לשכב לישון או להקים מחנה ללילה. בימי קדם, עוד לפני שהפכה למטרופולין, תוניס הייתה ממוקמת אסטרטגית על צומת דרכים חשוב של שיירות גמלים וסוחרים שנעו לאורך החוף הצפון-אפריקאי ופנימה אל עבר הסהרה. המקום שימש כנקודת עצירה ומנוחה בטוחה, ולכן כונה בפשטות בפי הנוודים הברברים: "מקום הלינה" או "תחנת המנוחה".
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- חלק ב: המקור הפיניקי -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-slate-100"></div>
+                        <h3 class="text-xl font-bold text-slate-200 mb-3 text-2xl font-bold">2. המקור הפיניקי: האלה תנית (Tanit)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            תיאוריה רומנטית וארכיאולוגית אחרת קושרת את השם לעיר המדינה האדירה קרתגו, ששרידיה נמצאים היום ממש בתוך פרבריה של תוניס המודרנית.
+                        </p>
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                            <span class="block text-sm font-bold text-slate-400 mb-2 uppercase tracking-wider">משמעות: "העיר של תנית"</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                <strong>תנית (Tanit)</strong> הייתה האלה הראשית והחשובה ביותר בפנתאון של קרתגו. היא הייתה אלת הפריון, הירח, השמיים והמלחמה, והמגנה העליונה של העיר (הסמל שלה, המזכיר אישה המרימה את ידיה, נמצא חרוט על אלפי אבנים באזור). חוקרים סבורים שהשם "תוניס" הוא התפתחות פונטית (שיבוש) של השם "תנית", ושהיישוב המקורי הוקדש כמקדש או עיר-מקלט לכבודה של אלה זו.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- חלק ג: הסיומת הלטינית -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-slate-500"></div>
+                        <h3 class="text-xl font-bold text-slate-400 mb-3 text-2xl font-bold">3. הסיומת המערבית-לטינית: -IA</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed font-light">
+                            כפי שראינו באלג'יריה (אלג'יר -> אלג'יריה), השם שבו משתמש העולם המערבי, <strong>Tunisia</strong> (ובעברית: תוניסיה), נוצר פשוט על ידי הוספת הסיומת הלטינית הקלאסית <em>-ia</em> ("ארצם של-") לשם עיר הבירה תוניס. 
+                            <br><br>
+                            הצרפתים והאירופאים השתמשו בתבנית זו כדי להגדיר את כלל המרחב הטריטוריאלי שנשלט מהעיר המרכזית. עם זאת, חשוב לדעת: בערבית ובפי המקומיים, אין הבדל בשם בין עיר הבירה למדינה. הם קוראים לשתיהן פשוט <strong>"תוּנֶס" (تونس)</strong>, וההקשר מובן מתוך השיחה.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- הרפתקה היסטורית: קרתגו נגד רומא -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-red-600 via-amber-200 to-red-600"></div>
+                
+                <h2 class="text-2xl font-bold text-red-500 mb-6 flex items-center border-b border-slate-700 pb-4 font-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    הרפתקה היסטורית: חניבעל, הפילים והמלחמות הפוניות
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg font-light">
+                    הרבה לפני שתוניסיה הייתה מוסלמית, ערבית או צרפתית, היא הייתה בירתה של האימפריה הפיניקית הגדולה והעשירה ביותר בהיסטוריה: <strong>קרתגו</strong>. היא הייתה המעצמה היחידה שהעזה לאתגר את הדומיננטיות של רומא המתעוררת.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="bg-slate-900/80 p-6 rounded-2xl border border-amber-900/50">
+                        <h3 class="text-xl font-bold text-amber-400 mb-3 font-bold">חניבעל ברקה ומסע הפילים (218 לפנה"ס)</h3>
+                        <p class="text-slate-300 leading-relaxed text-sm">
+                            במהלך "המלחמה הפונית השנייה", המצביא הקרתגי הגאון <strong>חניבעל ברקה</strong> (שמשמעות שמו בפיניקית/עברית היא "חנן-בעל", חסדו של האל בעל) רקם תוכנית צבאית שנחשבת עד היום לאחת הנועזות בהיסטוריה האנושית. במקום לתקוף את רומא דרך הים (שם היה לה יתרון), הוא החליט לתקוף מהיבשה, דרך "הדלת האחורית".
+                            <br><br>
+                            הוא יצא מספרד, חצה את נהר הרון בצרפת, והוביל צבא של כ-40,000 חיילים ולמעלה מ-30 <strong>פילי מלחמה אפריקאים אימתניים</strong> היישר מעבר לפסגות המושלגות והקפואות של <strong>הרי האלפים</strong>. למרות שאיבד כמחצית מאנשיו וכמעט את כל הפילים בקור העז, אפקט ההפתעה היה מושלם. הוא פלש לאיטליה, השמיד כליל את הצבא הרומי בקרב קאנאי המפורסם, וזרע אימה ברחבי איטליה במשך 15 שנים ("חניבעל בשערינו!").
+                        </p>
+                    </div>
+                    
+                    <div class="bg-slate-900/80 p-6 rounded-2xl border border-red-900/50">
+                        <h3 class="text-xl font-bold text-red-400 mb-3 font-bold">"קרתגו חייבת להיחרב" (Carthago delenda est)</h3>
+                        <p class="text-slate-300 leading-relaxed text-sm italic">
+                            הטראומה הרומית מחניבעל הייתה כה עמוקה, שהסנטור הרומי קאטו הזקן נהג לסיים כל נאום שלו בסנאט – גם בנושאים לא קשורים – במשפט האלמותי: "ובנוסף, אני סבור שקרתגו חייבת להיחרב". 
+                            <br><br>
+                            ואכן, במלחמה הפונית השלישית (146 לפנה"ס), הרומאים צרו על קרתגו, שרפו אותה עד היסוד ומכרו את עשרות אלפי תושביה לעבדות. האגדה מספרת שהרומאים אף <strong>זרעו מלח באדמת העיר</strong> כדי ששום גידול לא יצמח בה לעולם (אם כי היסטוריונים כיום טוענים שזהו מיתוס מאוחר). עם זאת, המיקום הגיאוגרפי של תוניסיה היה טוב מכדי להינטש. הרומאים בנו את העיר מחדש והפכו אותה לבירת הפרובינקיה העשירה שלהם, שנקראה <strong>"אפריקה" (Africa)</strong> – שם שמאוחר יותר הוענק ליבשת כולה!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- נתונים גיאוגרפיים, דמוגרפיים וכלכליים -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center border-b border-slate-700 pb-4 font-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    נתונים גיאוגרפיים, דמוגרפיים וכלכליים
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- שטח -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-900/30 p-2 rounded-lg text-indigo-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white font-bold">היהלום הקטן והצפוני</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-indigo-300 mb-2 font-mono">163,610 <span class="text-lg font-medium text-slate-500 font-sans">קמ"ר</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">
+                            תוניסיה היא המדינה הקטנה ביותר באזור המגרב (כלואה בין שתי הענקיות, אלג'יריה ולוב), אך היא מנצלת את שטחה ביעילות יוצאת דופן. הצפון והמרכז מתאפיינים באקלים ים-תיכוני קלאסי, הרים ירוקים ומישורים חקלאיים פוריים מאוד. 
+                            <br><br>
+                            הדרום הופך למדברי וצחיח (חלק ממדבר הסהרה). פריט טריוויה גיאוגרפי-קולנועי: בדרום המדינה שוכנת העיר <strong>תטואין (Tataouine)</strong>, עם האדריכלות הברברית הייחודית שלה וקשרוני האבן. הבמאי ג'ורג' לוקאס צילם שם את "מלחמת הכוכבים" וקרא לכוכב הלכת הבדיוני של לוק סקייווקר "טטואין" על שם האזור! בנוסף, תוניסיה מחזיקה בנקודה היבשתית הצפונית ביותר ביבשת אפריקה כולה (ראס אנג'לה).
+                        </p>
+                    </div>
+
+                    <!-- אוכלוסייה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-900/30 p-2 rounded-lg text-pink-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white font-bold">חברה משכילה וזכויות נשים</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-pink-300 mb-2 font-mono">~ 12.5 <span class="text-lg font-medium text-slate-500 font-sans">מיליון</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">
+                            האוכלוסייה התוניסאית (ברוב מוחלט מוסלמים סונים) נחשבת לאחת המשכילות והליברליות ביותר בעולם הערבי. יש בה שיעור השתתפות גבוה מאוד של נשים באקדמיה, בפוליטיקה ובכוח העבודה, ותנועה פמיניסטית חזקה השומרת על מורשתו של בורגיבה. 
+                            הזהות מורכבת מערבים וממיעוט ברברי (אמאזיגי) שורשי. באי הדרומי ג'רבה (Djerba) שוכנת אחת הקהילות היהודיות העתיקות והמיוחדות בעולם, המתרכזת סביב בית הכנסת העתיק "אלגריבה", המשמש מוקד עלייה לרגל מדי שנה.
+                        </p>
+                    </div>
+
+                    <!-- כלכלה ותל"ג -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-emerald-900/30 p-2 rounded-lg text-emerald-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white font-bold">הזהב הירוק (שמן זית) ופוספטים</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-emerald-300 mb-2 font-mono">~ 50 <span class="text-lg font-medium text-slate-500 font-sans">מיליארד $</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">
+                            בניגוד גמור לאלג'יריה ולוב השכנות לה, לתוניסיה <strong>אין מאגרי נפט או גז טבעי משמעותיים</strong>. עובדה זו אילצה אותה להשקיע לאורך השנים ב"הון אנושי" (חינוך) ובכלכלה מגוונת. 
+                            היא נחשבת למעצמה חקלאית והיא בעקביות אחת מ-3 יצואניות <strong>שמן הזית ("הזהב הירוק")</strong> הגדולות בעולם! בנוסף, היא נשענת על כריית פוספטים, תעשיית טקסטיל מפותחת המייצאת לאירופה, ומגזר תיירות ענק (חופי רחצה ואתרי עתיקות). עם זאת, מאז המהפכה, המדינה סובלת מחוסר יציבות כלכלית, אינפלציה ואחוזי אבטלה גבוהים בקרב צעירים.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- מטבע ואטימולוגיה של המטבע -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center border-b border-slate-700 pb-4 font-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    הכלכלה והמטבע: הדינאר התוניסאי ושיטת 3 האפסים
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="bg-yellow-600/20 text-yellow-500 px-3 py-1 rounded-lg ml-3 border border-yellow-700/50 font-mono">TND</span>
+                        דינאר תוניסאי (دينار تونسي)
+                    </h3>
+                    
+                    <div class="mt-4 bg-slate-900/50 p-5 rounded-xl border border-slate-700">
+                        <h4 class="text-yellow-400 font-semibold mb-2 font-bold">דינאר של שלושה אפסים:</h4>
+                        <p class="text-slate-300 leading-relaxed font-light">
+                            הדינאר התוניסאי הוכנס לשימוש בשנת 1960 כסמל לריבונות הכלכלית, והחליף את ה"פרנק התוניסאי" מימי השלטון הצרפתי. למרות טלטלות כלכליות, הוא נחשב היסטורית למטבע יציב יחסית במגרב. 
+                            <br><br>
+                            <strong class="text-white">עובדה יומיומית מעניינת:</strong> בניגוד לרוב המטבעות בעולם (כמו השקל, הדולר או האירו) שמתחלקים ל-100 יחידות משנה (אגורות/סנטים), הדינאר התוניסאי מתחלק ל-<strong>1,000 מילימים (Millimes)</strong>. לכן, אם תלך לשוק בתוניס או תשב בבית קפה, תראה שתגי המחיר תמיד נכתבים עם שלוש ספרות אחרי הנקודה העשרונית! (למשל: כוס קפה תעלה 1.500 דינאר, ולא 1.50).
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-400 mb-4 font-bold">אטימולוגיה מפורטת: מהאימפריה הרומית לצרפתית המודרנית</h3>
+                    
+                    <div class="flex flex-col md:flex-row gap-4 mb-6">
+                        <!-- המקור הרומי-אסלאמי -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">1. המטבע השלם: דינאר (Dinar)</span>
+                            <span class="text-xl font-bold text-white block mb-1">דֵנַארִיוּס (Denarius) הרומי</span>
+                            <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                                כפי שראינו באלג'יריה ובמדינות המפרץ, השם "דינאר" מגיע מהמטבע המפורסם של רומא העתיקה: ה-<em>Denarius</em> (מטבע כסף השווה עשרה איסרים). מאחר שרומא שלטה בתוניסיה ביד רמה במשך מאות שנים לאחר חורבן קרתגו, השם נטמע כל כך עמוק שהוא שרד את הכיבוש המוסלמי. הערבים אימצו את השם כ"דינאר" (מטבע זהב), והוא נשאר בשימוש עד היום כדי לחבר את המדינה המודרנית למורשת האסלאמית המפוארת.
+                            </p>
+                        </div>
+                        
+                        <!-- חלוקת המשנה -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-yellow-500/5 rounded-2xl"></div>
+                            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest block mb-2 relative z-10">2. חלוקת המשנה: מילים (Millime)</span>
+                            <span class="text-xl font-bold text-yellow-500 block mb-1 relative z-10">החותם של השיטה המטרית הצרפתית</span>
+                            <p class="text-slate-400 text-sm mt-2 relative z-10 leading-relaxed">
+                                המילה <strong>מילימים</strong> (Millimes בערבית: مليم) אינה ערבית כלל. היא מגיעה ישירות מהמילה הצרפתית <em>Millième</em>, שפירושה "החלק האלף" (שמקורה בתורה מהמילה הלטינית <em>Mille</em> - אלף). 
+                                <br>
+                                זהו ייצוג מושלם להשפעת השלטון הצרפתי על המדינה: הצרפתים הטמיעו את הדיוק של "השיטה המטרית" בכלכלה המקומית. התוצאה היא שילוב גיאופוליטי מרתק בתוך הארנק התוניסאי: מטבע שלם עם שם רומי-מוסלמי עתיק מהמזרח, שמחולק לאלפיות עם שם צרפתי-לטיני מהמערב!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- פוטר -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-12 w-full">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm font-medium">
+                נחקר, נכתב וקודד על ידי <strong class="text-red-500 font-bold">רם</strong> &copy; 2026.
+            </p>
+            <p class="text-slate-600 text-xs mt-2 font-light italic">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשיר Samsung S25 Ultra.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
