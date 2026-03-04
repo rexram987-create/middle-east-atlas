@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחקרי המגרב: לוב</title>
+    
+    <!-- ייבוא פונט Heebo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- ייבוא Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- הגדרות עיצוב -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .no-select { user-select: none; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col selection:bg-green-700 selection:text-white pb-10">
+
+    <!-- סרגל ניווט עליון -->
+    <nav class="w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 p-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="../index.html" class="flex items-center text-green-500 hover:text-green-400 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+                <span class="font-medium text-lg">חזרה לאטלס הראשי</span>
+            </a>
+            <div class="text-slate-400 font-medium">נתיב המדינות / המגרב</div>
+        </div>
+    </nav>
+
+    <main class="flex-grow p-6 sm:p-10 max-w-4xl mx-auto w-full">
+        
+        <!-- כותרת ראשית -->
+        <header class="mb-12 text-center mt-6">
+            <div class="inline-block bg-green-900/30 border border-green-700 text-green-400 px-4 py-1 rounded-full text-sm font-semibold mb-4 shadow-[0_0_15px_rgba(34,197,94,0.2)]">
+                קובץ מחקר היסטורי וגיאופוליטי מורחב
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-green-500 to-slate-100 mb-4 drop-shadow-md">
+                מדינת לוב
+            </h1>
+            <p class="text-xl text-slate-400 font-light font-sans">دولة ليبيا (Dawlat Lībiyā)</p>
+        </header>
+
+        <div class="space-y-10">
+            
+            <!-- תעודת זהות וייסוד -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-green-500 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    תעודת זהות היסטורית: מדינה שנתפרה מ-3 מחוזות
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2 font-bold">ציוני דרך וכינון המדינה</h3>
+                        <ul class="text-slate-400 space-y-3 leading-relaxed list-disc list-inside">
+                            <li><strong class="text-slate-200">1911-1943:</strong> השלטון הקולוניאלי האיטלקי. איטליה הפשיסטית כובשת את המחוזות העות'מאניים, מדכאת מרידות באכזריות (בראשות עומר אל-מוח'תאר) ומאחדת אותם לישות אחת הנקראת "לוב האיטלקית".</li>
+                            <li><strong class="text-green-400">24 בדצמבר 1951 (העצמאות):</strong> בהחלטת האו"ם (לאחר שאיטליה הפסידה במלחה"ע ה-2), מוקמת "הממלכה הלובית המאוחדת" תחת שלטונו של המלך אידריס.</li>
+                            <li><strong class="text-red-400">1 בספטמבר 1969:</strong> "מהפכת אל-פאתח". קבוצת קצינים צעירים בראשות מועמר קדאפי מפילה את המלך (ללא שפיכות דמים) ומקימה רפובליקה המבוססת על סוציאליזם ולאומיות ערבית.</li>
+                            <li><strong class="text-slate-200">2011:</strong> מלחמת האזרחים הראשונה ("האביב הערבי"), שמובילה להפלת קדאפי ורציחתו. מאז, המדינה שרויה בפיצול ובכאוס פוליטי.</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-slate-300 mb-2 font-bold">הדמויות המכוננות (ניגודים מוחלטים)</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-slate-400 leading-relaxed mb-1">
+                                    <strong class="text-white text-lg">המלך אידריס הראשון (מייסד)</strong>
+                                    <br><span class="text-sm">(מנהיג דתי של המסדר הסנוסי הפייסני)</span>
+                                </p>
+                                <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-slate-300 text-sm font-medium font-mono">
+                                    <span>1889 (אל-ג'גבוב)</span> <span class="mx-2">-</span> <span>1983 (קהיר)</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 leading-relaxed mb-1 mt-2">
+                                    <strong class="text-white text-lg">מועמר קדאפי (שליט הדיקטטורה)</strong>
+                                    <br><span class="text-sm">(הוגה "התאוריה העולמית השלישית" המשלבת סוציאליזם, אסלאם ודמוקרטיה ישירה כביכול, אותה פרסם ב"ספר הירוק")</span>
+                                </p>
+                                <div class="inline-flex items-center bg-slate-900 border border-slate-600 rounded-lg px-3 py-1 text-green-500 text-sm font-medium font-mono">
+                                    <span>1942 (סירת)</span> <span class="mx-2">-</span> <span>20 אוקטובר 2011 (סירת)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" class="w-14 h-9 ml-3 rounded-sm shadow-sm border border-slate-600 bg-white">
+                            <!-- פסים: אדום, שחור, ירוק -->
+                            <rect width="900" height="150" fill="#E70013"/>
+                            <rect width="900" height="300" y="150" fill="#000000"/>
+                            <rect width="900" height="150" y="450" fill="#239E46"/>
+                            <!-- סהרון וכוכב בלבן על הפס השחור -->
+                            <circle cx="450" cy="300" r="80" fill="#ffffff"/>
+                            <circle cx="475" cy="300" r="65" fill="#000000"/>
+                            <polygon points="500,270 480,310 520,310 490,335 505,370 460,345 415,370 430,335 400,310 440,310" fill="#ffffff" transform="scale(0.5) translate(400, 300)"/>
+                        </svg>
+                        דגל המדינה: ייצוג של שלושה מחוזות
+                    </h3>
+                    <div class="space-y-3">
+                        <p class="text-slate-400 leading-relaxed text-lg font-light">
+                            הדגל הנוכחי אומץ במקור ב-1951, בוטל על ידי קדאפי ב-1969, והוחזר כסמל המהפכה ב-2011. הוא מורכב משלושה פסים לא שווים (הפס השחור כפול בעוביו).
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-lg">
+                            <strong class="text-slate-300">סמליות הפיצול והאיחוד:</strong> הצבעים מייצגים את שלושת המחוזות ההיסטוריים שהרכיבו את לוב: <strong>האדום</strong> מסמל את מחוז פזאן (Fezzan) שבדרום המדברי ואת דם השהידים; <strong>השחור</strong> (עם הסהרון והכוכב הלבנים) לקוח מדגלה של התנועה הסנוסית, ומייצג את מחוז קירנאיקה (Cyrenaica) שבמזרח; וה<strong>ירוק</strong> מסמל את מחוז טריפוליטניה (Tripolitania) שבמערב, וכן את האסלאם והחקלאות. 
+                            <br><br>
+                            <strong class="text-green-500">עובדת טריוויה מדהימה על קדאפי:</strong> משנת 1977 ועד 2011, תחת שלטון קדאפי, דגל לוב היה פשוט <strong>מלבן ירוק לחלוטין</strong>! הוא היה הדגל הלאומי היחיד בעולם שהיה מורכב מצבע אחד בלבד ללא שום סמל, עיצוב או כיתוב, וסימל את אידאולוגיית "הספר הירוק" שלו.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-6 border-t border-slate-700">
+                    <h3 class="text-lg font-semibold text-slate-300 mb-3">הסיבה הגיאופוליטית לייצור המדינה</h3>
+                    <p class="text-slate-400 leading-relaxed text-lg">
+                        לוב כמדינה מאוחדת בגבולותיה הנוכחיים לא הייתה קיימת לפני המאה ה-20. במשך אלפי שנים, המזרח (קירנאיקה) היה מחובר תרבותית למצרים ולתרבות היוונית, בעוד המערב (טריפוליטניה) היה מחובר לתוניסיה ולתרבות הפיניקית-רומית, והדרום (פזאן) היה עולם נפרד של נוודי מדבר ומסחר סהרי. <strong>איטליה הקולוניאלית</strong> היא זו שתפרה את שלושת המחוזות האלו יחד ב-1934 לישות אחת בשם "לוב", כדי ליצור קולוניה אחת גדולה וקלה לניהול. הפיצול הזה (מזרח מול מערב) הוא בדיוק מה שקורע את המדינה כיום, כשבמזרח שולט הגנרל חפתר ובמערב (טריפולי) שולטת הממשלה המוכרת על ידי האו"ם.
+                    </p>
+                </div>
+            </section>
+
+            <!-- אטימולוגיה מורחבת ומפורטת -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-green-400 mb-6 flex items-center border-b border-slate-700 pb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" /></svg>
+                    ניתוח אטימולוגי: השבט שהעניק את שמו לכל יבשת אפריקה
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg">
+                    השם "לוב" (Libya) הוא אחד השמות הגיאוגרפיים העתיקים והמרתקים ביותר בעולם. מסעו של השם מתחיל בכתובות חרטומים מצריות, עובר דרך שירת יוון, וחוזר כבומרנג על ידי הכובשים האיטלקים. הנה הפירוק המלא:
+                </p>
+
+                <div class="space-y-6">
+                    <!-- חלק א: המקור המצרי הקדום -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-yellow-600"></div>
+                        <h3 class="text-xl font-bold text-yellow-500 mb-3 text-2xl font-bold">1. המקור בכתב חרטומים: רִיבּוּ / לִיבּוּ (Libu)</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            האזכור הראשון בהיסטוריה האנושית לשם "לוב" נמצא בטקסטים של מצרים העתיקה (בתקופת הממלכה החדשה, המאה ה-13 לפני הספירה).
+                        </p>
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                            <span class="block text-sm font-bold text-yellow-400 mb-2 uppercase tracking-wider">משמעות: שם של שבט ברברי מקומי</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                המצרים הקדמונים השתמשו במילה <strong>לִיבּוּ</strong> (או רִיבּוּ, שכן בכתב חרטומים אין הבדל ברור בין R ל-L) כדי לתאר <strong>קונפדרציה של שבטים נוודים (ברברים / אמאזיגים)</strong> שחיו במדבר המערבי, מיד מערבית לעמק הנילוס. שבטי הליבו היו ידועים כלוחמים אכזריים שלעיתים קרובות פלשו למצרים ואף הצליחו להשתלט עליה ולייסד את השושלת ה-22 וה-23 של הפרעונים. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- חלק ב: היוונים וההכללה -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-cyan-500"></div>
+                        <h3 class="text-xl font-bold text-cyan-400 mb-3 text-2xl font-bold">2. המעבר ליוון: לִיבְּיָה (Λιβύη / Libyē) כסמל ליבשת כולה</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed">
+                            כשהיוונים העתיקים החלו לחקור את הים התיכון ולסחור עם מצרים, הם שמעו על שבטי ה"ליבו" שחיים ממערב.
+                        </p>
+                        <div class="bg-slate-800 p-4 rounded-xl border border-slate-600">
+                            <span class="block text-sm font-bold text-cyan-300 mb-2 uppercase tracking-wider">התפתחות: מ"שבט" ל"יבשת אפריקה"</span>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                היוונים אימצו את השם והוסיפו לו את הסיומת המקובלת לשמות מקומות (-יה), וכך יצרו את המילה <strong>"ליביה" (Libyē)</strong>. אולם, היוונים עשו הכללה דרמטית: הם השתמשו במילה "ליביה" לא רק כדי לתאר את האזור הספציפי, אלא <strong>כדי לתאר את כל יבשת אפריקה כולה</strong> (כלומר, כל מה שהיה מדרום לים התיכון וממערב לנילוס נקרא בפיהם "ליביה"). 
+                                <br>רק מאות שנים מאוחר יותר, כשהרומאים כבשו את קרתגו (תוניסיה), הם הציגו את המילה הלטינית "אפריקה" (Africa), שהחליפה בהדרגה את "ליביה" כשמה של היבשת כולה.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- חלק ג: האימוץ המודרני -->
+                    <div class="bg-slate-900 rounded-2xl p-6 border border-slate-700 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-2 h-full bg-green-500"></div>
+                        <h3 class="text-xl font-bold text-green-400 mb-3 text-2xl font-bold">3. התחייה המודרנית (1934) מיוזמת איטליה</h3>
+                        <p class="text-slate-300 mb-4 text-base leading-relaxed font-light">
+                            החלק המדהים באטימולוגיה של לוב הוא שבמשך רוב ההיסטוריה האסלאמית, המקומיים <strong>כלל לא השתמשו בשם הזה!</strong> הערבים קראו למערב הארץ "טראבלוס" (טריפולי) ולמזרח "ברקה" (Barqa). 
+                            <br><br>
+                            מי שהחזיר את השם "לוב" לחיים היו <strong>האיטלקים הקולוניאליים בשנת 1934</strong>. השלטון הפשיסטי של מוסוליני, שחיפש להחיות את תהילת האימפריה הרומית, נבר בספרי ההיסטוריה הרומיים/יווניים והחליט להדביק לקולוניה המאוחדת שלו את השם העתיק והנשכח <strong>Libia</strong>. לאחר העצמאות ב-1951, התושבים המקומיים פשוט אימצו את השם הערבי "ליבּיא" (ليبيا) כשמה הרשמי של ארצם החדשה.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- הרפתקה היסטורית: הנהר המלאכותי -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-600 via-cyan-300 to-blue-600"></div>
+                
+                <h2 class="text-2xl font-bold text-blue-400 mb-6 flex items-center border-b border-slate-700 pb-4 font-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" /></svg>
+                    הרפתקה הנדסית: "הנהר המלאכותי העצום" של קדאפי
+                </h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-6 text-lg font-light">
+                    זהו סיפור על אחד הפרויקטים ההנדסיים השאפתניים והמשוגעים ביותר בהיסטוריה של האנושות, שזכה לכינוי "הפלא השמיני של העולם" על ידי קדאפי עצמו.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="bg-slate-900/80 p-6 rounded-2xl border border-blue-900/50">
+                        <h3 class="text-xl font-bold text-blue-300 mb-3 font-bold">התגלית מתחת לחולות המדבר</h3>
+                        <p class="text-slate-300 leading-relaxed text-sm">
+                            לוב היא אחת המדינות היבשות בעולם. בשנות ה-50, במהלך קידוחי נפט שגרתיים בעומק הסהרה (בדרום לוב), הגיאולוגים נדהמו לגלות אוקיינוס עצום – לא של נפט, אלא של <strong>מים מתוקים!</strong> אלו היו מאגרי "אקוויפר אבן החול הנובית" – מים פוסיליים (עתיקים) שנאגרו מתחת לאדמה לפני עשרות אלפי שנים, כשהסהרה הייתה עדיין ירוקה ופורייה. המאגרים האלו, שהיו מנותקים מגשם מודרני, היו בלתי נדלים במושגים אנושיים.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-slate-900/80 p-6 rounded-2xl border border-cyan-900/50">
+                        <h3 class="text-xl font-bold text-cyan-400 mb-3 font-bold">פרויקט ההשקיה הגדול בעולם (1984)</h3>
+                        <p class="text-slate-300 leading-relaxed text-sm italic">
+                            מועמר קדאפי החליט לנצל את מיליארדי הדולרים של הכנסות הנפט כדי "להפוך את המדבר לירוק כימי קדם". בשנת 1984, הוא יזם את "הנהר המלאכותי העצום" (Great Man-Made River - GMR). במקום להביא את האנשים אל המים בדרום, הוא החליט להביא את המים אל האנשים בחוף!
+                            <br><br>
+                            הפרויקט כלל בניית רשת צינורות בטון תת-קרקעיים בקוטר של 4 מטרים כל אחד (בגודל שמכונית יכולה לנסוע בתוכם!), באורך כולל של כ-<strong>4,000 קילומטרים</strong>. המערכת שואבת מיליוני מטרים מעוקבים של מים ביום מעומק של 500 מטר מתחת לסהרה, ומזרימה אותם לערים המרכזיות (טריפולי, בנגאזי) לחקלאות ולשתייה. למרות ההרס שזרעה מלחמת האזרחים של 2011 (שבה הופצצו חלקים מהפרויקט), הנהר התת-קרקעי הזה עדיין מספק כ-70% ממי השתייה של לוב כולה!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- נתונים גיאוגרפיים, דמוגרפיים וכלכליים -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-indigo-400 mb-6 flex items-center border-b border-slate-700 pb-4 font-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                    נתונים גיאוגרפיים, דמוגרפיים וכלכליים
+                </h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- שטח -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-indigo-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-indigo-900/30 p-2 rounded-lg text-indigo-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white font-bold">ענקית המדבר</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-indigo-300 mb-2 font-mono">1,759,540 <span class="text-lg font-medium text-slate-500 font-sans">קמ"ר</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">
+                            לוב היא המדינה ה-16 בגודלה בעולם (השלישית באפריקה). כ-<strong>90% משטחה הוא מדבר צחיח לחלוטין</strong> (מדבר סהרה). החיים מתאפשרים רק בזכות רצועת החוף הארוכה שלה (1,770 ק"מ) לאורך הים התיכון, שם שורר אקלים נוח יותר. המרחב העצום והשומם הזה מקשה מאוד על משילות ושליטה על הגבולות שלה, מה שהפך אותה לתחנת מעבר מרכזית למהגרים מאפריקה לאירופה.
+                        </p>
+                    </div>
+
+                    <!-- אוכלוסייה -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-pink-900/30 p-2 rounded-lg text-pink-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white font-bold">חברה שבטית ומפוצלת</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-pink-300 mb-2 font-mono">~ 7 <span class="text-lg font-medium text-slate-500 font-sans">מיליון</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">
+                            למרות שטחה העצום, אוכלוסיית לוב קטנה יחסית ומרוכזת רק בערים שלאורך החוף (טריפולי במערב ובנגאזי במזרח). הרוב המוחלט הם ערבים וברברים מוסלמים-סונים. הדינמיקה الحقيقית של המדינה מבוססת על <strong>שבטיות</strong> עמוקה (קיימים כ-140 שבטים מרכזיים). מאז נפילת קדאפי, הנאמנות לשבט גוברת על הנאמנות ל"מדינה", מה שמזין את מלחמת האזרחים.
+                        </p>
+                    </div>
+
+                    <!-- כלכלה ותל"ג -->
+                    <div class="bg-slate-900 p-6 rounded-2xl border border-slate-700 hover:border-emerald-500 transition-colors">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-emerald-900/30 p-2 rounded-lg text-emerald-400 ml-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-white font-bold">קללת הנפט האפריקאי</h3>
+                        </div>
+                        <p class="text-3xl font-extrabold text-emerald-300 mb-2 font-mono">~ 40-50 <span class="text-lg font-medium text-slate-500 font-sans">מיליארד $ (תנודתי)</span></p>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">
+                            לוב מחזיקה ב<strong>עתודות הנפט המוכחות הגדולות ביותר בכל יבשת אפריקה</strong>. הנפט שלה (שנתגלה ב-1959) נחשב לאיכותי מאוד ("מתוק וקל") וזול להפקה. הכלכלה נשענת על הנפט באופן קיצוני (מעל 95% מהייצוא). מלחמת האזרחים סובבת כיום בעיקר סביב השליטה על שדות הנפט והבנק המרכזי המחלק את רווחיו.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- מטבע ואטימולוגיה של המטבע -->
+            <section class="bg-slate-800 rounded-3xl p-8 shadow-xl border border-slate-700">
+                <h2 class="text-2xl font-bold text-yellow-500 mb-6 flex items-center border-b border-slate-700 pb-4 font-bold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    הכלכלה והמטבע: הדינר הלובי
+                </h2>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-white mb-2 flex items-center">
+                        <span class="bg-yellow-600/20 text-yellow-500 px-3 py-1 rounded-lg ml-3 border border-yellow-700/50 font-mono">LYD</span>
+                        דינר לובי (دينار ليبي)
+                    </h3>
+                    
+                    <div class="mt-4 bg-slate-900/50 p-5 rounded-xl border border-slate-700">
+                        <h4 class="text-yellow-400 font-semibold mb-2 font-bold">המהפכה המוניטרית של קדאפי:</h4>
+                        <p class="text-slate-300 leading-relaxed font-light">
+                            לאחר קבלת העצמאות ב-1951, המטבע של לוב היה "הלירה הלובית" (Pound), שהייתה צמודה לליש"ט הבריטית (שריד לממשל הצבאי הבריטי ששלט שם זמנית לאחר מלה"ע ה-2). ב-1971, שנתיים לאחר עלייתו לשלטון, <strong>מועמר קדאפי</strong> החליט לנתק כל סממן של אימפריאליזם מערבי. הוא ביטל את הלירה האנגלית והנפיק את ה"דינר הלובי" בעל השורשים הערביים-אסלאמיים. תחת קדאפי, הדינר היה מטבע חזק ויציב, אך מאז 2011 הוא קורס עקב פילוג השלטון, ויש כיום שני בנקים מרכזיים (במזרח ובמערב) שמדפיסים שטרות שונים!
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-yellow-400 mb-4 font-bold">אטימולוגיה מפורטת לחלקי המטבע: המפגש בין רומא ליוון באפריקה</h3>
+                    <p class="text-slate-400 mb-4">
+                        לוב מספקת את הדוגמה האולטימטיבית לאירוניה הבלשנית של העולם הערבי. קדאפי רצה להתנתק מהמערב ואימץ מילים "אסלאמיות" לחלוטין (דינר ודירהם), אך למעשה – <strong>שני חלקי המטבע הם אירופאיים קלאסיים טהורים!</strong> 
+                    </p>
+                    
+                    <div class="flex flex-col md:flex-row gap-4 mb-6">
+                        <!-- המטבע השלם -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700">
+                            <span class="text-xs font-bold text-slate-500 uppercase tracking-widest block mb-2">1. המטבע השלם: דינר (Dinar)</span>
+                            <span class="text-xl font-bold text-white block mb-1">הירושה מהאימפריה הרומית</span>
+                            <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                                כפי שראינו באלג'יריה ותוניסיה השכנות, השם "דינר" מגיע ישירות מהמטבע הרומי <em>Denarius</em>. רומא שלטה בחופי לוב במשך מאות שנים (כפי שמעידות העתיקות המרהיבות בעיר לפטיס מגנה), והשם נטמע, שרד את הכיבוש המוסלמי והפך לשם גנרי למטבע זהב בערבית.
+                            </p>
+                        </div>
+                        
+                        <!-- חלוקת המשנה -->
+                        <div class="flex-1 bg-slate-900 p-5 rounded-2xl border border-slate-700 relative">
+                            <div class="absolute inset-0 bg-yellow-500/5 rounded-2xl"></div>
+                            <span class="text-xs font-bold text-yellow-600 uppercase tracking-widest block mb-2 relative z-10">2. חלוקת המשנה: דירהם (Dirham)</span>
+                            <span class="text-xl font-bold text-yellow-500 block mb-1 relative z-10">החותם של יוון העתיקה</span>
+                            <p class="text-slate-400 text-sm mt-2 relative z-10 leading-relaxed">
+                                <strong>חריגה מעניינת:</strong> בניגוד לאלג'יריה (סנטימה) או תוניסיה (מילימים), הדינר הלובי אינו מתחלק לשמות אירופיים-מודרניים. הוא מתחלק ל-1,000 <strong>"דירהם"</strong> (درهم). מאיפה הגיעה המילה דירהם? כפי שראינו במדינות המפרץ, היא מגיעה מהמילה היוונית העתיקה <em>Drachma</em> (דְרַכְמָה - חופן). כך, המטבע של לוב משלב באופן אירוני בין מטבע רומי (דנאריוס) שמחולק לאגורות של מטבע יווני (דרכמה)!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- פוטר -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center mt-12 w-full">
+        <div class="max-w-5xl mx-auto px-6">
+            <p class="text-slate-500 text-sm font-medium">
+                נחקר, נכתב וקודד על ידי <strong class="text-green-500 font-bold">רם</strong> &copy; 2026.
+            </p>
+            <p class="text-slate-600 text-xs mt-2 font-light italic">
+                מותאם ומוטמע לחוויית קריאה אופטימלית במצב כהה ובמכשיר Samsung S25 Ultra.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
